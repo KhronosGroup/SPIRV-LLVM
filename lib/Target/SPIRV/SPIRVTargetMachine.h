@@ -38,7 +38,7 @@
 #ifndef LLVM_LIB_TARGET_SPIRV_SPIRVTARGETMACHINE_H
 #define LLVM_LIB_TARGET_SPIRV_SPIRVTARGETMACHINE_H
 
-#include "SPIRVSubTarget.h"
+#include "SPIRVSubtarget.h"
 #include "llvm/CodeGen/Passes.h"
 #include "llvm/IR/DataLayout.h"
 #include "llvm/Target/TargetMachine.h"
