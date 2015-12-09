@@ -199,8 +199,8 @@ void SPIRVToOCL20::visitCallSPIRVAtomicBuiltin(CallInst* CI, Op OC) {
     auto Ptr = findFirstPtr(Args);
     auto Name = OCLSPIRVBuiltinMap::rmap(OC);
     auto NumOrder = getAtomicBuiltinNumMemoryOrderArgs(Name);
-    auto OrderIdx = Ptr + 1;
-    auto ScopeIdx = Ptr + 1 + NumOrder;
+    auto ScopeIdx = Ptr + 1;
+    auto OrderIdx = Ptr + 2;
     if (OC == OpAtomicIIncrement ||
         OC == OpAtomicIDecrement) {
       Args.erase(Args.begin() + OrderIdx, Args.begin() + ScopeIdx + 1);
@@ -214,7 +214,7 @@ void SPIRVToOCL20::visitCallSPIRVAtomicBuiltin(CallInst* CI, Op OC) {
             [](unsigned Ord) {
         return mapSPIRVMemOrderToOCL(Ord);
       });
-      move(Args, OrderIdx, ScopeIdx + 1, Args.size());
+      std::swap(Args[ScopeIdx], Args.back());
     }
     return Name;
   }, &Attrs);

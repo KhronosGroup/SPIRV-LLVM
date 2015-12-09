@@ -353,7 +353,7 @@ OCL20ToSPIRV::visitCallInst(CallInst& CI) {
     }
     if (DemangledName == kOCLBuiltinName::AtomicCmpXchgStrong ||
         DemangledName == kOCLBuiltinName::AtomicCmpXchgWeak) {
-      assert(CLVer == 20 && "Wrong version of OpenCL");
+      assert(CLVer == kOCLVer::CL20 && "Wrong version of OpenCL");
       PCI = visitCallAtomicCmpXchg(PCI, DemangledName);
     }
     visitCallAtomicLegacy(PCI, MangledName, DemangledName);
@@ -641,10 +641,10 @@ OCL20ToSPIRV::transAtomicBuiltin(CallInst* CI,
   AttributeSet Attrs = CI->getCalledFunction()->getAttributes();
   mutateCallInstSPIRV(M, CI, [=](CallInst * CI, std::vector<Value *> &Args){
     Info.PostProc(Args);
-    auto NumOrder = getAtomicBuiltinNumMemoryOrderArgs(Info.UniqName);
+    const size_t NumOrder = getAtomicBuiltinNumMemoryOrderArgs(Info.UniqName);
     const size_t ArgsCount = Args.size();
-    auto ScopeIdx = ArgsCount - 3;
-    auto OrderIdx = ArgsCount - NumOrder;
+    const size_t ScopeIdx = ArgsCount - NumOrder - 1;
+    const size_t OrderIdx = ArgsCount - NumOrder;
     Args[ScopeIdx] = mapUInt(M, cast<ConstantInt>(Args[ScopeIdx]),
         [](unsigned I){
       return map<Scope>(static_cast<OCLScopeKind>(I));
