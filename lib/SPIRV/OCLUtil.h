@@ -139,7 +139,8 @@ namespace kOCLBuiltinName {
   const static char AtomicPrefix[]       = "atomic_";
   const static char AtomicCmpXchg[]      = "atomic_cmpxchg";
   const static char AtomicCmpXchgStrong[] = "atomic_compare_exchange_strong";
-  const static char AtomicInit[]         = "atomic_init";
+  const static char AtomicCmpXchgWeak[]   = "atomic_compare_exchange_weak";
+  const static char AtomicInit[]          = "atomic_init";
   const static char AtomicWorkItemFence[] = "atomic_work_item_fence";
   const static char Barrier[]            = "barrier";
   const static char ConvertPrefix[]      = "convert_";
@@ -316,6 +317,12 @@ void
 mutateFunctionOCL(Function *F,
     std::function<std::string (CallInst *, std::vector<Value *> &)>ArgMutate,
     AttributeSet *Attrs = nullptr);
+
+
+/// Translates OCL work-item builtin functions to SPIRV builtin variables.
+/// Function like get_global_id(i) -> x = load GlobalInvocationId; extract x, i
+/// Function like get_work_dim() -> load WorkDim
+void transWorkItemBuiltinsToVariables(llvm::Module* M, bool isCPP);
 
 } // namespace OCLUtil
 

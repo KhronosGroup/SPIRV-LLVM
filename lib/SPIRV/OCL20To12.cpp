@@ -80,7 +80,7 @@ char OCL20To12::ID = 0;
 bool
 OCL20To12::runOnModule(Module& Module) {
   M = &Module;
-  if (getOCLVersion(M) >= 20)
+  if (getOCLVersion(M) >= kOCLVer::CL20)
     return false;
 
   Ctx = &M->getContext();

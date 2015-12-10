@@ -74,7 +74,7 @@ AtomicWorkItemFenceLiterals getAtomicWorkItemFenceLiterals(CallInst* CI) {
 }
 
 size_t getAtomicBuiltinNumMemoryOrderArgs(StringRef Name) {
-  if (Name.find("compare_exchange_strong") != StringRef::npos)
+  if (Name.startswith("atomic_compare_exchange"))
     return 2;
   return 1;
 }
@@ -354,6 +354,63 @@ mutateFunctionOCL(Function *F,
     AttributeSet *Attrs) {
   OCLBuiltinFuncMangleInfo BtnInfo;
   return mutateFunction(F, ArgMutate, &BtnInfo, Attrs, false);
+}
+
+
+/// Translates OCL work-item builtin functions to SPIRV builtin variables.
+/// Function like get_global_id(i) -> x = load GlobalInvocationId; extract x, i
+/// Function like get_work_dim() -> load WorkDim
+void transWorkItemBuiltinsToVariables(llvm::Module* M, bool isCPP) {
+  DEBUG(dbgs() << "Enter transWorkItemBuiltinsToVariables\n");
+  std::vector<Function *> WorkList;
+  for (auto I = M->begin(), E = M->end(); I != E; ++I) {
+    std::string DemangledName;
+    if (!oclIsBuiltin(I->getName(), 20, &DemangledName, isCPP))
+      continue;
+    DEBUG(dbgs() << "Function demangled name: " << DemangledName << '\n');
+    std::string BuiltinVarName;
+    SPIRVBuiltinVariableKind BVKind = BuiltInCount;
+    if (!SPIRSPIRVBuiltinVariableMap::find(DemangledName, &BVKind))
+      continue;
+    BuiltinVarName = std::string(kSPIRVName::Prefix) +
+        SPIRVBuiltinVariableNameMap::map(BVKind);
+    DEBUG(dbgs() << "builtin variable name: " << BuiltinVarName << '\n');
+    bool IsVec = I->getFunctionType()->getNumParams() > 0;
+    Type *GVType = IsVec ? VectorType::get(I->getReturnType(),3) :
+        I->getReturnType();
+    auto BV = new GlobalVariable(*M, GVType,
+        true,
+        GlobalValue::ExternalLinkage,
+        nullptr, BuiltinVarName,
+        0,
+        GlobalVariable::NotThreadLocal,
+        SPIRAS_Constant);
+    std::vector<Instruction *> InstList;
+    for (auto UI = I->user_begin(), UE = I->user_end(); UI != UE; ++UI) {
+      auto CI = dyn_cast<CallInst>(*UI);
+      assert(CI && "invalid instruction");
+      Value * NewValue = new LoadInst(BV, "", CI);
+      DEBUG(dbgs() << "Transform: " << *CI << " => " << *NewValue << '\n');
+      if (IsVec) {
+        NewValue = ExtractElementInst::Create(NewValue,
+          CI->getArgOperand(0),
+          "", CI);
+        DEBUG(dbgs() << *NewValue << '\n');
+      }
+      NewValue->takeName(CI);
+      CI->replaceAllUsesWith(NewValue);
+      InstList.push_back(CI);
+    }
+    for (auto &Inst:InstList) {
+      Inst->dropAllReferences();
+      Inst->removeFromParent();
+    }
+    WorkList.push_back(I);
+  }
+  for (auto &I:WorkList) {
+    I->dropAllReferences();
+    I->removeFromParent();
+  }
 }
 
 } // namespace OCLUtil
