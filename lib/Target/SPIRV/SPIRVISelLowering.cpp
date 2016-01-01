@@ -38,6 +38,8 @@
 
 #include "SPIRVTargetMachine.h"
 
+#include "SPIRVGenInstrInfo.inc"
+
 #define DEBUG_TYPE "spirv-isel"
 
 using namespace llvm;
@@ -45,4 +47,12 @@ using namespace llvm;
 SPIRVTargetLowering::SPIRVTargetLowering(SPIRVTargetMachine &TM)
    : TargetLowering(TM)
 {
+  addRegisterClass(MVT::i32, &SPIRV::GPR32RegClass);
+  addRegisterClass(MVT::i64, &SPIRV::GPR64RegClass);
+  addRegisterClass(MVT::f16, &SPIRV::GPR16RegClass);
+  addRegisterClass(MVT::f32, &SPIRV::GPR32RegClass);
+  addRegisterClass(MVT::f64, &SPIRV::GPR64RegClass);
+  addRegisterClass(MVT::i1,  &SPIRV::GPR1RegClass);
+
+  computeRegisterProperties();
 }

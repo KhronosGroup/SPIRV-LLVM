@@ -57,9 +57,11 @@ public:
 
   TargetPassConfig *createPassConfig(PassManagerBase &PM) override;
   const SPIRVSubtarget *getSubtargetImpl() const override { return &Subtarget; }
+  TargetLoweringObjectFile *getObjFileLowering() const override { return TLOF; }
 
 private:
   SPIRVSubtarget        Subtarget;
+  TargetLoweringObjectFile *TLOF;
 };
 
 class SPIRVPassConfig : public TargetPassConfig {

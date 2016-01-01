@@ -39,6 +39,7 @@
 #include "SPIRVTargetMachine.h"
 #include "SPIRV.h"
 
+#include "llvm/CodeGen/TargetLoweringObjectFileImpl.h"
 #include "llvm/Support/TargetRegistry.h"
 #include "llvm/Target/TargetOptions.h"
 
@@ -59,7 +60,8 @@ SPIRVTargetMachine::SPIRVTargetMachine(const Target &T,
                                        CodeModel::Model CM,
                                        CodeGenOpt::Level OL) :
   LLVMTargetMachine(T, TT, CPU, FS,Options, RM, CM,OL),
-  Subtarget(TT, CPU, FS, *this) {
+  Subtarget(TT, CPU, FS, *this),
+  TLOF(new TargetLoweringObjectFileELF()){
   initAsmInfo();
   setAsmVerbosityDefault(true);
   setRequiresStructuredCFG(false);
