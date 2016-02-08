@@ -570,7 +570,7 @@ mutateCallInst(Module *M, CallInst *CI,
 
   auto Args = getArguments(CI);
   auto NewName = ArgMutate(CI, Args);
-  StringRef InstName;
+  std::string InstName;
   if (!CI->getType()->isVoidTy() && CI->hasName()) {
     InstName = CI->getName();
     CI->setName(InstName + ".old");
@@ -595,13 +595,13 @@ mutateCallInst(Module *M, CallInst *CI,
   auto Args = getArguments(CI);
   Type *RetTy = CI->getType();
   auto NewName = ArgMutate(CI, Args, RetTy);
-  StringRef InstName;
+  std::string InstName;
   if (CI->hasName()) {
     InstName = CI->getName();
     CI->setName(InstName + ".old");
   }
   auto NewCI = addCallInst(M, NewName, RetTy, Args, Attrs,
-      CI, Mangle, InstName.str() + ".tmp", TakeFuncName);
+      CI, Mangle, InstName + ".tmp", TakeFuncName);
   auto NewI = RetMutate(NewCI);
   NewI->takeName(CI);
   DEBUG(dbgs() << " => " << *NewI << '\n');
@@ -815,16 +815,28 @@ getMDOperandAsType(MDNode* N, unsigned I) {
   return cast<ValueAsMetadata>(N->getOperand(I))->getType();
 }
 
-std::string
-getNamedMDAsString(Module *M, const std::string &MDName) {
+std::set<std::string>
+getNamedMDAsStringSet(Module *M, const std::string &MDName) {
   NamedMDNode *NamedMD = M->getNamedMetadata(MDName);
+  std::set<std::string> StrSet;
   if (!NamedMD)
-    return "";
-  assert(NamedMD->getNumOperands() == 1 && "Invalid SPIR");
-  MDNode *MD = NamedMD->getOperand(0);
-  if (!MD || MD->getNumOperands() == 0)
-    return "";
-  return getMDOperandAsString(MD, 0);
+    return std::move(StrSet);
+
+  assert(NamedMD->getNumOperands() > 0 && "Invalid SPIR");
+
+  for (unsigned I = 0, E = NamedMD->getNumOperands(); I != E; ++I) {
+    MDNode *MD = NamedMD->getOperand(I);
+    if (!MD || MD->getNumOperands() == 0)
+      continue;
+    assert(MD->getNumOperands() == 1 && "Invalid SPIR");
+    auto S = getMDOperandAsString(MD, 0);
+    SmallVector<StringRef, 10> Exts;
+    StringRef(S).split(Exts, " ", -1, false);
+    for (auto S:Exts)
+      StrSet.insert(std::move(S.str()));
+  }
+
+  return std::move(StrSet);
 }
 
 std::tuple<unsigned, unsigned, std::string>
@@ -1069,8 +1081,9 @@ getSPIRVSampledImageType(Module *M, Type *ImageType) {
   StringRef ImgTyName;
   if (isOCLImageType(ImageType, &ImgTyName))
     return getOrCreateOpaquePtrType(M,
-        std::string(kSPIRVTypeName::SampledImg) + kSPIRVTypeName::Delimiter
-        + ImgTyName.str());
+        std::string(kSPIRVTypeName::SampledImg)
+          + kSPIRVTypeName::Delimiter + ImgTyName.str()
+          + kSPIRVTypeName::Delimiter + kAccessQualName::ReadOnly);
   llvm_unreachable("Invalid image type");
   return nullptr;
 }
@@ -1151,5 +1164,4 @@ mangleBuiltin(const std::string &UniqName,
 }
 
 }
-
 

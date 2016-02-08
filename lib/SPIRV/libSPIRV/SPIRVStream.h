@@ -86,13 +86,14 @@ public:
 
 class SPIRVEncoder {
 public:
-  explicit SPIRVEncoder(std::ostream& OutputStream)
-    :OS(OutputStream){}
-  std::ostream& OS;
+  explicit SPIRVEncoder(spv_ostream &OutputStream) : OS(OutputStream) {}
+  spv_ostream &OS;
 };
 
 /// Output a new line in text mode. Do nothing in binary mode.
-std::ostream& SPIRVNL(std::ostream &OS);
+class SPIRVNL {
+  friend spv_ostream &operator<<(spv_ostream &O, const SPIRVNL &E);
+};
 
 template<typename T>
 const SPIRVDecoder&
@@ -190,6 +191,7 @@ SPIRV_DEC_ENCDEC(Op)
 SPIRV_DEC_ENCDEC(Capability)
 SPIRV_DEC_ENCDEC(Decoration)
 SPIRV_DEC_ENCDEC(OCLExtOpKind)
+SPIRV_DEC_ENCDEC(LinkageType)
 
 const SPIRVEncoder&
 operator<<(const SPIRVEncoder&O, const std::string& Str);

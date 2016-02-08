@@ -42,6 +42,7 @@
 
 #include "SPIRVEntry.h"
 #include "SPIRVUtil.h"
+#include "SPIRVStream.h"
 #include <string>
 #include <vector>
 #include <utility>
@@ -149,6 +150,32 @@ public:
   SPIRVLinkageTypeKind getLinkageType() const {
     return (SPIRVLinkageTypeKind)Literals.back();
   }
+
+  static void encodeLiterals(SPIRVEncoder& Encoder,
+                             const std::vector<SPIRVWord>& Literals) {
+#ifdef _SPIRV_SUPPORT_TEXT_FMT
+    if(SPIRVUseTextFormat) {
+      Encoder << getString(Literals.cbegin(), Literals.cend() - 1);
+      Encoder.OS << " ";
+      Encoder << (SPIRVLinkageTypeKind)Literals.back();
+    } else
+#endif
+     Encoder << Literals;
+  }
+
+  static void decodeLiterals(SPIRVDecoder& Decoder, std::vector<SPIRVWord>& Literals) {
+#ifdef _SPIRV_SUPPORT_TEXT_FMT
+    if(SPIRVUseTextFormat) {
+      std::string Name;
+      Decoder >> Name;
+      SPIRVLinkageTypeKind Kind;
+      Decoder >> Kind;
+      std::copy_n(getVec(Name).begin(), Literals.size()-1, Literals.begin());
+      Literals.back() = Kind;
+   } else
+#endif
+     Decoder >> Literals;
+  }
 };
 
 class SPIRVMemberDecorate:public SPIRVDecorateGeneric{
@@ -192,7 +219,7 @@ public:
   };
   // Incomplete constructor
   SPIRVDecorationGroup():SPIRVEntry(OC){}
-  void encodeAll(std::ostream &O) const;
+  void encodeAll(spv_ostream &O) const;
   _SPIRV_DCL_ENCDEC
   // Move the given decorates to the decoration group
   void takeDecorates(SPIRVDecorateSet &Decs) {

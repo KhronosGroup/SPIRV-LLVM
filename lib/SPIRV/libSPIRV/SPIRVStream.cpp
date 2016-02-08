@@ -44,7 +44,7 @@
 namespace SPIRV{
 
 /// Write string with quote. Replace " with \".
-static void writeQuotedString(std::ostream& O, const std::string& Str) {
+static void writeQuotedString(spv_ostream& O, const std::string& Str) {
   O << '"';
   for (auto I : Str) {
     if (I == '"')
@@ -138,6 +138,7 @@ SPIRV_DEF_ENCDEC(Op)
 SPIRV_DEF_ENCDEC(Capability)
 SPIRV_DEF_ENCDEC(Decoration)
 SPIRV_DEF_ENCDEC(OCLExtOpKind)
+SPIRV_DEF_ENCDEC(LinkageType)
 
 // Read a string with padded 0's at the end so that they form a stream of
 // words.
@@ -251,12 +252,14 @@ SPIRVDecoder::validate()const {
   assert(!IS.bad() && "Bad iInput stream");
 }
 
-std::ostream& SPIRVNL(std::ostream &IS) {
+spv_ostream &
+operator<<(spv_ostream &O, const SPIRVNL &E) {
 #ifdef _SPIRV_SUPPORT_TEXT_FMT
   if (SPIRVUseTextFormat)
-    IS << '\n';
+    O << '\n';
 #endif
-  return IS;
+  return O;
 }
 
-}
+} // end of SPIRV namespace
+

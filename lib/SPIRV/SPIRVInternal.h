@@ -61,7 +61,7 @@ namespace SPIRV{
   /// The LLVM/SPIR-V translator version used to fill the lower 16 bits of the
   /// generator's magic number in the generated SPIR-V module.
   /// This number should be bumped up whenever the generated SPIR-V changes.
-  const static unsigned short kTranslatorVer = 9;
+  const static unsigned short kTranslatorVer = 10;
 
 #define SPCV_TARGET_LLVM_IMAGE_TYPE_ENCODE_ACCESS_QUAL 0
 // Workaround for SPIR 2 producer bug about kernel function calling convention.
@@ -214,18 +214,6 @@ SPIRVMap<std::string, SPIRVAccessQualifierKind>::init() {
   add("read_write", AccessQualifierReadWrite);
 }
 typedef SPIRVMap<std::string, SPIRVAccessQualifierKind> SPIRSPIRVAccessQualifierMap;
-
-template<> inline void
-SPIRVMap<GlobalValue::LinkageTypes, SPIRVLinkageTypeKind>::init() {
-  add(GlobalValue::ExternalLinkage, LinkageTypeExport);
-  add(GlobalValue::AvailableExternallyLinkage, LinkageTypeImport);
-  add(GlobalValue::PrivateLinkage, LinkageTypeInternal);
-  add(GlobalValue::LinkOnceODRLinkage, LinkageTypeInternal);
-  add(GlobalValue::CommonLinkage, LinkageTypeInternal);
-  add(GlobalValue::InternalLinkage, LinkageTypeInternal);
-}
-typedef SPIRVMap<GlobalValue::LinkageTypes, SPIRVLinkageTypeKind>
-  SPIRSPIRVLinkageTypeMap;
 
 template<> inline void
 SPIRVMap<Attribute::AttrKind, SPIRVFuncParamAttrKind>::init() {
@@ -710,9 +698,11 @@ std::string getMDOperandAsString(MDNode* N, unsigned I);
 /// Get metadata operand as type.
 Type* getMDOperandAsType(MDNode* N, unsigned I);
 
-/// Get a named metadata as string.
-/// Assume the named metadata has only one operand which contains one string.
-std::string getNamedMDAsString(Module *M, const std::string &MDName);
+/// Get a named metadata as a set of string.
+/// Assume the named metadata has one or more operands each of which contains
+/// one string.
+std::set<std::string> getNamedMDAsStringSet(Module *M,
+    const std::string &MDName);
 
 /// Get SPIR-V language by SPIR-V metadata spirv.Source
 std::tuple<unsigned, unsigned, std::string>

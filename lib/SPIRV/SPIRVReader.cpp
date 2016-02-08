@@ -93,6 +93,10 @@ cl::opt<bool> SPIRVGenKernelArgNameMD("spirv-gen-kernel-arg-name-md",
     cl::init(false), cl::desc("Enable generating OpenCL kernel argument name "
     "metadata"));
 
+cl::opt<bool> SPIRVGenImgTypeAccQualPostfix("spirv-gen-image-type-acc-postfix",
+    cl::init(false), cl::desc("Enable generating access qualifier postfix"
+        " in OpenCL image type names"));
+
 // Prefix for placeholder global variable name.
 const char* kPlaceholderPrefix = "placeholder.";
 
@@ -457,6 +461,7 @@ private:
   void setName(llvm::Value* V, SPIRVValue* BV);
   template<class Source, class Func>
   bool foreachFuncCtlMask(Source, Func);
+  llvm::GlobalValue::LinkageTypes transLinkageType(const SPIRVValue* V);
 };
 
 Type *
@@ -586,10 +591,12 @@ SPIRVToLLVM::transFPType(SPIRVType* T) {
 
 std::string
 SPIRVToLLVM::transOCLImageTypeName(SPIRV::SPIRVTypeImage* ST) {
-  return std::string(kSPR2TypeName::OCLPrefix)
-       + rmap<std::string>(ST->getDescriptor())
-       + kSPR2TypeName::Delimiter
-       + rmap<std::string>(ST->getAccessQualifier());
+  std::string Name = std::string(kSPR2TypeName::OCLPrefix)
+    + rmap<std::string>(ST->getDescriptor());
+  if (SPIRVGenImgTypeAccQualPostfix)
+    Name = Name + kSPR2TypeName::Delimiter
+      + rmap<std::string>(ST->getAccessQualifier());
+  return std::move(Name);
 }
 
 std::string
@@ -1215,7 +1222,7 @@ SPIRVToLLVM::transValueWithoutDecoration(SPIRVValue *BV, Function *F,
     auto AddrSpace = SPIRSPIRVAddrSpaceMap::rmap(BS);
     bool IsConst = BVar->isConstant();
     auto LVar = new GlobalVariable(*M, Ty, IsConst,
-        SPIRSPIRVLinkageTypeMap::rmap(BVar->getLinkageType()),
+        transLinkageType(BVar),
         Initializer?dyn_cast<Constant>(transValue(Initializer, F, BB, false)):
             nullptr,
         BV->getName(), 0, GlobalVariable::NotThreadLocal, AddrSpace);
@@ -1596,8 +1603,7 @@ SPIRVToLLVM::transFunction(SPIRVFunction *BF) {
     return Loc->second;
 
   auto IsKernel = BM->isEntryPoint(ExecutionModelKernel, BF->getId());
-  auto Linkage = IsKernel ? GlobalValue::ExternalLinkage :
-      SPIRSPIRVLinkageTypeMap::rmap(BF->getLinkageType());
+  auto Linkage = IsKernel ? GlobalValue::ExternalLinkage : transLinkageType(BF);
   FunctionType *FT = dyn_cast<FunctionType>(transType(BF->getFunctionType()));
   Function *F = dyn_cast<Function>(mapValue(BF, Function::Create(FT, Linkage,
       BF->getName(), M)));
@@ -2262,6 +2268,30 @@ SPIRVToLLVM::getOCLGenericCastToPtrName(SPIRVInstruction* BI) {
     default:
       llvm_unreachable("Invalid address space");
       return "";
+  }
+}
+
+llvm::GlobalValue::LinkageTypes
+SPIRVToLLVM::transLinkageType(const SPIRVValue* V) {
+  if (V->getLinkageType() == LinkageTypeInternal) {
+    return GlobalValue::InternalLinkage;
+  }
+  else if (V->getLinkageType() == LinkageTypeImport) {
+    // Function declaration
+    if (V->getOpCode() == OpFunction) {
+      if (static_cast<const SPIRVFunction*>(V)->getNumBasicBlock() == 0)
+        return GlobalValue::ExternalLinkage;
+    }
+    // Variable declaration
+    if (V->getOpCode() == OpVariable) {
+      if (static_cast<const SPIRVVariable*>(V)->getInitializer() == 0)
+        return GlobalValue::ExternalLinkage;
+    }
+    // Definition
+    return GlobalValue::AvailableExternallyLinkage;
+  }
+  else {// LinkageTypeExport
+    return GlobalValue::ExternalLinkage;
   }
 }
 

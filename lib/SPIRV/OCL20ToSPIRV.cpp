@@ -73,7 +73,6 @@ public:
   OCL20ToSPIRV():ModulePass(ID), M(nullptr), Ctx(nullptr), CLVer(0) {
     initializeOCL20ToSPIRVPass(*PassRegistry::getPassRegistry());
   }
-  virtual void getAnalysisUsage(AnalysisUsage &AU);
   virtual bool runOnModule(Module &M);
   virtual void visitCallInst(CallInst &CI);
 
@@ -274,10 +273,6 @@ private:
 };
 
 char OCL20ToSPIRV::ID = 0;
-
-void
-OCL20ToSPIRV::getAnalysisUsage(AnalysisUsage& AU) {
-}
 
 bool
 OCL20ToSPIRV::runOnModule(Module& Module) {
@@ -713,7 +708,8 @@ void OCL20ToSPIRV::visitCallConvert(CallInst* CI,
   }
   auto Loc = DemangledName.find("_rt");
   std::string Rounding;
-  if (Loc != std::string::npos) {
+  if (Loc != std::string::npos &&
+      !(isa<IntegerType>(SrcTy) && IsTargetInt)) {
     Rounding = DemangledName.substr(Loc, 4);
   }
   AttributeSet Attrs = CI->getCalledFunction()->getAttributes();
@@ -878,16 +874,21 @@ OCL20ToSPIRV::visitCallGetImageSize(CallInst* CI,
       if (Dim == 1)
         return NCI;
       if (DemangledName == kOCLBuiltinName::GetImageDim) {
-        if (Desc.Dim != Dim3D)
-          return NCI;
-        else {
+        if (Desc.Dim == Dim3D) {
           auto ZeroVec = ConstantVector::getSplat(3,
             Constant::getNullValue(NCI->getType()->getVectorElementType()));
           Constant *Index[] = {getInt32(M, 0), getInt32(M, 1),
               getInt32(M, 2), getInt32(M, 3)};
           return new ShuffleVectorInst(NCI, ZeroVec,
              ConstantVector::get(Index), "", CI);
+
+        } else if (Desc.Dim == Dim2D && Desc.Arrayed) {
+          Constant *Index[] = {getInt32(M, 0), getInt32(M, 1)};
+          Constant *mask = ConstantVector::get(Index);
+          return new ShuffleVectorInst(NCI, UndefValue::get(NCI->getType()),
+                                       mask, NCI->getName(), CI);
         }
+        return NCI;
       }
       auto I = StringSwitch<unsigned>(DemangledName)
           .Case(kOCLBuiltinName::GetImageWidth, 0)
