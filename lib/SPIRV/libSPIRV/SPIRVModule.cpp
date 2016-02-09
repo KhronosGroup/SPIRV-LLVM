@@ -215,7 +215,7 @@ public:
   // Instruction creation functions
   virtual SPIRVInstruction *addPtrAccessChainInst(SPIRVType *, SPIRVValue *,
       std::vector<SPIRVValue *>, SPIRVBasicBlock *, bool);
-  virtual SPIRVInstruction *addAsyncGroupCopy(Scope Scope,
+  virtual SPIRVInstruction *addAsyncGroupCopy(SPIRVValue *Scope,
       SPIRVValue *Dest, SPIRVValue *Src, SPIRVValue *NumElems, SPIRVValue *Stride,
       SPIRVValue *Event, SPIRVBasicBlock *BB);
   virtual SPIRVInstruction *addExtInst(SPIRVType *,
@@ -365,6 +365,7 @@ SPIRVModuleImpl::addLine(SPIRVEntry* E, SPIRVString* FileName,
 // multiple targets.
 void
 SPIRVModuleImpl::optimizeDecorates() {
+
   SPIRVDBG(spvdbgs() << "[optimizeDecorates] begin\n");
   for (auto I = DecorateSet.begin(), E = DecorateSet.end(); I != E;) {
     auto D = *I;
@@ -398,11 +399,17 @@ SPIRVModuleImpl::optimizeDecorates() {
         continue;
       Targets.push_back(E->getTargetId());
     }
-    DecorateSet.erase(ER.first, ER.second);
-    auto GD = new SPIRVGroupDecorate(G, Targets);
-    DecGroupVec.push_back(G);
-    GroupDecVec.push_back(GD);
+
+    // WordCount is only 16 bits.  We can only have 65535 - FixedWC targtets per group.
+    // For now, just skip using a group if the number of targets to too big
+    if( Targets.size() < 65530 ) {
+      DecorateSet.erase(ER.first, ER.second);
+      auto GD = new SPIRVGroupDecorate(G, Targets);
+      DecGroupVec.push_back(G);
+      GroupDecVec.push_back(GD);
+    }
   }
+
 }
 
 SPIRVValue*
@@ -990,7 +997,7 @@ SPIRVModuleImpl::addPtrAccessChainInst(SPIRVType *Type, SPIRVValue *Base,
 }
 
 SPIRVInstruction *
-SPIRVModuleImpl::addAsyncGroupCopy(Scope Scope,
+SPIRVModuleImpl::addAsyncGroupCopy(SPIRVValue *Scope,
     SPIRVValue *Dest, SPIRVValue *Src, SPIRVValue *NumElems, SPIRVValue *Stride,
     SPIRVValue *Event, SPIRVBasicBlock *BB) {
   return addInstruction(new SPIRVGroupAsyncCopy(Scope, getId(), Dest, Src,
