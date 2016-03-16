@@ -1248,13 +1248,10 @@ void OCL20ToSPIRV::visitCallRelational(CallInst *CI,
           False = Constant::getNullValue(VTy);
           True = Constant::getAllOnesValue(VTy);
         } else {
-          if (isDouble)
-          {
+          if (isDouble) {
               False = getInt64(M, 0);
               True = getInt64(M, 1);
-          }
-          else
-          {
+          } else {
               False = getInt32(M, 0);
               True = getInt32(M, 1);
           }
