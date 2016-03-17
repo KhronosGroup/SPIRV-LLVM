@@ -1239,14 +1239,22 @@ void OCL20ToSPIRV::visitCallRelational(CallInst *CI,
       },
       [=](CallInst *NewCI) -> Instruction * {
         Value *False = nullptr, *True = nullptr;
+        bool isDouble = NewCI->getOperand(0)->getType()->getScalarSizeInBits() == 64;
         if (NewCI->getType()->isVectorTy()) {
-          Type *VTy = VectorType::get(Type::getInt32Ty(*Ctx),
-                                      NewCI->getType()->getVectorNumElements());
+            // This adds support for doubles
+            Type *ScalarTy = isDouble ? Type::getInt64Ty(*Ctx) : Type::getInt32Ty(*Ctx);
+            Type *VTy = VectorType::get(ScalarTy,
+                                        NewCI->getType()->getVectorNumElements());
           False = Constant::getNullValue(VTy);
           True = Constant::getAllOnesValue(VTy);
         } else {
-          False = getInt32(M, 0);
-          True = getInt32(M, 1);
+          if (isDouble) {
+              False = getInt64(M, 0);
+              True = getInt64(M, 1);
+          } else {
+              False = getInt32(M, 0);
+              True = getInt32(M, 1);
+          }
         }
         return SelectInst::Create(NewCI, True, False, "", NewCI->getNextNode());
       },
