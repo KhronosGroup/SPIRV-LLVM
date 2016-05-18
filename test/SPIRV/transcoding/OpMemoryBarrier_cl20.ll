@@ -20,34 +20,32 @@
 ; CHECK-LLVM-NEXT: call spir_func void @_Z22atomic_work_item_fencejii(i32 4, i32 3, i32 2)
 ; CHECK-LLVM-NEXT: call spir_func void @_Z22atomic_work_item_fencejii(i32 4, i32 3, i32 3)
 
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope1:[0-9]+]] [[MemSema1:[0-9]+]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope1]] [[MemSema2:[0-9]+]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope1]] [[MemSema3:[0-9]+]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope1]] [[MemSema4:[0-9]+]]
+; global | acquire_release
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema1:[0-9]+]] 520
+; local | acquire_release
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema2:[0-9]+]] 264
+; image | acquire_release
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema3:[0-9]+]] 2056
 
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope2:[0-9]+]] [[MemSema1]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope2]] [[MemSema2]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope2]] [[MemSema3]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope2]] [[MemSema4]]
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[ScopeWorkItem:[0-9]+]] 4
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[ScopeWorkGroup:[0-9]+]] 2
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[ScopeDevice:[0-9]+]] 1
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[ScopeCrossDevice:[0-9]+]] 0
 
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope3:[0-9]+]] [[MemSema1]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope3]] [[MemSema2]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope3]] [[MemSema3]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope3]] [[MemSema4]]
+; CHECK-SPIRV: 3 MemoryBarrier [[ScopeWorkItem]] [[MemSema1]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeWorkGroup]] [[MemSema1]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeDevice]] [[MemSema1]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeCrossDevice]] [[MemSema1]]
 
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope4:[0-9]+]] [[MemSema1]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope4]] [[MemSema2]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope4]] [[MemSema3]]
-; CHECK-SPIRV-DAG: 3 MemoryBarrier [[Scope4]] [[MemSema4]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeWorkItem]] [[MemSema2]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeWorkGroup]] [[MemSema2]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeDevice]] [[MemSema2]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeCrossDevice]] [[MemSema2]]
 
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[Scope1]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[Scope2]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[Scope3]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[Scope4]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema1]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema2]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema3]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema4]] {{[0-9]+}}
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeWorkItem]] [[MemSema3]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeWorkGroup]] [[MemSema3]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeDevice]] [[MemSema3]]
+; CHECK-SPIRV-NEXT: 3 MemoryBarrier [[ScopeCrossDevice]] [[MemSema3]]
 
 ; ModuleID = 'OpMemoryBarrier.ll'
 target datalayout = "e-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
@@ -58,7 +56,7 @@ define spir_kernel void @test() #0 {
 entry:
   call spir_func void @_Z22atomic_work_item_fencejii(i32 2, i32 3, i32 0) ; global mem fence + memory_scope_work_item
   call spir_func void @_Z22atomic_work_item_fencejii(i32 2, i32 3, i32 1) ; global mem fence + memory_scope_work_group
-  call spir_func void @_Z22atomic_work_item_fencejii(i32 2, i32 3, i32 2) ; global mem fence + memory_scope__devices
+  call spir_func void @_Z22atomic_work_item_fencejii(i32 2, i32 3, i32 2) ; global mem fence + memory_scope_device
   call spir_func void @_Z22atomic_work_item_fencejii(i32 2, i32 3, i32 3) ; global mem fence + memory_scope_all_svm_devices
 
   call spir_func void @_Z22atomic_work_item_fencejii(i32 1, i32 3, i32 0) ; local mem fence + memory_scope_work_item

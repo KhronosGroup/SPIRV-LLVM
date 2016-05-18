@@ -12,20 +12,21 @@
 ; CHECK-LLVM-NEXT: call spir_func void @_Z7barrierj(i32 5)
 ; CHECK-LLVM-NEXT: call spir_func void @_Z7barrierj(i32 7)
 
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[ScopeWorkGroup:[0-9]+]] {{2}}
-; CHECK-SPIRV-DAG: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema1:[0-9]+]]
-; CHECK-SPIRV-DAG: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema2:[0-9]+]]
-; CHECK-SPIRV-DAG: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema3:[0-9]+]]
-; CHECK-SPIRV-DAG: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema4:[0-9]+]]
-; CHECK-SPIRV-DAG: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema5:[0-9]+]]
-; CHECK-SPIRV-DAG: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema6:[0-9]+]]
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema1:[0-9]+]] 512
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema2:[0-9]+]] 256
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema3:[0-9]+]] 2048
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema4:[0-9]+]] 768
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema5:[0-9]+]] 2304
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema6:[0-9]+]] 2816
+; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[ScopeWorkGroup:[0-9]+]] 2
 
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema1]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema2]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema3]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema4]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema5]] {{[0-9]+}}
-; CHECK-SPIRV-DAG: 4 Constant {{[0-9]+}} [[MemSema6]] {{[0-9]+}}
+; CHECK-SPIRV: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema1]]
+; CHECK-SPIRV-NEXT: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema2]]
+; CHECK-SPIRV-NEXT: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema3]]
+; CHECK-SPIRV-NEXT: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema4]]
+; CHECK-SPIRV-NEXT: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema5]]
+; CHECK-SPIRV-NEXT: 4 ControlBarrier [[ScopeWorkGroup]] [[ScopeWorkGroup]] [[MemSema6]]
+
 
 ; ModuleID = 'barrier-cl12.cl'
 target datalayout = "e-p:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
