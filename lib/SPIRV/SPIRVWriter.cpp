@@ -653,6 +653,11 @@ LLVMToSPIRV::transFunctionDecl(Function *F) {
       BA->addAttr(FunctionParameterAttributeZext);
     if (Attrs.hasAttribute(ArgNo + 1, Attribute::SExt))
       BA->addAttr(FunctionParameterAttributeSext);
+    if (Attrs.hasAttribute(ArgNo + 1, Attribute::Dereferenceable)
+        && oclIsKernel(F))
+      BA->addDecorate(DecorationMaxByteOffset,
+                      Attrs.getAttribute(ArgNo + 1, Attribute::Dereferenceable)
+                        .getDereferenceableBytes());
   }
   if (Attrs.hasAttribute(AttributeSet::ReturnIndex, Attribute::ZExt))
     BF->addDecorate(DecorationFuncParamAttr, FunctionParameterAttributeZext);
