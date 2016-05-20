@@ -6,12 +6,16 @@
 ; RUN: llvm-dis < %t.rev.bc | FileCheck %s --check-prefix=CHECK-LLVM
 
 ; CHECK-LLVM: define spir_kernel void @worker(i8 addrspace(3)* dereferenceable(12) %ptr)
+; CHECK-LLVM: define spir_func void @not_a_kernel(i8 addrspace(3)* dereferenceable(123) %ptr2)
 
 ; CHECK-SPIRV: 3 Name [[PTR_ID:[0-9]+]] "ptr"
-; CHECK-SPIRV: 4 Decorate [[PTR_ID]] MaxByteOffset 12 
-; CHECK-SPIRV: 4 TypeInt [[CHAR_T:[0-9]+]] 8 0 
-; CHECK-SPIRV: 4 TypePointer [[CHAR_PTR_T:[0-9]+]] 4 [[CHAR_T]] 
+; CHECK-SPIRV: 4 Name [[PTR2_ID:[0-9]+]] "ptr2"
+; CHECK-SPIRV: 4 Decorate [[PTR_ID]] MaxByteOffset 12
+; CHECK-SPIRV: 4 Decorate [[PTR2_ID]] MaxByteOffset 123
+; CHECK-SPIRV: 4 TypeInt [[CHAR_T:[0-9]+]] 8 0
+; CHECK-SPIRV: 4 TypePointer [[CHAR_PTR_T:[0-9]+]] 4 [[CHAR_T]]
 ; CHECK-SPIRV: 3 FunctionParameter [[CHAR_PTR_T]] [[PTR_ID]]
+; CHECK-SPIRV: 3 FunctionParameter [[CHAR_PTR_T]] [[PTR2_ID]]
 
 target datalayout = "e-p:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "spir-unknown-unknown"
@@ -21,6 +25,12 @@ define spir_kernel void @worker(i8 addrspace(3)* dereferenceable(12) %ptr) #0 {
 entry:
   %ptr.addr = alloca i8 addrspace(3)*, align 4
   store i8 addrspace(3)* %ptr, i8 addrspace(3)** %ptr.addr, align 4
+  ret void
+}
+
+; Function Attrs: nounwind
+define spir_func void @not_a_kernel(i8 addrspace(3)* dereferenceable(123) %ptr2) #0 {
+entry:
   ret void
 }
 

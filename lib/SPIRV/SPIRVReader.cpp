@@ -1741,7 +1741,7 @@ SPIRVToLLVM::transFunction(SPIRVFunction *BF) {
     });
 
     SPIRVWord MaxOffset = 0;
-    if (IsKernel && BA->hasDecorate(DecorationMaxByteOffset, 0, &MaxOffset)) {
+    if (BA->hasDecorate(DecorationMaxByteOffset, 0, &MaxOffset)) {
       AttrBuilder Builder;
       Builder.addDereferenceableAttr(MaxOffset);
       I->addAttr(AttributeSet::get(*Context, I->getArgNo() + 1, Builder));
