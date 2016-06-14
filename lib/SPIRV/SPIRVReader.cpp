@@ -660,7 +660,7 @@ SPIRVToLLVM::transOCLPipeTypeName(SPIRV::SPIRVTypePipe* PT,
     return std::string(kSPIRVTypeName::PrefixAndDelim)
           + kSPIRVTypeName::Pipe
           + kSPIRVTypeName::Delimiter
-          + "_"
+          + kSPIRVTypeName::PostfixDelim
           + PipeAccess;
 }
 
@@ -1287,7 +1287,6 @@ SPIRVToLLVM::oclTransConstantPipeStorage(
   auto Int32Ty = IntegerType::getInt32Ty(*Context);
   auto CPSTy = M->getTypeByName(CPSName);
   if (!CPSTy) {
-
     Type* CPSElemsTy[] = { Int32Ty, Int32Ty, Int32Ty };
     CPSTy = StructType::create(*Context, CPSElemsTy, CPSName);
   }
