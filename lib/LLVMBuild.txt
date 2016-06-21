@@ -35,6 +35,7 @@ subdirectories =
  Passes
  ProfileData
  Support
+ SPIRV
  TableGen
  Target
  Transforms

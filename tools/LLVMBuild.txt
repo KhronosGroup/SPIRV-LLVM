@@ -41,6 +41,7 @@ subdirectories =
  llvm-profdata
  llvm-rtdyld
  llvm-size
+ llvm-spirv
  llvm-split
  opt
  verify-uselistorder
