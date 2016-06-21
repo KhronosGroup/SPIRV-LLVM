@@ -8,7 +8,7 @@ target triple = "spir-unknown-unknown"
 ; CHECK: 7 SpecConstantOp {{[0-9]*}} {{[0-9]*}} 70
 
 @a_var = addrspace(1) global [2 x i8] c"\96\96", align 1
-@k_var = addrspace(1) global [2 x i8 addrspace(1)*] [i8 addrspace(1)* getelementptr inbounds ([2 x i8] addrspace(1)* @a_var, i32 0, i64 1), i8 addrspace(1)* getelementptr inbounds ([2 x i8] addrspace(1)* @a_var, i32 0, i32 0)], align 4
+@k_var = addrspace(1) global [2 x i8 addrspace(1)*] [i8 addrspace(1)* getelementptr inbounds ([2 x i8], [2 x i8] addrspace(1)* @a_var, i32 0, i64 1), i8 addrspace(1)* getelementptr inbounds ([2 x i8], [2 x i8] addrspace(1)* @a_var, i32 0, i32 0)], align 4
 
 ; Function Attrs: nounwind
 define spir_kernel void @foo(i32 addrspace(1)* %a) #0 {

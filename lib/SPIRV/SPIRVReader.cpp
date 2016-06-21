@@ -1638,7 +1638,7 @@ SPIRVToLLVM::transValueWithoutDecoration(SPIRVValue *BV, Function *F,
     auto IsInbound = AC->isInBounds();
     Value *V = nullptr;
     if (BB) {
-      auto GEP = GetElementPtrInst::Create(Base->getType(), Base, Index,
+      auto GEP = GetElementPtrInst::Create(nullptr, Base, Index,
           BV->getName(), BB);
       GEP->setIsInBounds(IsInbound);
       V = GEP;

@@ -127,7 +127,7 @@ entry:
   %call = tail call spir_func i64 @_Z13get_global_idj(i32 0) #2
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i32 addrspace(1)* %src, i64 %idxprom
+  %arrayidx = getelementptr inbounds i32, i32 addrspace(1)* %src, i64 %idxprom
   %0 = bitcast i32 addrspace(1)* %arrayidx to i8 addrspace(1)*
   %1 = addrspacecast i8 addrspace(1)* %0 to i8 addrspace(4)*
   ; CHECK-LLVM: call{{.*}}@_Z10write_pipePU3AS18ocl_pipePU3AS4vjj
@@ -150,7 +150,7 @@ entry:
   %call = tail call spir_func i64 @_Z13get_global_idj(i32 0) #2
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i32 addrspace(1)* %dst, i64 %idxprom
+  %arrayidx = getelementptr inbounds i32, i32 addrspace(1)* %dst, i64 %idxprom
   %0 = bitcast i32 addrspace(1)* %arrayidx to i8 addrspace(1)*
   %1 = addrspacecast i8 addrspace(1)* %0 to i8 addrspace(4)*
   ; CHECK-LLVM: call{{.*}}@_Z9read_pipePU3AS18ocl_pipePU3AS4vjj
@@ -179,7 +179,7 @@ entry:
 if.then:                                          ; preds = %entry
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i32 addrspace(1)* %src, i64 %idxprom
+  %arrayidx = getelementptr inbounds i32, i32 addrspace(1)* %src, i64 %idxprom
   %1 = bitcast i32 addrspace(1)* %arrayidx to i8 addrspace(1)*
   %2 = addrspacecast i8 addrspace(1)* %1 to i8 addrspace(4)*
   ; CHECK-LLVM: call{{.*}}@_Z10write_pipePU3AS18ocl_pipe13ocl_reserveidjPU3AS4vjj
@@ -241,7 +241,7 @@ entry:
 if.then:                                          ; preds = %entry
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i32 addrspace(1)* %dst, i64 %idxprom
+  %arrayidx = getelementptr inbounds i32, i32 addrspace(1)* %dst, i64 %idxprom
   %1 = bitcast i32 addrspace(1)* %arrayidx to i8 addrspace(1)*
   %2 = addrspacecast i8 addrspace(1)* %1 to i8 addrspace(4)*
   ; CHECK-LLVM: call{{.*}}@_Z9read_pipePU3AS18ocl_pipe13ocl_reserveidjPU3AS4vjj
@@ -281,15 +281,15 @@ entry:
   br i1 %call2, label %if.then, label %if.end
 
 if.then:                                          ; preds = %entry
-  %2 = load %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_write_char.res_id, align 8, !tbaa !39
+  %2 = load %opencl.reserve_id_t*, %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_write_char.res_id, align 8, !tbaa !39
   %call3 = tail call spir_func i64 @_Z12get_local_idj(i32 0) #2
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i8 addrspace(1)* %src, i64 %idxprom
+  %arrayidx = getelementptr inbounds i8, i8 addrspace(1)* %src, i64 %idxprom
   %3 = addrspacecast i8 addrspace(1)* %arrayidx to i8 addrspace(4)*
   %4 = trunc i64 %call3 to i32
   %5 = tail call i32 @_Z10write_pipePU3AS18ocl_pipe13ocl_reserveidjPU3AS4vjj(%opencl.pipe_t addrspace(1)* %out_pipe, %opencl.reserve_id_t* %2, i32 %4, i8 addrspace(4)* %3, i32 1, i32 1) #2
-  %6 = load %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_write_char.res_id, align 8, !tbaa !39
+  %6 = load %opencl.reserve_id_t*, %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_write_char.res_id, align 8, !tbaa !39
   ; CHECK-LLVM: call{{.*}}@_Z28work_group_commit_write_pipePU3AS18ocl_pipe13ocl_reserveidjj
   ; CHECK-SPIRV: GroupCommitWritePipe {{[0-9]+}} [[PipeArgID]] {{[0-9]+}} {{[0-9]+}} {{[0-9]+}}
   tail call void @_Z28work_group_commit_write_pipePU3AS18ocl_pipe13ocl_reserveidjj(%opencl.pipe_t addrspace(1)* %out_pipe, %opencl.reserve_id_t* %6, i32 1, i32 1) #2
@@ -325,15 +325,15 @@ entry:
   br i1 %call2, label %if.then, label %if.end
 
 if.then:                                          ; preds = %entry
-  %2 = load %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_read_char.res_id, align 8, !tbaa !39
+  %2 = load %opencl.reserve_id_t*, %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_read_char.res_id, align 8, !tbaa !39
   %call3 = tail call spir_func i64 @_Z12get_local_idj(i32 0) #2
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i8 addrspace(1)* %dst, i64 %idxprom
+  %arrayidx = getelementptr inbounds i8, i8 addrspace(1)* %dst, i64 %idxprom
   %3 = addrspacecast i8 addrspace(1)* %arrayidx to i8 addrspace(4)*
   %4 = trunc i64 %call3 to i32
   %5 = tail call i32 @_Z9read_pipePU3AS18ocl_pipe13ocl_reserveidjPU3AS4vjj(%opencl.pipe_t addrspace(1)* %in_pipe, %opencl.reserve_id_t* %2, i32 %4, i8 addrspace(4)* %3, i32 1, i32 1) #2
-  %6 = load %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_read_char.res_id, align 8, !tbaa !39
+  %6 = load %opencl.reserve_id_t*, %opencl.reserve_id_t* addrspace(3)* @test_pipe_workgroup_read_char.res_id, align 8, !tbaa !39
   ; CHECK-LLVM: call{{.*}}@_Z27work_group_commit_read_pipePU3AS18ocl_pipe13ocl_reserveidjj
   ; CHECK-SPIRV: GroupCommitReadPipe {{[0-9]+}} [[PipeArgID]] {{[0-9]+}} {{[0-9]+}} {{[0-9]+}}
   tail call void @_Z27work_group_commit_read_pipePU3AS18ocl_pipe13ocl_reserveidjj(%opencl.pipe_t addrspace(1)* %in_pipe, %opencl.reserve_id_t* %6, i32 1, i32 1) #2
@@ -367,7 +367,7 @@ if.then:                                          ; preds = %entry
   %call3 = tail call spir_func i32 @_Z22get_sub_group_local_idv() #2
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i32 addrspace(1)* %src, i64 %idxprom
+  %arrayidx = getelementptr inbounds i32, i32 addrspace(1)* %src, i64 %idxprom
   %1 = bitcast i32 addrspace(1)* %arrayidx to i8 addrspace(1)*
   %2 = addrspacecast i8 addrspace(1)* %1 to i8 addrspace(4)*
   %3 = tail call i32 @_Z10write_pipePU3AS18ocl_pipe13ocl_reserveidjPU3AS4vjj(%opencl.pipe_t addrspace(1)* %out_pipe, %opencl.reserve_id_t* %0, i32 %call3, i8 addrspace(4)* %2, i32 4, i32 4) #2
@@ -409,7 +409,7 @@ if.then:                                          ; preds = %entry
   %call3 = tail call spir_func i32 @_Z22get_sub_group_local_idv() #2
   %sext = shl i64 %call, 32
   %idxprom = ashr exact i64 %sext, 32
-  %arrayidx = getelementptr inbounds i32 addrspace(1)* %dst, i64 %idxprom
+  %arrayidx = getelementptr inbounds i32, i32 addrspace(1)* %dst, i64 %idxprom
   %1 = bitcast i32 addrspace(1)* %arrayidx to i8 addrspace(1)*
   %2 = addrspacecast i8 addrspace(1)* %1 to i8 addrspace(4)*
   %3 = tail call i32 @_Z9read_pipePU3AS18ocl_pipe13ocl_reserveidjPU3AS4vjj(%opencl.pipe_t addrspace(1)* %in_pipe, %opencl.reserve_id_t* %0, i32 %call3, i8 addrspace(4)* %2, i32 4, i32 4) #2

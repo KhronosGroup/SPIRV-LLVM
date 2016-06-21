@@ -41,7 +41,7 @@ define spir_kernel void @block_kernel(i32 addrspace(1)* %res) #0 {
 ; CHECK-SPIRV: Function
 ; CHECK-SPIRV: FunctionParameter {{.*}} [[res:[0-9]+]]
 entry:
-%0 = load %opencl.block* addrspace(2)* @block_kernel.b1, align 4
+%0 = load %opencl.block*, %opencl.block* addrspace(2)* @block_kernel.b1, align 4
   %1 = call i8* @spir_get_block_invoke(%opencl.block* %0)
   %2 = call i8* @spir_get_block_context(%opencl.block* %0)
   %3 = bitcast i8* %1 to i32 (i8*, i32)*
