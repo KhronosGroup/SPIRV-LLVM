@@ -821,7 +821,7 @@ addBlockBind(Module *M, Function *InvokeFunc, Value *BlkCtx, Value *CtxLen,
 
 IntegerType* getSizetType(Module *M) {
   return IntegerType::getIntNTy(M->getContext(),
-    M->getDataLayout()->getPointerSizeInBits(0));
+    M->getDataLayout().getPointerSizeInBits(0));
 }
 
 Type *
@@ -1371,7 +1371,7 @@ bool
 eraseUselessFunctions(Module *M) {
   bool changed = false;
   for (auto I = M->begin(), E = M->end(); I != E;)
-    changed |= eraseIfNoUse(I++);
+    changed |= eraseIfNoUse(static_cast<Function*>(I++));
   return changed;
 }
 

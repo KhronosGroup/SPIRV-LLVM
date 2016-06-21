@@ -103,7 +103,7 @@ public:
 
   virtual void getAnalysisUsage(AnalysisUsage &AU) const {
     AU.addRequired<CallGraphWrapperPass>();
-    AU.addRequired<AliasAnalysis>();
+    //AU.addRequired<AliasAnalysis>();
     AU.addRequired<AssumptionCacheTracker>();
   }
 
@@ -144,7 +144,7 @@ private:
   eraseUselessFunctions() {
     bool changed = false;
     for (auto I = M->begin(), E = M->end(); I != E;) {
-      Function *F = I++;
+      Function *F = static_cast<Function*>(I++);
       if (!GlobalValue::isInternalLinkage(F->getLinkage()) &&
           !F->isDeclaration())
         continue;
@@ -340,8 +340,9 @@ private:
       DEBUG(dbgs() << "[lowerReturnBlock] inline " << F->getName() << '\n');
       auto CG = &getAnalysis<CallGraphWrapperPass>().getCallGraph();
       auto ACT = &getAnalysis<AssumptionCacheTracker>();
-      auto AA = &getAnalysis<AliasAnalysis>();
-      InlineFunctionInfo IFI(CG, M->getDataLayout(), AA, ACT);
+      //auto AA = &getAnalysis<AliasAnalysis>();
+      //InlineFunctionInfo IFI(CG, M->getDataLayout(), AA, ACT);
+      InlineFunctionInfo IFI(CG, ACT);
       InlineFunction(CI, IFI);
       Inlined = true;
     }
@@ -460,7 +461,7 @@ INITIALIZE_PASS_BEGIN(SPIRVLowerOCLBlocks, "spvblocks",
     "SPIR-V lower OCL blocks", false, false)
 INITIALIZE_PASS_DEPENDENCY(CallGraphWrapperPass)
 INITIALIZE_PASS_DEPENDENCY(AssumptionCacheTracker)
-INITIALIZE_AG_DEPENDENCY(AliasAnalysis)
+//INITIALIZE_AG_DEPENDENCY(AliasAnalysis)
 INITIALIZE_PASS_END(SPIRVLowerOCLBlocks, "spvblocks",
     "SPIR-V lower OCL blocks", false, false)
 

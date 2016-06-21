@@ -116,7 +116,7 @@ SPIRVRegularizeLLVM::regularize() {
   //lowerConstantExpressions();
 
   for (auto I = M->begin(), E = M->end(); I != E;) {
-    Function *F = I++;
+    Function *F = static_cast<Function*>(I++);
     if (F->isDeclaration() && F->use_empty()) {
       F->eraseFromParent();
       continue;
@@ -193,7 +193,7 @@ void
 SPIRVRegularizeLLVM::lowerFuncPtr(Module* M) {
   std::vector<std::pair<Function *, Op>> Work;
   for (auto I = M->begin(), E = M->end(); I != E;) {
-    Function *F = I++;
+    Function *F = static_cast<Function*>(I++);
     auto AI = F->arg_begin();
     if (hasFunctionPointerArg(F, AI)) {
       auto OC = getSPIRVFuncOC(F->getName());

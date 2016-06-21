@@ -69,7 +69,7 @@
 #include "llvm/IR/Verifier.h"
 #include "llvm/Pass.h"
 #include "llvm/PassSupport.h"
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/Casting.h"
 #include "llvm/Support/CommandLine.h"
 #include "llvm/Support/Debug.h"
@@ -134,19 +134,19 @@ public:
   void transDbgInfo(Value *V, SPIRVValue *BV) {
     if (auto I = dyn_cast<Instruction>(V)) {
       auto DL = I->getDebugLoc();
-      if (!DL.isUnknown()) {
-        DILocation DIL(DL.getAsMDNode());
-        auto File = BM->getString(DIL.getFilename().str());
+      if (DL.get() != nullptr) {
+        DILocation* DIL = DL.get();
+        auto File = BM->getString(DIL->getFilename().str());
         // ToDo: SPIR-V rev.31 cannot add debug info for instructions without ids.
         // This limitation needs to be addressed.
         if (!BV->hasId())
           return;
-        BM->addLine(BV, File, DIL.getLineNumber(), DIL.getColumnNumber());
+        BM->addLine(BV, File, DL.getLine(), DL.getCol());
       }
     } else if (auto F = dyn_cast<Function>(V)) {
       if (auto DIS = getDISubprogram(F)) {
-        auto File = BM->getString(DIS.getFilename().str());
-        BM->addLine(BV, File, DIS.getLineNumber(), 0);
+        auto File = BM->getString(DIS->getFilename().str());
+        BM->addLine(BV, File, DIS->getLine(), 0);
       }
     }
   }
@@ -1313,7 +1313,7 @@ bool
 LLVMToSPIRV::transGlobalVariables() {
   for (auto I = M->global_begin(),
             E = M->global_end(); I != E; ++I) {
-    if (!transValue(I, nullptr))
+    if (!transValue(static_cast<GlobalVariable*>(I), nullptr))
       return false;
   }
   return true;
@@ -1347,13 +1347,13 @@ LLVMToSPIRV::transFunction(Function *I) {
   transFunctionDecl(I);
   // Creating all basic blocks before creating any instruction.
   for (Function::iterator FI = I->begin(), FE = I->end(); FI != FE; ++FI) {
-    transValue(FI, nullptr);
+    transValue(static_cast<BasicBlock*>(FI), nullptr);
   }
   for (Function::iterator FI = I->begin(), FE = I->end(); FI != FE; ++FI) {
-    SPIRVBasicBlock* BB = static_cast<SPIRVBasicBlock*>(transValue(FI, nullptr));
+    SPIRVBasicBlock* BB = static_cast<SPIRVBasicBlock*>(transValue(static_cast<BasicBlock*>(FI), nullptr));
     for (BasicBlock::iterator BI = FI->begin(), BE = FI->end(); BI != BE;
         ++BI) {
-      transValue(BI, BB, false);
+      transValue(static_cast<Instruction*>(BI), BB, false);
     }
   }
 }
@@ -1374,7 +1374,7 @@ LLVMToSPIRV::translate() {
     return false;
 
   for (Module::iterator I = M->begin(), E = M->end(); I != E; ++I) {
-    Function *F = I;
+    Function *F = static_cast<Function*>(I);
     auto FT = F->getFunctionType();
     std::map<unsigned, Type *> ChangedType;
     oclGetMutatedArgumentTypesByBuiltin(FT, ChangedType, F);
@@ -1384,7 +1384,8 @@ LLVMToSPIRV::translate() {
   // SPIR-V logical layout requires all function declarations go before
   // function definitions.
   std::vector<Function *> Decls, Defs;
-  for (Module::iterator I = M->begin(), E = M->end(); I != E; ++I) {
+  for (Module::iterator I1 = M->begin(), E = M->end(); I1 != E; ++I1) {
+    auto I = static_cast<Function*>(I1);
     if (isBuiltinTransToInst(I) || isBuiltinTransToExtInst(I)
         || I->getName().startswith(SPCV_CAST) ||
         I->getName().startswith(LLVM_MEMCPY))
@@ -1412,7 +1413,7 @@ LLVMToSPIRV::translate() {
 
 llvm::IntegerType* LLVMToSPIRV::getSizetType() {
   return IntegerType::getIntNTy(M->getContext(),
-    M->getDataLayout()->getPointerSizeInBits());
+    M->getDataLayout().getPointerSizeInBits());
 }
 
 void
@@ -1697,7 +1698,7 @@ ModulePass *llvm::createLLVMToSPIRV(SPIRVModule *SMod) {
 }
 
 void
-addPassesForSPIRV(PassManager &PassMgr) {
+addPassesForSPIRV(legacy::PassManager &PassMgr) {
   if (SPIRVMemToReg)
     PassMgr.add(createPromoteMemoryToRegisterPass());
   PassMgr.add(createTransOCLMD());
@@ -1713,7 +1714,7 @@ addPassesForSPIRV(PassManager &PassMgr) {
 bool
 llvm::WriteSPIRV(Module *M, llvm::raw_ostream &OS, std::string &ErrMsg) {
   std::unique_ptr<SPIRVModule> BM(SPIRVModule::createSPIRVModule());
-  PassManager PassMgr;
+  legacy::PassManager PassMgr;
   addPassesForSPIRV(PassMgr);
   PassMgr.add(createLLVMToSPIRV(BM.get()));
   PassMgr.run(*M);
@@ -1727,7 +1728,7 @@ llvm::WriteSPIRV(Module *M, llvm::raw_ostream &OS, std::string &ErrMsg) {
 bool
 llvm::RegularizeLLVMForSPIRV(Module *M, std::string &ErrMsg) {
   std::unique_ptr<SPIRVModule> BM(SPIRVModule::createSPIRVModule());
-  PassManager PassMgr;
+  legacy::PassManager PassMgr;
   addPassesForSPIRV(PassMgr);
   PassMgr.run(*M);
   return true;
