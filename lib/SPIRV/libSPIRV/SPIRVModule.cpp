@@ -71,6 +71,8 @@ public:
     MemoryModel(MemoryModelOpenCL){
     AddrModel = sizeof(size_t) == 32 ? AddressingModelPhysical32
         : AddressingModelPhysical64;
+    // OpenCL memory model requires Kernel capability
+    SPIRVModuleImpl::addCapability(CapabilityKernel);
   };
   virtual ~SPIRVModuleImpl();
 
@@ -138,8 +140,6 @@ public:
   void setAlignment(SPIRVValue *, SPIRVWord);
   void setMemoryModel(SPIRVMemoryModelKind MM) {
     MemoryModel = MM;
-    if (MemoryModel == spv::MemoryModelOpenCL)
-      addCapability(CapabilityKernel);
   }
   void setName(SPIRVEntry *E, const std::string &Name);
   void setSourceLanguage(SourceLanguage Lang, SPIRVWord Ver) {
