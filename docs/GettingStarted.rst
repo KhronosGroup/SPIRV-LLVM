@@ -63,38 +63,59 @@ Here's the short story for getting up and running quickly with LLVM:
 
 #. Configure and build LLVM and Clang:
 
-   * ``cd where-you-want-to-build-llvm``
-   * ``mkdir build`` (for building without polluting the source dir)
+   *Warning:* Make sure you've checked out *all of* the source code 
+   before trying to configure with cmake.  cmake does not pickup newly
+   added source directories in incremental builds. 
+
+   The build uses `CMake <CMake.html>`_. LLVM requires CMake 3.4.3 to build. It
+   is generally recommended to use a recent CMake, especially if you're
+   generating Ninja build files. This is because the CMake project is constantly
+   improving the quality of the generators, and the Ninja generator gets a lot
+   of attention.
+
+   * ``cd where you want to build llvm``
+   * ``mkdir build``
    * ``cd build``
-   * ``../llvm/configure [options]``
-     Some common options:
+   * ``cmake -G <generator> [options] <path to llvm sources>``
 
-     * ``--prefix=directory`` --- Specify for *directory* the full pathname of
-       where you want the LLVM tools and libraries to be installed (default
-       ``/usr/local``).
+     Some common generators are:
 
-     * ``--enable-optimized`` --- Compile with optimizations enabled (default
-       is NO).
+     * ``Unix Makefiles`` --- for generating make-compatible parallel makefiles.
+     * ``Ninja`` --- for generating `Ninja <https://ninja-build.org>`_
+       build files. Most llvm developers use Ninja.
+     * ``Visual Studio`` --- for generating Visual Studio projects and
+       solutions.
+     * ``Xcode`` --- for generating Xcode projects.
 
-     * ``--enable-assertions`` --- Compile with assertion checks enabled
-       (default is YES).
+     Some Common options:
 
-   * ``make [-j]`` --- The ``-j`` specifies the number of jobs (commands) to run
-     simultaneously.  This builds both LLVM and Clang for Debug+Asserts mode.
-     The ``--enable-optimized`` configure option is used to specify a Release
-     build.
+     * ``-DCMAKE_INSTALL_PREFIX=directory`` --- Specify for *directory* the full
+       pathname of where you want the LLVM tools and libraries to be installed
+       (default ``/usr/local``).
 
-   * ``make check-all`` --- This run the regression tests to ensure everything
-     is in working order.
+     * ``-DCMAKE_BUILD_TYPE=type`` --- Valid options for *type* are Debug,
+       Release, RelWithDebInfo, and MinSizeRel. Default is Debug.
 
-   * It is also possible to use `CMake <CMake.html>`_ instead of the makefiles.
-     With CMake it is possible to generate project files for several IDEs:
-     Xcode, Eclipse CDT4, CodeBlocks, Qt-Creator (use the CodeBlocks
-     generator), KDevelop3.
+     * ``-DLLVM_ENABLE_ASSERTIONS=On`` --- Compile with assertion checks enabled
+       (default is Yes for Debug builds, No for all other build types).
+
+   * Run your build tool of choice!
+
+     * The default target (i.e. ``make``) will build all of LLVM
+
+     * The ``check-all`` target (i.e. ``make check-all``) will run the
+       regression tests to ensure everything is in working order.
+
+     * CMake will generate build targets for each tool and library, and most
+       LLVM sub-projects generate their own ``check-<project>`` target.
+
+     * Running a serial build will be *slow*.  Make sure you run a 
+       parallel build; for ``make``, use ``make -j``.  
+
+   * For more information see `CMake <CMake.html>`_
 
    * If you get an "internal compiler error (ICE)" or test failures, see
-     `below`.
-
+     `below`_.
 Consult the `Getting Started with LLVM`_ section for detailed information on
 configuring and compiling LLVM.  See `Setting Up Your Environment`_ for tips
 that simplify working with the Clang front end and LLVM tools.  Go to `Program
