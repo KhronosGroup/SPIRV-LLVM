@@ -250,6 +250,8 @@ public:
       const std::vector<SPIRVWord>&, SPIRVBasicBlock *);
   virtual SPIRVInstruction *addPhiInst(SPIRVType *, std::vector<SPIRVValue *>,
       SPIRVBasicBlock *);
+  virtual SPIRVInstruction *addCompositeConstructInst(SPIRVType *,
+      const std::vector<SPIRVId>&, SPIRVBasicBlock *);
   virtual SPIRVInstruction *addCompositeExtractInst(SPIRVType *, SPIRVValue *,
       const std::vector<SPIRVWord>&, SPIRVBasicBlock *);
   virtual SPIRVInstruction *addCompositeInsertInst(SPIRVValue *Object,
@@ -284,6 +286,10 @@ public:
   virtual SPIRVInstruction *addSwitchInst(SPIRVValue *, SPIRVBasicBlock *,
       const std::vector<std::pair<std::vector<SPIRVWord>, SPIRVBasicBlock *>>&,
       SPIRVBasicBlock *);
+  virtual SPIRVInstruction *addFModInst(SPIRVType *TheType, SPIRVId TheDividend,
+      SPIRVId TheDivisor, SPIRVBasicBlock *BB);
+  virtual SPIRVInstruction *addVectorTimesScalarInst(SPIRVType *TheType,
+      SPIRVId TheVector, SPIRVId TheScalar, SPIRVBasicBlock *BB);
   virtual SPIRVInstruction *addUnaryInst(Op, SPIRVType *, SPIRVValue *,
       SPIRVBasicBlock *);
   virtual SPIRVInstruction *addVariable(SPIRVType *, bool, SPIRVLinkageTypeKind,
@@ -939,6 +945,19 @@ SPIRVModuleImpl::addSwitchInst(SPIRVValue *Select, SPIRVBasicBlock *Default,
     SPIRVBasicBlock *BB) {
   return BB->addInstruction(new SPIRVSwitch(Select, Default, Pairs, BB));
 }
+SPIRVInstruction *
+SPIRVModuleImpl::addFModInst(SPIRVType *TheType, SPIRVId TheDividend,
+    SPIRVId TheDivisor, SPIRVBasicBlock *BB) {
+    return BB->addInstruction(new SPIRVFMod(TheType, getId(), TheDividend,
+        TheDivisor, BB));
+}
+
+SPIRVInstruction *
+SPIRVModuleImpl::addVectorTimesScalarInst(SPIRVType *TheType, SPIRVId TheVector,
+    SPIRVId TheScalar, SPIRVBasicBlock *BB) {
+  return BB->addInstruction(new SPIRVVectorTimesScalar(TheType, getId(),
+        TheVector, TheScalar, BB));
+}
 
 SPIRVInstruction *
 SPIRVModuleImpl::addGroupInst(Op OpCode, SPIRVType *Type,
@@ -1097,6 +1116,13 @@ SPIRVModuleImpl::addAsyncGroupCopy(SPIRVValue *Scope,
     SPIRVValue *Event, SPIRVBasicBlock *BB) {
   return addInstruction(new SPIRVGroupAsyncCopy(Scope, getId(), Dest, Src,
     NumElems, Stride, Event, BB), BB);
+}
+
+SPIRVInstruction *
+SPIRVModuleImpl::addCompositeConstructInst(SPIRVType *Type,
+    const std::vector<SPIRVId>& Constituents, SPIRVBasicBlock *BB) {
+  return addInstruction(new SPIRVCompositeConstruct(Type, getId(),
+      Constituents, BB), BB);
 }
 
 SPIRVInstruction *

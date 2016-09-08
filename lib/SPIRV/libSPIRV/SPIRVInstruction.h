@@ -1057,6 +1057,98 @@ protected:
   std::vector<SPIRVWord> Pairs;
 };
 
+class SPIRVFMod : public SPIRVInstruction {
+public:
+  static const Op OC = OpFMod;
+  static const SPIRVWord FixedWordCount = 4;
+  // Complete constructor
+  SPIRVFMod(SPIRVType *TheType, SPIRVId TheId, SPIRVId TheDividend,
+      SPIRVId TheDivisor, SPIRVBasicBlock *BB)
+      :SPIRVInstruction(5, OC, TheType, TheId, BB), Dividend(TheDividend), Divisor(TheDivisor) {
+    validate();
+    assert(BB && "Invalid BB");
+  }
+  // Incomplete constructor
+  SPIRVFMod() :SPIRVInstruction(OC), Dividend(SPIRVID_INVALID),
+    Divisor(SPIRVID_INVALID) {
+  }
+  SPIRVValue *getDividend() const { return getValue(Dividend); }
+  SPIRVValue *getDivisor() const { return getValue(Divisor); }
+
+  std::vector<SPIRVValue*> getOperands() {
+    std::vector<SPIRVId> Operands;
+    Operands.push_back(Dividend);
+    Operands.push_back(Divisor);
+    return getValues(Operands);
+  }
+
+  void setWordCount(SPIRVWord FixedWordCount) {
+    SPIRVEntry::setWordCount(FixedWordCount);
+  }
+  _SPIRV_DEF_ENCDEC4(Type, Id, Dividend, Divisor)
+  void validate()const {
+    SPIRVInstruction::validate();
+    if (getValue(Dividend)->isForward() ||
+        getValue(Divisor)->isForward())
+      return;
+    SPIRVInstruction::validate();
+  }
+protected:
+  SPIRVId Dividend;
+  SPIRVId Divisor;
+};
+
+class SPIRVVectorTimesScalar : public SPIRVInstruction {
+public:
+  static const Op OC = OpVectorTimesScalar;
+  static const SPIRVWord FixedWordCount = 4;
+  // Complete constructor
+  SPIRVVectorTimesScalar(SPIRVType *TheType, SPIRVId TheId, SPIRVId TheVector,
+      SPIRVId TheScalar, SPIRVBasicBlock *BB)
+      :SPIRVInstruction(5, OC, TheType, TheId, BB), Vector(TheVector), Scalar(TheScalar) {
+    validate();
+    assert(BB && "Invalid BB");
+  }
+  // Incomplete constructor
+  SPIRVVectorTimesScalar() :SPIRVInstruction(OC), Vector(SPIRVID_INVALID),
+      Scalar(SPIRVID_INVALID) {
+  }
+  SPIRVValue *getVector() const { return getValue(Vector); }
+  SPIRVValue *getScalar() const { return getValue(Scalar); }
+
+  std::vector<SPIRVValue*> getOperands() {
+    std::vector<SPIRVId> Operands;
+    Operands.push_back(Vector);
+    Operands.push_back(Scalar);
+    return getValues(Operands);
+  }
+
+  void setWordCount(SPIRVWord FixedWordCount) {
+    SPIRVEntry::setWordCount(FixedWordCount);
+  }
+  _SPIRV_DEF_ENCDEC4(Type, Id, Vector, Scalar)
+  void validate()const {
+    SPIRVInstruction::validate();
+    if (getValue(Vector)->isForward() ||
+        getValue(Scalar)->isForward())
+      return;
+
+    assert(getValueType(Vector)->isTypeVector() &&
+        getValueType(Vector)->getVectorComponentType()->isTypeFloat() &&
+        "First operand must be a vector of floating-point type");
+    assert(getValueType(getId())->isTypeVector() &&
+        getValueType(getId())->getVectorComponentType()->isTypeFloat() &&
+        "Result type must be a vector of floating-point type");
+    assert(getValueType(Vector)->getVectorComponentType() ==
+        getValueType(getId())->getVectorComponentType() &&
+        "Scalar must have the same type as the Component Type in Result Type");
+    SPIRVInstruction::validate();
+  }
+protected:
+  SPIRVId Vector;
+  SPIRVId Scalar;
+};
+
 class SPIRVUnary:public SPIRVInstTemplateBase {
 protected:
   void validate()const {
@@ -1290,6 +1382,46 @@ protected:
     OCLExtOpKind ExtOpOCL;
   };
   SPIRVExtInstSetKind ExtSetKind;
+};
+
+class SPIRVCompositeConstruct : public SPIRVInstruction {
+public:
+  const static Op OC = OpCompositeConstruct;
+  const static SPIRVWord FixedWordCount = 3;
+  // Complete constructor
+  SPIRVCompositeConstruct(SPIRVType *TheType, SPIRVId TheId,
+    const std::vector<SPIRVId>& TheConstituents, SPIRVBasicBlock *TheBB) :
+    SPIRVInstruction(TheConstituents.size() + FixedWordCount, OC,
+        TheType, TheId, TheBB), Constituents(TheConstituents) {
+    validate();
+    assert(TheBB && "Invalid BB");
+  }
+  // Incomplete constructor
+  SPIRVCompositeConstruct():SPIRVInstruction(OC) {}
+
+  const std::vector<SPIRVValue*> getConstituents() const {
+    return getValues(Constituents);
+  }
+protected:
+  void setWordCount(SPIRVWord TheWordCount) {
+    SPIRVEntry::setWordCount(TheWordCount);
+    Constituents.resize(TheWordCount - FixedWordCount);
+  }
+  _SPIRV_DEF_ENCDEC3(Type, Id, Constituents)
+  void validate() const {
+    SPIRVInstruction::validate();
+    switch (getValueType(this->getId())->getOpCode()) {
+    case OpTypeVector:
+      assert(getConstituents().size() > 1 &&
+          "There must be at least two Constituent operands in vector");
+    case OpTypeArray:
+    case OpTypeStruct:
+      break;
+    default:
+      assert("Invalid type");
+    }
+  }
+  std::vector<SPIRVId> Constituents;
 };
 
 class SPIRVCompositeExtract:public SPIRVInstruction {
