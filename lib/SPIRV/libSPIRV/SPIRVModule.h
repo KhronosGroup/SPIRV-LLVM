@@ -166,8 +166,10 @@ public:
       SPIRVWord MemberNumber, const std::string &Name) = 0;
   virtual void addUnknownStructField(SPIRVTypeStruct *, unsigned idx,
                                      SPIRVId id) = 0;
-  virtual SPIRVLine *addLine(SPIRVEntry *E, SPIRVString *FileName, SPIRVWord Line,
+  virtual void addLine(SPIRVEntry *E, SPIRVId FileNameId, SPIRVWord Line,
       SPIRVWord Column) = 0;
+  virtual const std::shared_ptr<const SPIRVLine>& getCurrentLine() const = 0;
+  virtual void setCurrentLine(const std::shared_ptr<const SPIRVLine>&) = 0;
   virtual const SPIRVDecorateGeneric *addDecorate(const SPIRVDecorateGeneric*)
     = 0;
   virtual SPIRVDecorationGroup *addDecorationGroup() = 0;
@@ -290,6 +292,8 @@ public:
     = 0;
   virtual SPIRVInstruction *addSelectInst(SPIRVValue *, SPIRVValue *, SPIRVValue *,
       SPIRVBasicBlock *) = 0;
+  virtual SPIRVInstruction *addSelectionMergeInst(SPIRVId MergeBlock,
+      SPIRVWord SelectionControl, SPIRVBasicBlock *BB) = 0;
   virtual SPIRVInstruction *addStoreInst(SPIRVValue *, SPIRVValue *,
       const std::vector<SPIRVWord>&, SPIRVBasicBlock *) = 0;
   virtual SPIRVInstruction *addSwitchInst(SPIRVValue *, SPIRVBasicBlock *,

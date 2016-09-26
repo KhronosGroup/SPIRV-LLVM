@@ -1437,6 +1437,8 @@ SPIRVToLLVM::transValueWithoutDecoration(SPIRVValue *BV, Function *F,
     else if (LinkageTy == GlobalValue::CommonLinkage)
         // In LLVM variables with common linkage type must be initilized by 0
         Initializer = Constant::getNullValue(Ty);
+    else if (BVar->getStorageClass() == SPIRVStorageClassKind::StorageClassWorkgroup)
+        Initializer = dyn_cast<Constant>(UndefValue::get(Ty));
 
     SPIRVStorageClassKind BS = BVar->getStorageClass();
     if (BS == StorageClassFunction && !Init) {
@@ -1609,6 +1611,12 @@ SPIRVToLLVM::transValueWithoutDecoration(SPIRVValue *BV, Function *F,
                                        transValue(BS->getTrueValue(), F, BB),
                                        transValue(BS->getFalseValue(), F, BB),
                                        BV->getName(), BB));
+  }
+
+  case OpLine:
+  case OpSelectionMerge: {
+    // OpenCL Compiler does not use this instruction
+    return nullptr;
   }
 
   case OpSwitch: {

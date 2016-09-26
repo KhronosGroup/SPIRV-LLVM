@@ -72,7 +72,7 @@ public:
         : AddressingModelPhysical64;
     // OpenCL memory model requires Kernel capability
     setMemoryModel(MemoryModelOpenCL);
-  };
+  }
   virtual ~SPIRVModuleImpl();
 
   // Object query functions
@@ -80,7 +80,7 @@ public:
   bool exist(SPIRVId, SPIRVEntry **) const;
   SPIRVId getId(SPIRVId Id = SPIRVID_INVALID, unsigned Increment = 1);
   virtual SPIRVEntry *getEntry(SPIRVId Id) const;
-  bool hasDebugInfo() const { return !LineVec.empty();}
+  bool hasDebugInfo() const { return !StringVec.empty();}
 
   // Error handling functions
   SPIRVErrorLog &getErrorLog() { return ErrLog;}
@@ -162,8 +162,10 @@ public:
       SPIRVWord MemberNumber, const std::string &Name);
   virtual void addUnknownStructField(SPIRVTypeStruct *Struct, unsigned I,
                                      SPIRVId ID);
-  virtual SPIRVLine *addLine(SPIRVEntry *E, SPIRVString *FileName, SPIRVWord Line,
+  virtual void addLine(SPIRVEntry *E, SPIRVId FileNameId, SPIRVWord Line,
       SPIRVWord Column);
+  virtual const std::shared_ptr<const SPIRVLine>& getCurrentLine() const;
+  virtual void setCurrentLine(const std::shared_ptr<const SPIRVLine> &Line);
   virtual void addCapability(SPIRVCapabilityKind);
   virtual void addCapabilityInternal(SPIRVCapabilityKind);
   virtual const SPIRVDecorateGeneric *addDecorate(const SPIRVDecorateGeneric *);
@@ -281,6 +283,8 @@ public:
   virtual SPIRVInstruction *addReturnValueInst(SPIRVValue *, SPIRVBasicBlock *);
   virtual SPIRVInstruction *addSelectInst(SPIRVValue *, SPIRVValue *, SPIRVValue *,
       SPIRVBasicBlock *);
+  virtual SPIRVInstruction *addSelectionMergeInst(SPIRVId MergeBlock,
+      SPIRVWord SelectionControl, SPIRVBasicBlock *BB);
   virtual SPIRVInstruction *addStoreInst(SPIRVValue *, SPIRVValue *,
       const std::vector<SPIRVWord>&, SPIRVBasicBlock *);
   virtual SPIRVInstruction *addSwitchInst(SPIRVValue *, SPIRVBasicBlock *,
@@ -332,7 +336,6 @@ private:
   typedef std::vector<SPIRVVariable *> SPIRVVariableVec;
   typedef std::vector<SPIRVString *> SPIRVStringVec;
   typedef std::vector<SPIRVMemberName *> SPIRVMemberNameVec;
-  typedef std::vector<SPIRVLine *> SPIRVLineVec;
   typedef std::vector<SPIRVDecorationGroup *> SPIRVDecGroupVec;
   typedef std::vector<SPIRVGroupDecorateGeneric *> SPIRVGroupDecVec;
   typedef std::map<SPIRVId, SPIRVExtInstSetKind> SPIRVIdToBuiltinSetMap;
@@ -353,7 +356,7 @@ private:
   SPIRVIdSet NamedId;
   SPIRVStringVec StringVec;
   SPIRVMemberNameVec MemberNameVec;
-  SPIRVLineVec LineVec;
+  std::shared_ptr<const SPIRVLine> CurrentLine;
   SPIRVDecorateSet DecorateSet;
   SPIRVDecGroupVec DecGroupVec;
   SPIRVGroupDecVec GroupDecVec;
@@ -383,12 +386,23 @@ SPIRVModuleImpl::~SPIRVModuleImpl() {
     delete C.second;
 }
 
-SPIRVLine*
-SPIRVModuleImpl::addLine(SPIRVEntry* E, SPIRVString* FileName,
+const std::shared_ptr<const SPIRVLine>&
+SPIRVModuleImpl::getCurrentLine() const {
+  return CurrentLine;
+}
+
+void
+SPIRVModuleImpl::setCurrentLine(const std::shared_ptr<const SPIRVLine>& Line) {
+  CurrentLine = Line;
+}
+
+void
+SPIRVModuleImpl::addLine(SPIRVEntry* E, SPIRVId FileNameId,
     SPIRVWord Line, SPIRVWord Column) {
-  auto L = add(new SPIRVLine(E, FileName->getId(), Line, Column));
-  E->setLine(L);
-  return L;
+  if (!(CurrentLine && CurrentLine->equals(FileNameId, Line, Column)))
+    CurrentLine.reset(new SPIRVLine(this, FileNameId, Line, Column));
+  assert(E && "invalid entry");
+  E->setLine(CurrentLine);
 }
 
 // Creates decoration group and group decorates from decorates shared by
@@ -496,9 +510,6 @@ SPIRVModuleImpl::layoutEntry(SPIRVEntry* E) {
     break;
   case OpMemberName:
     addTo(MemberNameVec, E);
-    break;
-  case OpLine:
-    addTo(LineVec, E);
     break;
   case OpVariable: {
     auto BV = static_cast<SPIRVVariable*>(E);
@@ -1102,6 +1113,12 @@ SPIRVModuleImpl::addSelectInst(SPIRVValue *Condition, SPIRVValue *Op1,
 }
 
 SPIRVInstruction *
+SPIRVModuleImpl::addSelectionMergeInst(SPIRVId MergeBlock,
+    SPIRVWord SelectionControl, SPIRVBasicBlock *BB) {
+    return addInstruction(new SPIRVSelectionMerge(MergeBlock, SelectionControl, BB), BB);
+}
+
+SPIRVInstruction *
 SPIRVModuleImpl::addPtrAccessChainInst(SPIRVType *Type, SPIRVValue *Base,
     std::vector<SPIRVValue *> Indices, SPIRVBasicBlock *BB, bool IsInBounds){
   return addInstruction(SPIRVInstTemplateBase::create(
@@ -1347,7 +1364,6 @@ operator<< (spv_ostream &O, SPIRVModule &M) {
   }
 
   O << MI.MemberNameVec
-    << MI.LineVec
     << MI.DecGroupVec
     << MI.DecorateSet
     << MI.GroupDecVec
