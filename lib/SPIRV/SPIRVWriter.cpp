@@ -1267,6 +1267,32 @@ LLVMToSPIRV::transIntrinsicInst(IntrinsicInst *II, SPIRVBasicBlock *BB) {
       transValue(II->getOperand(2), BB),
       getMemoryAccess(cast<MemIntrinsic>(II)),
       BB);
+  case Intrinsic::lifetime_start : {
+    int64_t Size = dyn_cast<ConstantInt>(II->getOperand(0))->getSExtValue();
+    if (Size == -1)
+      Size = 0;
+    if (isa<BitCastInst>(II->getOperand(1))) {
+      auto LT = BM->addLifetimeStartInst(
+          transValue(dyn_cast<BitCastInst>(II->getOperand(1))->getOperand(0), BB),
+          Size, BB);
+      auto BC = LT->getPrevious();
+      assert(BC->getOpCode() == OpBitcast && "Invalid instruction");
+      BM->eraseInstruction(BC, BB);
+      return LT;
+    }
+    return BM->addLifetimeStartInst(transValue(II->getOperand(1), BB), Size, BB);
+  }
+  case Intrinsic::lifetime_end : {
+    int64_t Size = dyn_cast<ConstantInt>(II->getOperand(0))->getSExtValue();
+    if (Size == -1)
+      Size = 0;
+    if (isa<BitCastInst>(II->getOperand(1))) {
+      return BM->addLifetimeStopInst(
+          transValue(dyn_cast<BitCastInst>(II->getOperand(1))->getOperand(0), BB),
+          Size, BB);
+    }
+    return BM->addLifetimeStopInst(transValue(II->getOperand(1), BB), Size, BB);
+  }
   default:
     // LLVM intrinsic functions shouldn't get to SPIRV, because they
     // would have no definition there.
