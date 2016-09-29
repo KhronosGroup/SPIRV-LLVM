@@ -184,6 +184,7 @@ public:
   virtual SPIRVFunction *addFunction(SPIRVFunction *);
   virtual SPIRVFunction *addFunction(SPIRVTypeFunction *, SPIRVId);
   virtual SPIRVEntry *replaceForward(SPIRVForward *, SPIRVEntry *);
+  virtual void eraseInstruction(SPIRVInstruction *, SPIRVBasicBlock *);
 
   // Type creation functions
   template<class T> T * addType(T *Ty);
@@ -277,6 +278,10 @@ public:
       SPIRVBasicBlock* BB, SPIRVType *Ty);
   virtual SPIRVInstTemplateBase *addInstTemplate(Op OC,
       const std::vector<SPIRVWord>& Ops, SPIRVBasicBlock* BB, SPIRVType *Ty);
+  virtual SPIRVInstruction *addLifetimeStartInst(SPIRVValue *Object,
+      SPIRVWord Size, SPIRVBasicBlock *BB);
+  virtual SPIRVInstruction *addLifetimeStopInst(SPIRVValue *Object,
+      SPIRVWord Size, SPIRVBasicBlock *BB);
   virtual SPIRVInstruction *addMemoryBarrierInst(
       Scope ScopeKind, SPIRVWord MemFlag, SPIRVBasicBlock *BB);
   virtual SPIRVInstruction *addReturnInst(SPIRVBasicBlock *);
@@ -887,6 +892,16 @@ SPIRVModuleImpl::replaceForward(SPIRVForward *Forward, SPIRVEntry *Entry) {
   return Entry;
 }
 
+void
+SPIRVModuleImpl::eraseInstruction(SPIRVInstruction *I, SPIRVBasicBlock *BB) {
+  SPIRVId Id = I->getId();
+  BB->eraseInstruction(I);
+  auto Loc = IdEntryMap.find(Id);
+  assert(Loc != IdEntryMap.end());
+  IdEntryMap.erase(Loc);
+  delete I;
+}
+
 SPIRVValue *
 SPIRVModuleImpl::addConstant(SPIRVValue *C) {
   return add(C);
@@ -1095,6 +1110,20 @@ SPIRVModuleImpl::addControlBarrierInst(SPIRVValue *ExecKind,
     SPIRVValue *MemKind, SPIRVValue *MemSema, SPIRVBasicBlock *BB) {
   return addInstruction(
       new SPIRVControlBarrier(ExecKind, MemKind, MemSema, BB), BB);
+}
+
+SPIRVInstruction *
+SPIRVModuleImpl::addLifetimeStartInst(SPIRVValue *Object, SPIRVWord Size,
+    SPIRVBasicBlock *BB) {
+  return BB->addInstruction(new SPIRVLifetimeStart(Object->getId(),
+      Size, BB));
+}
+
+SPIRVInstruction *
+SPIRVModuleImpl::addLifetimeStopInst(SPIRVValue *Object, SPIRVWord Size,
+    SPIRVBasicBlock *BB) {
+  return BB->addInstruction(new SPIRVLifetimeStop(Object->getId(),
+      Size, BB));
 }
 
 SPIRVInstruction *
