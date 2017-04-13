@@ -2,7 +2,7 @@ LLVM/SPIR-V Bi-Directional Translator
 -------------------------------------
 [![Build Status](https://travis-ci.org/KhronosGroup/SPIRV-LLVM.svg?branch=khronos%2Fspirv-3.6.1)](https://travis-ci.org/KhronosGroup/SPIRV-LLVM)
 
-The `khronos/spirv-3.6.1` branch of this repository contains source code for the LLVM/SPIR-V Bi-Directional Translator, a library for translating between LLVM and [SPIR-V](https://www.khronos.org/registry/spir-v/).
+The `khronos/spirv-3.8` branch of this repository contains source code for the LLVM/SPIR-V Bi-Directional Translator, a library for translating between LLVM and [SPIR-V](https://www.khronos.org/registry/spir-v/).
 
 The LLVM/SPIR-V Bi-Directional Translator is open source software. You may freely distribute it under the terms of the license agreement found in LICENSE.txt.
 
