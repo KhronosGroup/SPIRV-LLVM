@@ -1303,6 +1303,28 @@ LLVMToSPIRV::transIntrinsicInst(IntrinsicInst *II, SPIRVBasicBlock *BB) {
       transValue(II->getOperand(2), BB),
       getMemoryAccess(cast<MemIntrinsic>(II)),
       BB);
+  case Intrinsic::memmove: {
+    //Since memory areas for source and dest can overlap, 1. copy to temporary, 2. copy to destination
+    SPIRVType *Ty = transType(II->getType());
+    //TODO name. Set size of memory behind variable?
+    //according to the SPIR-V specs, the Variable (with Storage Class Function) need to be at the beginning of the first block of the function, see section 2.4 (Logical Layout of a Module)
+    //TODO how to get the variable there?
+    SPIRVValue *Tmp = BM->addVariable(Ty, false,
+      SPIRVLinkageTypeKind::LinkageTypeInternal, nullptr, "", 
+      SPIRVStorageClassKind::StorageClassFunction, BB);
+    BM->addCopyMemorySizedInst(
+      Tmp,
+      transValue(II->getOperand(1), BB),
+      transValue(II->getOperand(2), BB),
+      getMemoryAccess(cast<MemIntrinsic>(II)),
+      BB);
+    return BM->addCopyMemorySizedInst(
+      transValue(II->getOperand(0), BB),
+      Tmp,
+      transValue(II->getOperand(2), BB),
+      getMemoryAccess(cast<MemIntrinsic>(II)),
+      BB);
+  }
   case Intrinsic::lifetime_start:
     return transLifetimeIntrinsicInst(OpLifetimeStart, II, BB);
   case Intrinsic::lifetime_end:
