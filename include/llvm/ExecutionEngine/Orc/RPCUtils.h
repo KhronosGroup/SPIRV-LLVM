@@ -63,6 +63,7 @@ protected:
     static std::error_code readAndHandle(ChannelT &C, HandlerT Handler,
                                          llvm::index_sequence<Is...> _) {
       std::tuple<ArgTs...> RPCArgs;
+      (void)RPCArgs;
       if (auto EC = deserialize_seq(C, std::get<Is>(RPCArgs)...))
         return EC;
       return Handler(std::get<Is>(RPCArgs)...);
