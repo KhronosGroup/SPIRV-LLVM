@@ -255,7 +255,7 @@ SPIRVEntry::validateBuiltin(SPIRVWord TheSet, SPIRVWord Index)const {
 void
 SPIRVEntry::addDecorate(const SPIRVDecorate *Dec){
   auto Kind = Dec->getDecorateKind();
-  Decorates.insert(std::make_pair(Dec->getDecorateKind(), Dec));
+  Decorates.insert(std::make_pair(Kind, Dec));
   Module->addDecorate(Dec);
   SPIRVDBG(spvdbgs() << "[addDecorate] " << *Dec << '\n';)
 }
