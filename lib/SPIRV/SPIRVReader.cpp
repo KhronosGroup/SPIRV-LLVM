@@ -139,14 +139,6 @@ getMDTwoInt(LLVMContext *Context, unsigned Int1, unsigned Int2) {
   return MDNode::get(*Context, ValueVec);
 }
 
-static MDNode*
-getMDString(LLVMContext *Context, const std::string& Str) {
-  std::vector<Metadata*> ValueVec;
-  if (!Str.empty())
-    ValueVec.push_back(MDString::get(*Context, Str));
-  return MDNode::get(*Context, ValueVec);
-}
-
 static void
 addOCLVersionMetadata(LLVMContext *Context, Module *M,
     const std::string &MDName, unsigned Major, unsigned Minor) {
