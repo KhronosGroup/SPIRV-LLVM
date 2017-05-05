@@ -78,10 +78,10 @@ typedef SPIRVMap<std::string, Op, SPIRVOpaqueType>
 #define LLVM_MEMCPY "llvm.memcpy"
 
 namespace kOCLTypeQualifierName {
-  const static char *Const      = "const";
-  const static char *Volatile   = "volatile";
-  const static char *Restrict   = "restrict";
-  const static char *Pipe       = "pipe";
+  const char* const Const      = "const";
+  const char* const Volatile   = "volatile";
+  const char* const Restrict   = "restrict";
+  const char* const Pipe       = "pipe";
 }
 
 template<> inline void
@@ -270,101 +270,101 @@ typedef SPIRVMap<SPIRVExtInstSetKind, std::string, SPIRVExtSetShortName>
 #define SPIR_TEMP_NAME_PREFIX_CALL          "call"
 
 namespace kLLVMTypeName {
-  const static char StructPrefix[] = "struct.";
+  const char* const StructPrefix = "struct.";
 }
 
 namespace kSPIRVImageSampledTypeName {
-  const static char Float[] = "float";
-  const static char Half[]  = "half";
-  const static char Int[]   = "int";
-  const static char UInt[]  = "uint";
-  const static char Void[]  = "void";
+  const char* const Float = "float";
+  const char* const Half  = "half";
+  const char* const Int   = "int";
+  const char* const UInt  = "uint";
+  const char* const Void  = "void";
 }
 
 namespace kSPIRVTypeName {
-  const static char Delimiter             = '.';
-  const static char DeviceEvent[]         = "DeviceEvent";
-  const static char Event[]               = "Event";
-  const static char Image[]               = "Image";
-  const static char Pipe[]                = "Pipe";
-  const static char PostfixDelim          = '_';
-  const static char Prefix[]              = "spirv";
-  const static char PrefixAndDelim[]      = "spirv.";
-  const static char Queue[]               = "Queue";
-  const static char ReserveId[]           = "ReserveId";
-  const static char SampledImg[]          = "SampledImage";
-  const static char Sampler[]             = "Sampler";
-  const static char ConstantSampler[]     = "ConstantSampler";
-  const static char PipeStorage[]         = "PipeStorage";
-  const static char ConstantPipeStorage[] = "ConstantPipeStorage";
+  const char        Delimiter           = '.';
+  const char* const DeviceEvent         = "DeviceEvent";
+  const char* const Event               = "Event";
+  const char* const Image               = "Image";
+  const char* const Pipe                = "Pipe";
+  const char        PostfixDelim        = '_';
+  const char* const Prefix              = "spirv";
+  const char* const PrefixAndDelim      = "spirv.";
+  const char* const Queue               = "Queue";
+  const char* const ReserveId           = "ReserveId";
+  const char* const SampledImg          = "SampledImage";
+  const char* const Sampler             = "Sampler";
+  const char* const ConstantSampler     = "ConstantSampler";
+  const char* const PipeStorage         = "PipeStorage";
+  const char* const ConstantPipeStorage = "ConstantPipeStorage";
 }
 
 namespace kSPR2TypeName {
-  const static char Delimiter   = '.';
-  const static char OCLPrefix[]   = "opencl.";
-  const static char ImagePrefix[] = "opencl.image";
-  const static char Pipe[]        = "opencl.pipe_t";
-  const static char Sampler[]     = "opencl.sampler_t";
-  const static char Event[]       = "opencl.event_t";
+  const char        Delimiter   = '.';
+  const char* const OCLPrefix   = "opencl.";
+  const char* const ImagePrefix = "opencl.image";
+  const char* const Pipe        = "opencl.pipe_t";
+  const char* const Sampler     = "opencl.sampler_t";
+  const char* const Event       = "opencl.event_t";
 }
 
 namespace kAccessQualName {
-  const static char ReadOnly[]    = "read_only";
-  const static char WriteOnly[]   = "write_only";
-  const static char ReadWrite[]   = "read_write";
+  const char* const ReadOnly    = "read_only";
+  const char* const WriteOnly   = "write_only";
+  const char* const ReadWrite   = "read_write";
 }
 
 namespace kMangledName {
-  const static char Sampler[]               = "11ocl_sampler";
-  const static char AtomicPrefixIncoming[]  = "U7_Atomic";
-  const static char AtomicPrefixInternal[]  = "atomic_";
+  const char* const Sampler               = "11ocl_sampler";
+  const char* const AtomicPrefixIncoming  = "U7_Atomic";
+  const char* const AtomicPrefixInternal  = "atomic_";
 }
 
 namespace kSPIRVName {
-  const static char GroupPrefix[]            = "group_";
-  const static char Prefix[]                 = "__spirv_";
-  const static char Postfix[]                = "__";
-  const static char ImageQuerySize[]         = "ImageQuerySize";
-  const static char ImageQuerySizeLod[]      = "ImageQuerySizeLod";
-  const static char ImageSampleExplicitLod[] = "ImageSampleExplicitLod";
-  const static char ReservedPrefix[]         = "reserved_";
-  const static char SampledImage[]           = "SampledImage";
-  const static char TempSampledImage[]       = "TempSampledImage";
+  const char* const GroupPrefix            = "group_";
+  const char* const Prefix                 = "__spirv_";
+  const char* const Postfix                = "__";
+  const char* const ImageQuerySize         = "ImageQuerySize";
+  const char* const ImageQuerySizeLod      = "ImageQuerySizeLod";
+  const char* const ImageSampleExplicitLod = "ImageSampleExplicitLod";
+  const char* const ReservedPrefix         = "reserved_";
+  const char* const SampledImage           = "SampledImage";
+  const char* const TempSampledImage       = "TempSampledImage";
 }
 
 namespace kSPIRVPostfix {
-  const static char Sat[]       = "sat";
-  const static char Rtz[]       = "rtz";
-  const static char Rte[]       = "rte";
-  const static char Rtp[]       = "rtp";
-  const static char Rtn[]       = "rtn";
-  const static char Rt[]        = "rt";
-  const static char Return[]    = "R";
-  const static char Divider[]   = "_";
+  const char* const Sat       = "sat";
+  const char* const Rtz       = "rtz";
+  const char* const Rte       = "rte";
+  const char* const Rtp       = "rtp";
+  const char* const Rtn       = "rtn";
+  const char* const Rt        = "rt";
+  const char* const Return    = "R";
+  const char* const Divider   = "_";
   /// Divider between extended instruction name and postfix
-  const static char ExtDivider[] = "__";
+  const char* const ExtDivider = "__";
 }
 
 namespace kSPIRVMD {
-  const static char Capability[]        = "spirv.Capability";
-  const static char EntryPoint[]        = "spirv.EntryPoint";
-  const static char ExecutionMode[]     = "spirv.ExecutionMode";
-  const static char Extension[]         = "spirv.Extension";
-  const static char Generator[]         = "spirv.Generator";
-  const static char Source[]            = "spirv.Source";
-  const static char SourceExtension[]   = "spirv.SourceExtension";
-  const static char MemoryModel[]       = "spirv.MemoryModel";
+  const char* const Capability        = "spirv.Capability";
+  const char* const EntryPoint        = "spirv.EntryPoint";
+  const char* const ExecutionMode     = "spirv.ExecutionMode";
+  const char* const Extension         = "spirv.Extension";
+  const char* const Generator         = "spirv.Generator";
+  const char* const Source            = "spirv.Source";
+  const char* const SourceExtension   = "spirv.SourceExtension";
+  const char* const MemoryModel       = "spirv.MemoryModel";
 }
 
 namespace kSPIR2MD {
-  const static char Extensions[]        = "opencl.used.extensions";
-  const static char FPContract[]        = "opencl.enable.FP_CONTRACT";
-  const static char OCLVer[]            = "opencl.ocl.version";
-  const static char OptFeatures[]       = "opencl.used.optional.core.features";
-  const static char SPIRVer[]           = "opencl.spir.version";
-  const static char VecTyHint[]         = "vec_type_hint";
-  const static char WGSize[]            = "reqd_work_group_size";
-  const static char WGSizeHint[]        = "work_group_size_hint";
+  const char* const Extensions        = "opencl.used.extensions";
+  const char* const FPContract        = "opencl.enable.FP_CONTRACT";
+  const char* const OCLVer            = "opencl.ocl.version";
+  const char* const OptFeatures       = "opencl.used.optional.core.features";
+  const char* const SPIRVer           = "opencl.spir.version";
+  const char* const VecTyHint         = "vec_type_hint";
+  const char* const WGSize            = "reqd_work_group_size";
+  const char* const WGSizeHint        = "work_group_size_hint";
 }
 
 enum Spir2SamplerKind {
