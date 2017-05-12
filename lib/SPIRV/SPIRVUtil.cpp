@@ -1037,7 +1037,7 @@ transTypeDesc(Type *Ty, const BuiltinArgTypeMangleInfo &Info) {
     if (Name.startswith(kLLVMTypeName::StructPrefix))
       Name = Name.drop_front(strlen(kLLVMTypeName::StructPrefix));
     if (Name.startswith(kSPIRVTypeName::PrefixAndDelim)) {
-      Name = Name.substr(sizeof(kSPIRVTypeName::PrefixAndDelim) - 1);
+      Name = Name.substr(strlen(kSPIRVTypeName::PrefixAndDelim));
       Tmp = Name.str();
       auto pos = Tmp.find(kSPIRVTypeName::Delimiter); //first dot
       while (pos != std::string::npos) {
