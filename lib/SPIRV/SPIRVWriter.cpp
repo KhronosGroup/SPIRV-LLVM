@@ -1324,6 +1324,84 @@ LLVMToSPIRV::transIntrinsicInst(IntrinsicInst *II, SPIRVBasicBlock *BB) {
     return transLifetimeIntrinsicInst(OpLifetimeStart, II, BB);
   case Intrinsic::lifetime_end:
     return transLifetimeIntrinsicInst(OpLifetimeStop, II, BB);
+  case Intrinsic::bswap: {
+    auto SrcType = II->getArgOperand(0)->getType();
+    assert(SrcType->isIntegerTy() && "Can't bswap a non-integer type!");
+    SPIRVValue *Arg = transValue(II->getArgOperand(0), BB);
+    SPIRVType *ArgType = transType(SrcType);
+    switch(SrcType->getPrimitiveSizeInBits()) {
+      //This is mostly the same logic as lib/CodeGen/IntrinsicLowering.cpp#LowerBSWAP
+      default: llvm_unreachable("Unhandled type size of value to byteswap!");
+      case 16: {
+        SPIRVValue *Offset8 = BM->addConstant(ArgType, 8);
+        SPIRVValue *Tmp1 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg, 
+                                             Offset8, BB);
+        SPIRVValue *Tmp2 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg,
+                                             Offset8, BB);
+        return BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp1, Tmp2, BB);
+      }
+      case 32: {
+        SPIRVValue *Offset8 = BM->addConstant(ArgType, 8);
+        SPIRVValue *Offset24 = BM->addConstant(ArgType, 24);
+        SPIRVValue *Mask16 = BM->addConstant(ArgType, 0xFF00);
+        SPIRVValue *Mask24 = BM->addConstant(ArgType, 0xFF0000);
+        SPIRVValue *Tmp4 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg, 
+                                             Offset24, BB);
+        SPIRVValue *Tmp3 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg,
+                                             Offset8, BB);
+        SPIRVValue *Tmp2 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg, 
+                                             Offset8, BB);
+        SPIRVValue *Tmp1 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg,
+                                             Offset24, BB);
+        Tmp3 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp3, Mask24, BB);
+        Tmp2 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp2, Mask16, BB);
+        SPIRVValue *Res1 = BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp4, Tmp3, BB);
+        SPIRVValue *Res2 = BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp2, Tmp1, BB);
+        return BM->addBinaryInst(OpBitwiseOr, ArgType, Res1, Res2, BB);
+      }
+      case 64: {
+        SPIRVValue *Offset8 = BM->addConstant(ArgType, 8);
+        SPIRVValue *Offset24 = BM->addConstant(ArgType, 24);
+        SPIRVValue *Offset40 = BM->addConstant(ArgType, 40);
+        SPIRVValue *Offset56 = BM->addConstant(ArgType, 56);
+        SPIRVValue *Mask16 = BM->addConstant(ArgType, 0xFF00);
+        SPIRVValue *Mask24 = BM->addConstant(ArgType, 0xFF0000);
+        SPIRVValue *Mask32 = BM->addConstant(ArgType, 0xFF000000);
+        SPIRVValue *Mask40 = BM->addConstant(ArgType, 0xFF00000000);
+        SPIRVValue *Mask48 = BM->addConstant(ArgType, 0xFF0000000000);
+        SPIRVValue *Mask56 = BM->addConstant(ArgType, 0xFF000000000000);
+        SPIRVValue *Tmp8 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg, 
+                                             Offset56, BB);
+        SPIRVValue *Tmp7 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg,
+                                             Offset40, BB);
+        SPIRVValue *Tmp6 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg, 
+                                             Offset24, BB);
+        SPIRVValue *Tmp5 = BM->addBinaryInst(OpShiftLeftLogical, ArgType, Arg,
+                                             Offset8, BB);
+        SPIRVValue *Tmp4 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg, 
+                                             Offset8, BB);
+        SPIRVValue *Tmp3 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg,
+                                             Offset24, BB);
+        SPIRVValue *Tmp2 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg, 
+                                             Offset40, BB);
+        SPIRVValue *Tmp1 = BM->addBinaryInst(OpShiftRightLogical, ArgType, Arg,
+                                             Offset56, BB);
+        Tmp7 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp7, Mask56, BB);
+        Tmp6 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp6, Mask48, BB);
+        Tmp5 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp5, Mask40, BB);
+        Tmp4 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp4, Mask32, BB);
+        Tmp3 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp3, Mask24, BB);
+        Tmp2 = BM->addBinaryInst(OpBitwiseAnd, ArgType, Tmp2, Mask16, BB);
+        SPIRVValue *Res1 = BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp8, Tmp7, BB);
+        SPIRVValue *Res2 = BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp6, Tmp5, BB);
+        SPIRVValue *Res3 = BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp4, Tmp3, BB);
+        SPIRVValue *Res4 = BM->addBinaryInst(OpBitwiseOr, ArgType, Tmp2, Tmp1, BB);
+        Res1 = BM->addBinaryInst(OpBitwiseOr, ArgType, Res1, Res2, BB);
+        Res3 = BM->addBinaryInst(OpBitwiseOr, ArgType, Res3, Res4, BB);
+        return BM->addBinaryInst(OpBitwiseOr, ArgType, Res1, Res3, BB);
+      }
+    }
+  }
   default:
     // LLVM intrinsic functions shouldn't get to SPIRV, because they
     // would have no definition there.
