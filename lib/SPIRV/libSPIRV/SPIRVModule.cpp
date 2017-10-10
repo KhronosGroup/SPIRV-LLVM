@@ -378,15 +378,12 @@ private:
 };
 
 SPIRVModuleImpl::~SPIRVModuleImpl() {
-  //ToDo: Fix bug causing crash
-  //for (auto I:IdEntryMap)
-  //  delete I.second;
+  for (auto I:IdEntryMap)
+    delete I.second;
 
-  // ToDo: Fix bug causing crash
-  //for (auto I:EntryNoId) {
-  //  bildbgs() << "[delete] " << *I;
-  //  delete I;
-  //}
+  for (auto I:EntryNoId) {
+    delete I;
+  }
 
   for (auto C : CapMap)
     delete C.second;

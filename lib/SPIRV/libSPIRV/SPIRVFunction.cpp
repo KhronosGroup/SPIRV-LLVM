@@ -130,7 +130,7 @@ SPIRVFunction::decode(std::istream &I) {
 /// Do it here instead of in BB:decode to avoid back track in input stream.
 void
 SPIRVFunction::decodeBB(SPIRVDecoder &Decoder) {
-  SPIRVBasicBlock *BB = static_cast<SPIRVBasicBlock*>(Decoder.getEntry());
+  SPIRVBasicBlock *BB = static_cast<SPIRVBasicBlock*>(Decoder.getEntry(false));
   assert(BB);
   addBasicBlock(BB);
   SPIRVDBG(spvdbgs() << "Decode BB: " << BB->getId() << '\n');
@@ -147,7 +147,7 @@ SPIRVFunction::decodeBB(SPIRVDecoder &Decoder) {
       continue;
     }
 
-    SPIRVInstruction *Inst = static_cast<SPIRVInstruction *>(Decoder.getEntry());
+    SPIRVInstruction *Inst = static_cast<SPIRVInstruction *>(Decoder.getEntry(false));
     assert(Inst);
     if (Inst->getOpCode() != OpUndef)
       BB->addInstruction(Inst);

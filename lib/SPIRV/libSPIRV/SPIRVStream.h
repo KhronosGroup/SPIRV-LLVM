@@ -74,7 +74,7 @@ public:
 
   void setScope(SPIRVEntry *);
   bool getWordCountAndOpCode();
-  SPIRVEntry *getEntry();
+  SPIRVEntry *getEntry(bool Add = true);
   void validate()const;
 
   std::istream &IS;
