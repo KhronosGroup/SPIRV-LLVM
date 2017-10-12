@@ -378,11 +378,15 @@ private:
 };
 
 SPIRVModuleImpl::~SPIRVModuleImpl() {
-  for (auto I:IdEntryMap)
-    delete I.second;
+  //ToDo: Fix bug causing crash
+  //for (auto I:IdEntryMap)
+  //  delete I.second;
 
   for (auto I:EntryNoId) {
-    delete I;
+    // Entry of OpLine will be deleted by
+    // std::shared_ptr automatically.
+    if (I->getOpCode() != OpLine)
+      delete I;
   }
 
   for (auto C : CapMap)
@@ -549,7 +553,8 @@ SPIRVModuleImpl::addEntry(SPIRVEntry *Entry) {
     } else
       IdEntryMap[Id] = Entry;
   } else {
-    EntryNoId.push_back(Entry);
+    if (EntryNoId.empty() || EntryNoId.back() != Entry)
+      EntryNoId.push_back(Entry);
   }
 
   Entry->setModule(this);
@@ -1504,7 +1509,7 @@ operator>> (std::istream &I, SPIRVModule &M) {
   assert(MI.InstSchema == SPIRVISCH_Default && "Unsupported instruction schema");
 
   while(Decoder.getWordCountAndOpCode())
-    Decoder.getEntry();
+    M.add(Decoder.getEntry());
 
   MI.optimizeDecorates();
   MI.resolveUnknownStructFields();

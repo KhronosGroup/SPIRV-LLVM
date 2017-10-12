@@ -231,7 +231,7 @@ SPIRVDecoder::getWordCountAndOpCode() {
 }
 
 SPIRVEntry *
-SPIRVDecoder::getEntry(bool Add) {
+SPIRVDecoder::getEntry() {
   if (WordCount == 0 || OpCode == OpNop)
     return NULL;
   SPIRVEntry *Entry = SPIRVEntry::create(OpCode);
@@ -241,13 +241,12 @@ SPIRVDecoder::getEntry(bool Add) {
   else
     Entry->setScope(Scope);
   Entry->setWordCount(WordCount);
-  Entry->setLine(M.getCurrentLine());
+  if (OpCode != OpLine)
+    Entry->setLine(M.getCurrentLine());
   IS >> *Entry;
   if (Entry->isEndOfBlock() || OpCode == OpNoLine)
     M.setCurrentLine(nullptr);
   assert(!IS.bad() && !IS.fail() && "SPIRV stream fails");
-  if (Add)
-    M.add(Entry);
   return Entry;
 }
 

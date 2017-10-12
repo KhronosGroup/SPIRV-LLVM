@@ -110,6 +110,7 @@ SPIRVFunction::decode(std::istream &I) {
     case OpFunctionParameter: {
       auto Param = static_cast<SPIRVFunctionParameter *>(Decoder.getEntry());
       assert(Param);
+      Module->add(Param);
       Param->setParent(this);
       Parameters.push_back(Param);
       Decoder.getWordCountAndOpCode();
@@ -130,7 +131,7 @@ SPIRVFunction::decode(std::istream &I) {
 /// Do it here instead of in BB:decode to avoid back track in input stream.
 void
 SPIRVFunction::decodeBB(SPIRVDecoder &Decoder) {
-  SPIRVBasicBlock *BB = static_cast<SPIRVBasicBlock*>(Decoder.getEntry(false));
+  SPIRVBasicBlock *BB = static_cast<SPIRVBasicBlock*>(Decoder.getEntry());
   assert(BB);
   addBasicBlock(BB);
   SPIRVDBG(spvdbgs() << "Decode BB: " << BB->getId() << '\n');
@@ -143,14 +144,16 @@ SPIRVFunction::decodeBB(SPIRVDecoder &Decoder) {
     }
 
     if (Decoder.OpCode == OpLine) {
-      Decoder.getEntry();
+      Module->add(Decoder.getEntry());
       continue;
     }
 
-    SPIRVInstruction *Inst = static_cast<SPIRVInstruction *>(Decoder.getEntry(false));
+    SPIRVInstruction *Inst = static_cast<SPIRVInstruction *>(Decoder.getEntry());
     assert(Inst);
     if (Inst->getOpCode() != OpUndef)
       BB->addInstruction(Inst);
+    else
+      Module->add(Inst);
   }
   Decoder.setScope(this);
 }
