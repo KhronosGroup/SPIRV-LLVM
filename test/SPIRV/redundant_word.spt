@@ -33,3 +33,4 @@
 
 ; RUN: llvm-spirv %s -to-binary -o %t.spv
 ; RUN: llvm-spirv -r %t.spv -o %t.bc
+

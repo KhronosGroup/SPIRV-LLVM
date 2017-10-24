@@ -1506,7 +1506,7 @@ operator>> (std::istream &I, SPIRVModule &M) {
 
   while (Decoder.getWordCountAndOpCode()) {
     SPIRVEntry *Entry = Decoder.getEntry();
-    if (Entry != NULL)
+    if (Entry != nullptr)
       M.add(Entry);
   }
 
