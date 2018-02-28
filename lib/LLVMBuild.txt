@@ -37,6 +37,7 @@ subdirectories =
  Option
  Passes
  ProfileData
+ SPIRV
  Support
  TableGen
  Target
