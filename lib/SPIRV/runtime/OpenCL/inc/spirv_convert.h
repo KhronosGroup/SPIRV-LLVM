@@ -44,20 +44,28 @@ __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rte(float2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rtp(float2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rtn(float2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat(float2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtz(float2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rte(float2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtp(float2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtn(float2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtz(float2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rte(float2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtp(float2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtn(float2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2(double2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rtz(double2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rte(double2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rtp(double2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_rtn(double2);
 __attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat(double2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtz(double2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rte(double2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtp(double2);
-__attribute__((overloadable)) uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtn(double2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtz(double2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rte(double2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtp(double2);
+__attribute__((overloadable))
+uchar2 __spirv_ConvertFToU_Ruchar2_sat_rtn(double2);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3(half3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rtz(half3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rte(half3);
@@ -74,20 +82,28 @@ __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rte(float3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rtp(float3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rtn(float3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat(float3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtz(float3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rte(float3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtp(float3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtn(float3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtz(float3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rte(float3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtp(float3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtn(float3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3(double3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rtz(double3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rte(double3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rtp(double3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_rtn(double3);
 __attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat(double3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtz(double3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rte(double3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtp(double3);
-__attribute__((overloadable)) uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtn(double3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtz(double3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rte(double3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtp(double3);
+__attribute__((overloadable))
+uchar3 __spirv_ConvertFToU_Ruchar3_sat_rtn(double3);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4(half4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rtz(half4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rte(half4);
@@ -104,20 +120,28 @@ __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rte(float4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rtp(float4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rtn(float4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat(float4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtz(float4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rte(float4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtp(float4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtn(float4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtz(float4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rte(float4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtp(float4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtn(float4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4(double4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rtz(double4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rte(double4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rtp(double4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_rtn(double4);
 __attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat(double4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtz(double4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rte(double4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtp(double4);
-__attribute__((overloadable)) uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtn(double4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtz(double4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rte(double4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtp(double4);
+__attribute__((overloadable))
+uchar4 __spirv_ConvertFToU_Ruchar4_sat_rtn(double4);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8(half8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rtz(half8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rte(half8);
@@ -134,50 +158,75 @@ __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rte(float8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rtp(float8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rtn(float8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat(float8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtz(float8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rte(float8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtp(float8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtn(float8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtz(float8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rte(float8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtp(float8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtn(float8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8(double8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rtz(double8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rte(double8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rtp(double8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_rtn(double8);
 __attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat(double8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtz(double8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rte(double8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtp(double8);
-__attribute__((overloadable)) uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtn(double8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtz(double8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rte(double8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtp(double8);
+__attribute__((overloadable))
+uchar8 __spirv_ConvertFToU_Ruchar8_sat_rtn(double8);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16(half16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtz(half16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rte(half16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtp(half16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtn(half16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat(half16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtz(half16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rte(half16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtp(half16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtn(half16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtz(half16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rte(half16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtp(half16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtn(half16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16(float16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtz(float16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rte(float16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtp(float16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtn(float16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat(float16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtz(float16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rte(float16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtp(float16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtn(float16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtz(float16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rte(float16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtp(float16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtn(float16);
 __attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtz(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rte(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtp(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_rtn(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtz(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rte(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtp(double16);
-__attribute__((overloadable)) uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtn(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_rtz(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_rte(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_rtp(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_rtn(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtz(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rte(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtp(double16);
+__attribute__((overloadable))
+uchar16 __spirv_ConvertFToU_Ruchar16_sat_rtn(double16);
 
 __attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort(half);
 __attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_rtz(half);
@@ -205,160 +254,239 @@ __attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_rte(double);
 __attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_rtp(double);
 __attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_rtn(double);
 __attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_sat(double);
-__attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_sat_rtz(double);
-__attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_sat_rte(double);
-__attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_sat_rtp(double);
-__attribute__((overloadable)) ushort __spirv_ConvertFToU_Rushort_sat_rtn(double);
+__attribute__((overloadable)) ushort
+__spirv_ConvertFToU_Rushort_sat_rtz(double);
+__attribute__((overloadable)) ushort
+__spirv_ConvertFToU_Rushort_sat_rte(double);
+__attribute__((overloadable)) ushort
+__spirv_ConvertFToU_Rushort_sat_rtp(double);
+__attribute__((overloadable)) ushort
+__spirv_ConvertFToU_Rushort_sat_rtn(double);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2(half2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtz(half2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rte(half2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtp(half2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtn(half2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat(half2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtz(half2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rte(half2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtp(half2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtn(half2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtz(half2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rte(half2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtp(half2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtn(half2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2(float2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtz(float2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rte(float2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtp(float2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtn(float2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat(float2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtz(float2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rte(float2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtp(float2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtn(float2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtz(float2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rte(float2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtp(float2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtn(float2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2(double2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtz(double2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rte(double2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtp(double2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_rtn(double2);
 __attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat(double2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtz(double2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rte(double2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtp(double2);
-__attribute__((overloadable)) ushort2 __spirv_ConvertFToU_Rushort2_sat_rtn(double2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtz(double2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rte(double2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtp(double2);
+__attribute__((overloadable))
+ushort2 __spirv_ConvertFToU_Rushort2_sat_rtn(double2);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3(half3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtz(half3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rte(half3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtp(half3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtn(half3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat(half3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtz(half3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rte(half3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtp(half3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtn(half3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtz(half3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rte(half3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtp(half3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtn(half3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3(float3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtz(float3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rte(float3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtp(float3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtn(float3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat(float3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtz(float3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rte(float3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtp(float3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtn(float3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtz(float3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rte(float3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtp(float3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtn(float3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3(double3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtz(double3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rte(double3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtp(double3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_rtn(double3);
 __attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat(double3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtz(double3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rte(double3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtp(double3);
-__attribute__((overloadable)) ushort3 __spirv_ConvertFToU_Rushort3_sat_rtn(double3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtz(double3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rte(double3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtp(double3);
+__attribute__((overloadable))
+ushort3 __spirv_ConvertFToU_Rushort3_sat_rtn(double3);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4(half4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtz(half4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rte(half4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtp(half4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtn(half4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat(half4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtz(half4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rte(half4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtp(half4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtn(half4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtz(half4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rte(half4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtp(half4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtn(half4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4(float4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtz(float4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rte(float4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtp(float4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtn(float4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat(float4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtz(float4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rte(float4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtp(float4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtn(float4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtz(float4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rte(float4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtp(float4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtn(float4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4(double4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtz(double4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rte(double4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtp(double4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_rtn(double4);
 __attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat(double4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtz(double4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rte(double4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtp(double4);
-__attribute__((overloadable)) ushort4 __spirv_ConvertFToU_Rushort4_sat_rtn(double4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtz(double4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rte(double4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtp(double4);
+__attribute__((overloadable))
+ushort4 __spirv_ConvertFToU_Rushort4_sat_rtn(double4);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8(half8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtz(half8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rte(half8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtp(half8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtn(half8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat(half8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtz(half8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rte(half8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtp(half8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtn(half8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtz(half8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rte(half8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtp(half8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtn(half8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8(float8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtz(float8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rte(float8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtp(float8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtn(float8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat(float8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtz(float8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rte(float8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtp(float8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtn(float8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtz(float8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rte(float8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtp(float8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtn(float8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8(double8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtz(double8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rte(double8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtp(double8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_rtn(double8);
 __attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat(double8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtz(double8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rte(double8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtp(double8);
-__attribute__((overloadable)) ushort8 __spirv_ConvertFToU_Rushort8_sat_rtn(double8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtz(double8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rte(double8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtp(double8);
+__attribute__((overloadable))
+ushort8 __spirv_ConvertFToU_Rushort8_sat_rtn(double8);
 __attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtz(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rte(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtp(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtn(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtz(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rte(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtp(half16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtn(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtz(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rte(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtp(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtn(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtz(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rte(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtp(half16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtn(half16);
 __attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtz(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rte(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtp(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtn(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtz(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rte(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtp(float16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtn(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtz(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rte(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtp(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtn(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtz(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rte(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtp(float16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtn(float16);
 __attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtz(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rte(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtp(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_rtn(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtz(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rte(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtp(double16);
-__attribute__((overloadable)) ushort16 __spirv_ConvertFToU_Rushort16_sat_rtn(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtz(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rte(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtp(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_rtn(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtz(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rte(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtp(double16);
+__attribute__((overloadable))
+ushort16 __spirv_ConvertFToU_Rushort16_sat_rtn(double16);
 
 __attribute__((overloadable)) uint __spirv_ConvertFToU_Ruint(half);
 __attribute__((overloadable)) uint __spirv_ConvertFToU_Ruint_rtz(half);
@@ -516,30 +644,42 @@ __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rte(half16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtp(half16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtn(half16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat(half16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtz(half16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rte(half16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtp(half16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtn(half16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtz(half16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rte(half16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtp(half16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtn(half16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16(float16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtz(float16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rte(float16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtp(float16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtn(float16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat(float16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtz(float16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rte(float16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtp(float16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtn(float16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtz(float16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rte(float16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtp(float16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtn(float16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16(double16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtz(double16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rte(double16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtp(double16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_rtn(double16);
 __attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat(double16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtz(double16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rte(double16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtp(double16);
-__attribute__((overloadable)) uint16 __spirv_ConvertFToU_Ruint16_sat_rtn(double16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtz(double16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rte(double16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtp(double16);
+__attribute__((overloadable))
+uint16 __spirv_ConvertFToU_Ruint16_sat_rtn(double16);
 
 __attribute__((overloadable)) ulong __spirv_ConvertFToU_Rulong(half);
 __attribute__((overloadable)) ulong __spirv_ConvertFToU_Rulong_rtz(half);
@@ -587,20 +727,28 @@ __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rte(float2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rtp(float2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rtn(float2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat(float2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rtz(float2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rte(float2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rtp(float2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rtn(float2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rtz(float2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rte(float2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rtp(float2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rtn(float2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2(double2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rtz(double2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rte(double2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rtp(double2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_rtn(double2);
 __attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat(double2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rtz(double2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rte(double2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rtp(double2);
-__attribute__((overloadable)) ulong2 __spirv_ConvertFToU_Rulong2_sat_rtn(double2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rtz(double2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rte(double2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rtp(double2);
+__attribute__((overloadable))
+ulong2 __spirv_ConvertFToU_Rulong2_sat_rtn(double2);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3(half3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rtz(half3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rte(half3);
@@ -617,20 +765,28 @@ __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rte(float3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rtp(float3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rtn(float3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat(float3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rtz(float3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rte(float3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rtp(float3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rtn(float3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rtz(float3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rte(float3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rtp(float3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rtn(float3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3(double3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rtz(double3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rte(double3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rtp(double3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_rtn(double3);
 __attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat(double3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rtz(double3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rte(double3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rtp(double3);
-__attribute__((overloadable)) ulong3 __spirv_ConvertFToU_Rulong3_sat_rtn(double3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rtz(double3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rte(double3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rtp(double3);
+__attribute__((overloadable))
+ulong3 __spirv_ConvertFToU_Rulong3_sat_rtn(double3);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4(half4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rtz(half4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rte(half4);
@@ -647,20 +803,28 @@ __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rte(float4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rtp(float4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rtn(float4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat(float4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rtz(float4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rte(float4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rtp(float4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rtn(float4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rtz(float4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rte(float4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rtp(float4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rtn(float4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4(double4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rtz(double4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rte(double4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rtp(double4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_rtn(double4);
 __attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat(double4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rtz(double4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rte(double4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rtp(double4);
-__attribute__((overloadable)) ulong4 __spirv_ConvertFToU_Rulong4_sat_rtn(double4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rtz(double4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rte(double4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rtp(double4);
+__attribute__((overloadable))
+ulong4 __spirv_ConvertFToU_Rulong4_sat_rtn(double4);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8(half8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rtz(half8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rte(half8);
@@ -677,50 +841,75 @@ __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rte(float8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rtp(float8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rtn(float8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat(float8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rtz(float8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rte(float8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rtp(float8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rtn(float8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rtz(float8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rte(float8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rtp(float8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rtn(float8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8(double8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rtz(double8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rte(double8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rtp(double8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_rtn(double8);
 __attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat(double8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rtz(double8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rte(double8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rtp(double8);
-__attribute__((overloadable)) ulong8 __spirv_ConvertFToU_Rulong8_sat_rtn(double8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rtz(double8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rte(double8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rtp(double8);
+__attribute__((overloadable))
+ulong8 __spirv_ConvertFToU_Rulong8_sat_rtn(double8);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16(half16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtz(half16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rte(half16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtp(half16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtn(half16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat(half16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtz(half16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rte(half16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtp(half16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtn(half16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtz(half16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rte(half16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtp(half16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtn(half16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16(float16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtz(float16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rte(float16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtp(float16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtn(float16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat(float16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtz(float16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rte(float16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtp(float16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtn(float16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtz(float16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rte(float16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtp(float16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtn(float16);
 __attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtz(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rte(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtp(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_rtn(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtz(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rte(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtp(double16);
-__attribute__((overloadable)) ulong16 __spirv_ConvertFToU_Rulong16_sat_rtn(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_rtz(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_rte(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_rtp(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_rtn(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtz(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rte(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtp(double16);
+__attribute__((overloadable))
+ulong16 __spirv_ConvertFToU_Rulong16_sat_rtn(double16);
 
 __attribute__((overloadable)) char __spirv_ConvertFToS_Rchar(half);
 __attribute__((overloadable)) char __spirv_ConvertFToS_Rchar_rtz(half);
@@ -878,30 +1067,42 @@ __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rte(half16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtp(half16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtn(half16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat(half16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtz(half16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rte(half16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtp(half16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtn(half16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtz(half16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rte(half16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtp(half16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtn(half16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16(float16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtz(float16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rte(float16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtp(float16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtn(float16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat(float16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtz(float16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rte(float16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtp(float16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtn(float16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtz(float16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rte(float16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtp(float16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtn(float16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16(double16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtz(double16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rte(double16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtp(double16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_rtn(double16);
 __attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat(double16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtz(double16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rte(double16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtp(double16);
-__attribute__((overloadable)) char16 __spirv_ConvertFToS_Rchar16_sat_rtn(double16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtz(double16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rte(double16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtp(double16);
+__attribute__((overloadable))
+char16 __spirv_ConvertFToS_Rchar16_sat_rtn(double16);
 
 __attribute__((overloadable)) short __spirv_ConvertFToS_Rshort(half);
 __attribute__((overloadable)) short __spirv_ConvertFToS_Rshort_rtz(half);
@@ -949,20 +1150,28 @@ __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rte(float2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rtp(float2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rtn(float2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat(float2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rtz(float2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rte(float2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rtp(float2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rtn(float2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rtz(float2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rte(float2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rtp(float2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rtn(float2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2(double2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rtz(double2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rte(double2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rtp(double2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_rtn(double2);
 __attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat(double2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rtz(double2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rte(double2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rtp(double2);
-__attribute__((overloadable)) short2 __spirv_ConvertFToS_Rshort2_sat_rtn(double2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rtz(double2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rte(double2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rtp(double2);
+__attribute__((overloadable))
+short2 __spirv_ConvertFToS_Rshort2_sat_rtn(double2);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3(half3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rtz(half3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rte(half3);
@@ -979,20 +1188,28 @@ __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rte(float3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rtp(float3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rtn(float3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat(float3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rtz(float3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rte(float3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rtp(float3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rtn(float3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rtz(float3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rte(float3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rtp(float3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rtn(float3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3(double3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rtz(double3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rte(double3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rtp(double3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_rtn(double3);
 __attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat(double3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rtz(double3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rte(double3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rtp(double3);
-__attribute__((overloadable)) short3 __spirv_ConvertFToS_Rshort3_sat_rtn(double3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rtz(double3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rte(double3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rtp(double3);
+__attribute__((overloadable))
+short3 __spirv_ConvertFToS_Rshort3_sat_rtn(double3);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4(half4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rtz(half4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rte(half4);
@@ -1009,20 +1226,28 @@ __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rte(float4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rtp(float4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rtn(float4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat(float4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rtz(float4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rte(float4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rtp(float4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rtn(float4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rtz(float4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rte(float4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rtp(float4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rtn(float4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4(double4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rtz(double4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rte(double4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rtp(double4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_rtn(double4);
 __attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat(double4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rtz(double4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rte(double4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rtp(double4);
-__attribute__((overloadable)) short4 __spirv_ConvertFToS_Rshort4_sat_rtn(double4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rtz(double4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rte(double4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rtp(double4);
+__attribute__((overloadable))
+short4 __spirv_ConvertFToS_Rshort4_sat_rtn(double4);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8(half8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rtz(half8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rte(half8);
@@ -1039,50 +1264,75 @@ __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rte(float8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rtp(float8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rtn(float8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat(float8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rtz(float8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rte(float8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rtp(float8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rtn(float8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rtz(float8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rte(float8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rtp(float8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rtn(float8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8(double8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rtz(double8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rte(double8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rtp(double8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_rtn(double8);
 __attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat(double8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rtz(double8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rte(double8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rtp(double8);
-__attribute__((overloadable)) short8 __spirv_ConvertFToS_Rshort8_sat_rtn(double8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rtz(double8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rte(double8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rtp(double8);
+__attribute__((overloadable))
+short8 __spirv_ConvertFToS_Rshort8_sat_rtn(double8);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16(half16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtz(half16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rte(half16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtp(half16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtn(half16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat(half16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtz(half16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rte(half16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtp(half16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtn(half16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtz(half16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rte(half16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtp(half16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtn(half16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16(float16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtz(float16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rte(float16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtp(float16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtn(float16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat(float16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtz(float16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rte(float16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtp(float16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtn(float16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtz(float16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rte(float16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtp(float16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtn(float16);
 __attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtz(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rte(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtp(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_rtn(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtz(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rte(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtp(double16);
-__attribute__((overloadable)) short16 __spirv_ConvertFToS_Rshort16_sat_rtn(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_rtz(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_rte(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_rtp(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_rtn(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtz(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rte(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtp(double16);
+__attribute__((overloadable))
+short16 __spirv_ConvertFToS_Rshort16_sat_rtn(double16);
 
 __attribute__((overloadable)) int __spirv_ConvertFToS_Rint(half);
 __attribute__((overloadable)) int __spirv_ConvertFToS_Rint_rtz(half);
@@ -1260,10 +1510,14 @@ __attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_rte(double16);
 __attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_rtp(double16);
 __attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_rtn(double16);
 __attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_sat(double16);
-__attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_sat_rtz(double16);
-__attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_sat_rte(double16);
-__attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_sat_rtp(double16);
-__attribute__((overloadable)) int16 __spirv_ConvertFToS_Rint16_sat_rtn(double16);
+__attribute__((overloadable))
+int16 __spirv_ConvertFToS_Rint16_sat_rtz(double16);
+__attribute__((overloadable))
+int16 __spirv_ConvertFToS_Rint16_sat_rte(double16);
+__attribute__((overloadable))
+int16 __spirv_ConvertFToS_Rint16_sat_rtp(double16);
+__attribute__((overloadable))
+int16 __spirv_ConvertFToS_Rint16_sat_rtn(double16);
 
 __attribute__((overloadable)) long __spirv_ConvertFToS_Rlong(half);
 __attribute__((overloadable)) long __spirv_ConvertFToS_Rlong_rtz(half);
@@ -1421,30 +1675,42 @@ __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rte(half16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtp(half16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtn(half16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat(half16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtz(half16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rte(half16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtp(half16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtn(half16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtz(half16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rte(half16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtp(half16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtn(half16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16(float16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtz(float16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rte(float16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtp(float16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtn(float16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat(float16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtz(float16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rte(float16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtp(float16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtn(float16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtz(float16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rte(float16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtp(float16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtn(float16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16(double16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtz(double16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rte(double16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtp(double16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_rtn(double16);
 __attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat(double16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtz(double16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rte(double16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtp(double16);
-__attribute__((overloadable)) long16 __spirv_ConvertFToS_Rlong16_sat_rtn(double16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtz(double16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rte(double16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtp(double16);
+__attribute__((overloadable))
+long16 __spirv_ConvertFToS_Rlong16_sat_rtn(double16);
 
 __attribute__((overloadable)) half __spirv_ConvertUToF_Rhalf(uchar);
 __attribute__((overloadable)) half __spirv_ConvertUToF_Rhalf_rtz(uchar);
@@ -1673,10 +1939,14 @@ __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rte(uchar16);
 __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rtp(uchar16);
 __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rtn(uchar16);
 __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16(ushort16);
-__attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rtz(ushort16);
-__attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rte(ushort16);
-__attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rtp(ushort16);
-__attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rtn(ushort16);
+__attribute__((overloadable))
+float16 __spirv_ConvertUToF_Rfloat16_rtz(ushort16);
+__attribute__((overloadable))
+float16 __spirv_ConvertUToF_Rfloat16_rte(ushort16);
+__attribute__((overloadable))
+float16 __spirv_ConvertUToF_Rfloat16_rtp(ushort16);
+__attribute__((overloadable))
+float16 __spirv_ConvertUToF_Rfloat16_rtn(ushort16);
 __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16(uint16);
 __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rtz(uint16);
 __attribute__((overloadable)) float16 __spirv_ConvertUToF_Rfloat16_rte(uint16);
@@ -1789,25 +2059,41 @@ __attribute__((overloadable)) double8 __spirv_ConvertUToF_Rdouble8_rte(ulong8);
 __attribute__((overloadable)) double8 __spirv_ConvertUToF_Rdouble8_rtp(ulong8);
 __attribute__((overloadable)) double8 __spirv_ConvertUToF_Rdouble8_rtn(ulong8);
 __attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16(uchar16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtz(uchar16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rte(uchar16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtp(uchar16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtn(uchar16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtz(uchar16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rte(uchar16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtp(uchar16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtn(uchar16);
 __attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16(ushort16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtz(ushort16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rte(ushort16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtp(ushort16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtn(ushort16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtz(ushort16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rte(ushort16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtp(ushort16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtn(ushort16);
 __attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16(uint16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtz(uint16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rte(uint16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtp(uint16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtn(uint16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtz(uint16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rte(uint16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtp(uint16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtn(uint16);
 __attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16(ulong16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtz(ulong16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rte(ulong16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtp(ulong16);
-__attribute__((overloadable)) double16 __spirv_ConvertUToF_Rdouble16_rtn(ulong16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtz(ulong16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rte(ulong16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtp(ulong16);
+__attribute__((overloadable))
+double16 __spirv_ConvertUToF_Rdouble16_rtn(ulong16);
 
 __attribute__((overloadable)) half __spirv_ConvertSToF_Rhalf(char);
 __attribute__((overloadable)) half __spirv_ConvertSToF_Rhalf_rtz(char);
@@ -2152,25 +2438,37 @@ __attribute__((overloadable)) double8 __spirv_ConvertSToF_Rdouble8_rte(long8);
 __attribute__((overloadable)) double8 __spirv_ConvertSToF_Rdouble8_rtp(long8);
 __attribute__((overloadable)) double8 __spirv_ConvertSToF_Rdouble8_rtn(long8);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16(char16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtz(char16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rte(char16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtp(char16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtn(char16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtz(char16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rte(char16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtp(char16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtn(char16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16(short16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtz(short16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rte(short16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtp(short16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtn(short16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtz(short16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rte(short16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtp(short16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtn(short16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16(int16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtz(int16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rte(int16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtp(int16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtn(int16);
 __attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16(long16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtz(long16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rte(long16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtp(long16);
-__attribute__((overloadable)) double16 __spirv_ConvertSToF_Rdouble16_rtn(long16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtz(long16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rte(long16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtp(long16);
+__attribute__((overloadable))
+double16 __spirv_ConvertSToF_Rdouble16_rtn(long16);
 
 __attribute__((overloadable)) uchar __spirv_UConvert_Ruchar(uchar);
 __attribute__((overloadable)) uchar __spirv_UConvert_Ruchar_rtz(uchar);
@@ -2378,20 +2676,28 @@ __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rte(uchar16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtp(uchar16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtn(uchar16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat(uchar16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtz(uchar16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rte(uchar16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtp(uchar16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtn(uchar16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtz(uchar16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rte(uchar16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtp(uchar16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtn(uchar16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16(ushort16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtz(ushort16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rte(ushort16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtp(ushort16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtn(ushort16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat(ushort16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtz(ushort16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rte(ushort16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtp(ushort16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtn(ushort16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtz(ushort16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rte(ushort16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtp(ushort16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtn(ushort16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16(uint16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtz(uint16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rte(uint16);
@@ -2408,10 +2714,14 @@ __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rte(ulong16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtp(ulong16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_rtn(ulong16);
 __attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat(ulong16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtz(ulong16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rte(ulong16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtp(ulong16);
-__attribute__((overloadable)) uchar16 __spirv_UConvert_Ruchar16_sat_rtn(ulong16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtz(ulong16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rte(ulong16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtp(ulong16);
+__attribute__((overloadable))
+uchar16 __spirv_UConvert_Ruchar16_sat_rtn(ulong16);
 
 __attribute__((overloadable)) ushort __spirv_UConvert_Rushort(uchar);
 __attribute__((overloadable)) ushort __spirv_UConvert_Rushort_rtz(uchar);
@@ -2469,10 +2779,14 @@ __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_rte(ushort2);
 __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_rtp(ushort2);
 __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_rtn(ushort2);
 __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_sat(ushort2);
-__attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_sat_rtz(ushort2);
-__attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_sat_rte(ushort2);
-__attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_sat_rtp(ushort2);
-__attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_sat_rtn(ushort2);
+__attribute__((overloadable))
+ushort2 __spirv_UConvert_Rushort2_sat_rtz(ushort2);
+__attribute__((overloadable))
+ushort2 __spirv_UConvert_Rushort2_sat_rte(ushort2);
+__attribute__((overloadable))
+ushort2 __spirv_UConvert_Rushort2_sat_rtp(ushort2);
+__attribute__((overloadable))
+ushort2 __spirv_UConvert_Rushort2_sat_rtn(ushort2);
 __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2(uint2);
 __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_rtz(uint2);
 __attribute__((overloadable)) ushort2 __spirv_UConvert_Rushort2_rte(uint2);
@@ -2509,10 +2823,14 @@ __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_rte(ushort3);
 __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_rtp(ushort3);
 __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_rtn(ushort3);
 __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_sat(ushort3);
-__attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_sat_rtz(ushort3);
-__attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_sat_rte(ushort3);
-__attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_sat_rtp(ushort3);
-__attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_sat_rtn(ushort3);
+__attribute__((overloadable))
+ushort3 __spirv_UConvert_Rushort3_sat_rtz(ushort3);
+__attribute__((overloadable))
+ushort3 __spirv_UConvert_Rushort3_sat_rte(ushort3);
+__attribute__((overloadable))
+ushort3 __spirv_UConvert_Rushort3_sat_rtp(ushort3);
+__attribute__((overloadable))
+ushort3 __spirv_UConvert_Rushort3_sat_rtn(ushort3);
 __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3(uint3);
 __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_rtz(uint3);
 __attribute__((overloadable)) ushort3 __spirv_UConvert_Rushort3_rte(uint3);
@@ -2549,10 +2867,14 @@ __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_rte(ushort4);
 __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_rtp(ushort4);
 __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_rtn(ushort4);
 __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_sat(ushort4);
-__attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_sat_rtz(ushort4);
-__attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_sat_rte(ushort4);
-__attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_sat_rtp(ushort4);
-__attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_sat_rtn(ushort4);
+__attribute__((overloadable))
+ushort4 __spirv_UConvert_Rushort4_sat_rtz(ushort4);
+__attribute__((overloadable))
+ushort4 __spirv_UConvert_Rushort4_sat_rte(ushort4);
+__attribute__((overloadable))
+ushort4 __spirv_UConvert_Rushort4_sat_rtp(ushort4);
+__attribute__((overloadable))
+ushort4 __spirv_UConvert_Rushort4_sat_rtn(ushort4);
 __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4(uint4);
 __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_rtz(uint4);
 __attribute__((overloadable)) ushort4 __spirv_UConvert_Rushort4_rte(uint4);
@@ -2589,10 +2911,14 @@ __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_rte(ushort8);
 __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_rtp(ushort8);
 __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_rtn(ushort8);
 __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_sat(ushort8);
-__attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_sat_rtz(ushort8);
-__attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_sat_rte(ushort8);
-__attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_sat_rtp(ushort8);
-__attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_sat_rtn(ushort8);
+__attribute__((overloadable))
+ushort8 __spirv_UConvert_Rushort8_sat_rtz(ushort8);
+__attribute__((overloadable))
+ushort8 __spirv_UConvert_Rushort8_sat_rte(ushort8);
+__attribute__((overloadable))
+ushort8 __spirv_UConvert_Rushort8_sat_rtp(ushort8);
+__attribute__((overloadable))
+ushort8 __spirv_UConvert_Rushort8_sat_rtn(ushort8);
 __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8(uint8);
 __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_rtz(uint8);
 __attribute__((overloadable)) ushort8 __spirv_UConvert_Rushort8_rte(uint8);
@@ -2619,40 +2945,56 @@ __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rte(uchar16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtp(uchar16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtn(uchar16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat(uchar16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtz(uchar16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rte(uchar16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtp(uchar16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtn(uchar16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtz(uchar16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rte(uchar16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtp(uchar16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtn(uchar16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16(ushort16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtz(ushort16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rte(ushort16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtp(ushort16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtn(ushort16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat(ushort16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtz(ushort16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rte(ushort16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtp(ushort16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtn(ushort16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtz(ushort16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rte(ushort16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtp(ushort16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtn(ushort16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16(uint16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtz(uint16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rte(uint16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtp(uint16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtn(uint16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat(uint16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtz(uint16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rte(uint16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtp(uint16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtn(uint16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtz(uint16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rte(uint16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtp(uint16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtn(uint16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16(ulong16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtz(ulong16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rte(ulong16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtp(ulong16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_rtn(ulong16);
 __attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat(ulong16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtz(ulong16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rte(ulong16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtp(ulong16);
-__attribute__((overloadable)) ushort16 __spirv_UConvert_Rushort16_sat_rtn(ulong16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtz(ulong16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rte(ulong16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtp(ulong16);
+__attribute__((overloadable))
+ushort16 __spirv_UConvert_Rushort16_sat_rtn(ulong16);
 
 __attribute__((overloadable)) uint __spirv_UConvert_Ruint(uchar);
 __attribute__((overloadable)) uint __spirv_UConvert_Ruint_rtz(uchar);
@@ -3101,20 +3443,28 @@ __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rte(uchar16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtp(uchar16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtn(uchar16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat(uchar16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtz(uchar16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rte(uchar16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtp(uchar16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtn(uchar16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtz(uchar16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rte(uchar16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtp(uchar16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtn(uchar16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16(ushort16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtz(ushort16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rte(ushort16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtp(ushort16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtn(ushort16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat(ushort16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtz(ushort16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rte(ushort16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtp(ushort16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtn(ushort16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtz(ushort16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rte(ushort16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtp(ushort16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtn(ushort16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16(uint16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtz(uint16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rte(uint16);
@@ -3131,10 +3481,14 @@ __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rte(ulong16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtp(ulong16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_rtn(ulong16);
 __attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat(ulong16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtz(ulong16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rte(ulong16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtp(ulong16);
-__attribute__((overloadable)) ulong16 __spirv_UConvert_Rulong16_sat_rtn(ulong16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtz(ulong16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rte(ulong16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtp(ulong16);
+__attribute__((overloadable))
+ulong16 __spirv_UConvert_Rulong16_sat_rtn(ulong16);
 
 __attribute__((overloadable)) char __spirv_SConvert_Rchar(char);
 __attribute__((overloadable)) char __spirv_SConvert_Rchar_rtz(char);
@@ -3593,10 +3947,14 @@ __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_rte(short16);
 __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_rtp(short16);
 __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_rtn(short16);
 __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_sat(short16);
-__attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_sat_rtz(short16);
-__attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_sat_rte(short16);
-__attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_sat_rtp(short16);
-__attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_sat_rtn(short16);
+__attribute__((overloadable))
+short16 __spirv_SConvert_Rshort16_sat_rtz(short16);
+__attribute__((overloadable))
+short16 __spirv_SConvert_Rshort16_sat_rte(short16);
+__attribute__((overloadable))
+short16 __spirv_SConvert_Rshort16_sat_rtp(short16);
+__attribute__((overloadable))
+short16 __spirv_SConvert_Rshort16_sat_rtn(short16);
 __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16(int16);
 __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_rtz(int16);
 __attribute__((overloadable)) short16 __spirv_SConvert_Rshort16_rte(int16);
@@ -4389,10 +4747,14 @@ __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_rte(short);
 __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_rtp(short);
 __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_rtn(short);
 __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_sat(short);
-__attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_sat_rtz(short);
-__attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_sat_rte(short);
-__attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_sat_rtp(short);
-__attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_sat_rtn(short);
+__attribute__((overloadable)) uchar
+__spirv_SatConvertSToU_Ruchar_sat_rtz(short);
+__attribute__((overloadable)) uchar
+__spirv_SatConvertSToU_Ruchar_sat_rte(short);
+__attribute__((overloadable)) uchar
+__spirv_SatConvertSToU_Ruchar_sat_rtp(short);
+__attribute__((overloadable)) uchar
+__spirv_SatConvertSToU_Ruchar_sat_rtn(short);
 __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar(int);
 __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_rtz(int);
 __attribute__((overloadable)) uchar __spirv_SatConvertSToU_Ruchar_rte(int);
@@ -4419,200 +4781,300 @@ __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rte(char2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtp(char2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtn(char2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat(char2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(char2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(char2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(char2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(char2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(char2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(char2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(char2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(char2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2(short2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtz(short2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rte(short2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtp(short2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtn(short2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat(short2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(short2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(short2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(short2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(short2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(short2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(short2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(short2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(short2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2(int2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtz(int2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rte(int2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtp(int2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtn(int2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat(int2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(int2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(int2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(int2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(int2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(int2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(int2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(int2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(int2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2(long2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtz(long2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rte(long2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtp(long2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_rtn(long2);
 __attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat(long2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(long2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(long2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(long2);
-__attribute__((overloadable)) uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(long2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtz(long2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rte(long2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtp(long2);
+__attribute__((overloadable))
+uchar2 __spirv_SatConvertSToU_Ruchar2_sat_rtn(long2);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3(char3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtz(char3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rte(char3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtp(char3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtn(char3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat(char3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(char3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(char3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(char3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(char3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(char3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(char3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(char3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(char3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3(short3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtz(short3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rte(short3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtp(short3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtn(short3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat(short3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(short3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(short3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(short3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(short3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(short3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(short3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(short3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(short3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3(int3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtz(int3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rte(int3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtp(int3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtn(int3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat(int3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(int3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(int3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(int3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(int3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(int3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(int3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(int3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(int3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3(long3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtz(long3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rte(long3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtp(long3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_rtn(long3);
 __attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat(long3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(long3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(long3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(long3);
-__attribute__((overloadable)) uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(long3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtz(long3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rte(long3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtp(long3);
+__attribute__((overloadable))
+uchar3 __spirv_SatConvertSToU_Ruchar3_sat_rtn(long3);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4(char4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtz(char4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rte(char4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtp(char4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtn(char4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat(char4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(char4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(char4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(char4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(char4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(char4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(char4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(char4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(char4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4(short4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtz(short4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rte(short4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtp(short4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtn(short4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat(short4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(short4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(short4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(short4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(short4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(short4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(short4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(short4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(short4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4(int4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtz(int4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rte(int4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtp(int4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtn(int4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat(int4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(int4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(int4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(int4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(int4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(int4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(int4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(int4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(int4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4(long4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtz(long4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rte(long4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtp(long4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_rtn(long4);
 __attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat(long4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(long4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(long4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(long4);
-__attribute__((overloadable)) uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(long4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtz(long4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rte(long4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtp(long4);
+__attribute__((overloadable))
+uchar4 __spirv_SatConvertSToU_Ruchar4_sat_rtn(long4);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8(char8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtz(char8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rte(char8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtp(char8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtn(char8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat(char8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(char8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(char8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(char8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(char8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(char8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(char8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(char8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(char8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8(short8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtz(short8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rte(short8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtp(short8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtn(short8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat(short8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(short8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(short8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(short8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(short8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(short8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(short8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(short8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(short8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8(int8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtz(int8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rte(int8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtp(int8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtn(int8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat(int8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(int8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(int8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(int8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(int8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(int8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(int8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(int8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(int8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8(long8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtz(long8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rte(long8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtp(long8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_rtn(long8);
 __attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat(long8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(long8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(long8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(long8);
-__attribute__((overloadable)) uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(long8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtz(long8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rte(long8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtp(long8);
+__attribute__((overloadable))
+uchar8 __spirv_SatConvertSToU_Ruchar8_sat_rtn(long8);
 __attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rte(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(char16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rte(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(char16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(char16);
 __attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rte(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(short16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rte(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(short16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(short16);
 __attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rte(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(int16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rte(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(int16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(int16);
 __attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rte(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(long16);
-__attribute__((overloadable)) uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtz(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rte(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtp(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_rtn(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtz(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rte(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtp(long16);
+__attribute__((overloadable))
+uchar16 __spirv_SatConvertSToU_Ruchar16_sat_rtn(long16);
 
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort(char);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtz(char);
@@ -4620,240 +5082,417 @@ __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rte(char);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtp(char);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtn(char);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat(char);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtz(char);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rte(char);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtp(char);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtn(char);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtz(char);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rte(char);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtp(char);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtn(char);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort(short);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtz(short);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rte(short);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtp(short);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtn(short);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat(short);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtz(short);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rte(short);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtp(short);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtn(short);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtz(short);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rte(short);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtp(short);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtn(short);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort(int);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtz(int);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rte(int);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtp(int);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtn(int);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat(int);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtz(int);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rte(int);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtp(int);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtn(int);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtz(int);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rte(int);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtp(int);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtn(int);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort(long);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtz(long);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rte(long);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtp(long);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_rtn(long);
 __attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat(long);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtz(long);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rte(long);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtp(long);
-__attribute__((overloadable)) ushort __spirv_SatConvertSToU_Rushort_sat_rtn(long);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtz(long);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rte(long);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtp(long);
+__attribute__((overloadable)) ushort
+__spirv_SatConvertSToU_Rushort_sat_rtn(long);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtz(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rte(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtp(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtn(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(char2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtz(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rte(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtp(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtn(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(char2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(char2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtz(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rte(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtp(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtn(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(short2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtz(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rte(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtp(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtn(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(short2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(short2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2(int2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtz(int2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rte(int2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtp(int2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtn(int2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat(int2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(int2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(int2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(int2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(int2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(int2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(int2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(int2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(int2);
 __attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtz(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rte(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtp(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_rtn(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(long2);
-__attribute__((overloadable)) ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtz(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rte(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtp(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_rtn(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtz(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rte(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtp(long2);
+__attribute__((overloadable))
+ushort2 __spirv_SatConvertSToU_Rushort2_sat_rtn(long2);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtz(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rte(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtp(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtn(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(char3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtz(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rte(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtp(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtn(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(char3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(char3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtz(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rte(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtp(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtn(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(short3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtz(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rte(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtp(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtn(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(short3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(short3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3(int3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtz(int3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rte(int3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtp(int3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtn(int3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat(int3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(int3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(int3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(int3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(int3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(int3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(int3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(int3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(int3);
 __attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtz(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rte(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtp(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_rtn(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(long3);
-__attribute__((overloadable)) ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtz(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rte(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtp(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_rtn(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtz(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rte(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtp(long3);
+__attribute__((overloadable))
+ushort3 __spirv_SatConvertSToU_Rushort3_sat_rtn(long3);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtz(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rte(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtp(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtn(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(char4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtz(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rte(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtp(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtn(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(char4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(char4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtz(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rte(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtp(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtn(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(short4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtz(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rte(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtp(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtn(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(short4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(short4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4(int4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtz(int4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rte(int4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtp(int4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtn(int4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat(int4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(int4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(int4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(int4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(int4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(int4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(int4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(int4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(int4);
 __attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtz(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rte(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtp(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_rtn(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(long4);
-__attribute__((overloadable)) ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtz(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rte(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtp(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_rtn(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtz(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rte(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtp(long4);
+__attribute__((overloadable))
+ushort4 __spirv_SatConvertSToU_Rushort4_sat_rtn(long4);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtz(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rte(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtp(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtn(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(char8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtz(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rte(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtp(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtn(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(char8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(char8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtz(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rte(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtp(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtn(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(short8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtz(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rte(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtp(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtn(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(short8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(short8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8(int8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtz(int8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rte(int8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtp(int8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtn(int8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat(int8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(int8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(int8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(int8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(int8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(int8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(int8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(int8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(int8);
 __attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtz(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rte(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtp(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_rtn(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(long8);
-__attribute__((overloadable)) ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtz(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rte(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtp(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_rtn(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtz(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rte(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtp(long8);
+__attribute__((overloadable))
+ushort8 __spirv_SatConvertSToU_Rushort8_sat_rtn(long8);
 __attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtz(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rte(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtp(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtn(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(char16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtz(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rte(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtp(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtn(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(short16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtz(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rte(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtp(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtn(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(char16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtz(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rte(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtp(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtn(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(short16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(short16);
 __attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtz(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rte(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtp(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtn(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(int16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtz(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rte(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtp(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtn(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(int16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(int16);
 __attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtz(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rte(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtp(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_rtn(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(long16);
-__attribute__((overloadable)) ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtz(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rte(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtp(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_rtn(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtz(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rte(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtp(long16);
+__attribute__((overloadable))
+ushort16 __spirv_SatConvertSToU_Rushort16_sat_rtn(long16);
 
 __attribute__((overloadable)) uint __spirv_SatConvertSToU_Ruint(char);
 __attribute__((overloadable)) uint __spirv_SatConvertSToU_Ruint_rtz(char);
@@ -4901,20 +5540,28 @@ __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rte(char2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtp(char2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtn(char2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat(char2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtz(char2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rte(char2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtp(char2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtn(char2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtz(char2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rte(char2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtp(char2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtn(char2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2(short2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtz(short2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rte(short2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtp(short2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtn(short2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat(short2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtz(short2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rte(short2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtp(short2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtn(short2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtz(short2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rte(short2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtp(short2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtn(short2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2(int2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtz(int2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rte(int2);
@@ -4931,30 +5578,42 @@ __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rte(long2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtp(long2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_rtn(long2);
 __attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat(long2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtz(long2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rte(long2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtp(long2);
-__attribute__((overloadable)) uint2 __spirv_SatConvertSToU_Ruint2_sat_rtn(long2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtz(long2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rte(long2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtp(long2);
+__attribute__((overloadable))
+uint2 __spirv_SatConvertSToU_Ruint2_sat_rtn(long2);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3(char3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtz(char3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rte(char3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtp(char3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtn(char3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat(char3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtz(char3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rte(char3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtp(char3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtn(char3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtz(char3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rte(char3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtp(char3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtn(char3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3(short3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtz(short3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rte(short3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtp(short3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtn(short3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat(short3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtz(short3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rte(short3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtp(short3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtn(short3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtz(short3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rte(short3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtp(short3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtn(short3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3(int3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtz(int3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rte(int3);
@@ -4971,30 +5630,42 @@ __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rte(long3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtp(long3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_rtn(long3);
 __attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat(long3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtz(long3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rte(long3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtp(long3);
-__attribute__((overloadable)) uint3 __spirv_SatConvertSToU_Ruint3_sat_rtn(long3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtz(long3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rte(long3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtp(long3);
+__attribute__((overloadable))
+uint3 __spirv_SatConvertSToU_Ruint3_sat_rtn(long3);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4(char4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtz(char4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rte(char4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtp(char4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtn(char4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat(char4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtz(char4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rte(char4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtp(char4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtn(char4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtz(char4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rte(char4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtp(char4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtn(char4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4(short4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtz(short4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rte(short4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtp(short4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtn(short4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat(short4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtz(short4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rte(short4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtp(short4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtn(short4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtz(short4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rte(short4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtp(short4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtn(short4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4(int4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtz(int4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rte(int4);
@@ -5011,30 +5682,42 @@ __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rte(long4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtp(long4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_rtn(long4);
 __attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat(long4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtz(long4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rte(long4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtp(long4);
-__attribute__((overloadable)) uint4 __spirv_SatConvertSToU_Ruint4_sat_rtn(long4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtz(long4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rte(long4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtp(long4);
+__attribute__((overloadable))
+uint4 __spirv_SatConvertSToU_Ruint4_sat_rtn(long4);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8(char8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtz(char8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rte(char8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtp(char8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtn(char8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat(char8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtz(char8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rte(char8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtp(char8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtn(char8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtz(char8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rte(char8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtp(char8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtn(char8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8(short8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtz(short8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rte(short8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtp(short8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtn(short8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat(short8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtz(short8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rte(short8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtp(short8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtn(short8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtz(short8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rte(short8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtp(short8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtn(short8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8(int8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtz(int8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rte(int8);
@@ -5051,50 +5734,75 @@ __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rte(long8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtp(long8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_rtn(long8);
 __attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat(long8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtz(long8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rte(long8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtp(long8);
-__attribute__((overloadable)) uint8 __spirv_SatConvertSToU_Ruint8_sat_rtn(long8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtz(long8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rte(long8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtp(long8);
+__attribute__((overloadable))
+uint8 __spirv_SatConvertSToU_Ruint8_sat_rtn(long8);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16(char16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtz(char16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rte(char16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtp(char16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtn(char16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat(char16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(char16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(char16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(char16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(char16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(char16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(char16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(char16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(char16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtz(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rte(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtp(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtn(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(short16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_rtz(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_rte(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_rtp(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_rtn(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(short16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(short16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16(int16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtz(int16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rte(int16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtp(int16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtn(int16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat(int16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(int16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(int16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(int16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(int16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(int16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(int16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(int16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(int16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16(long16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtz(long16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rte(long16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtp(long16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_rtn(long16);
 __attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat(long16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(long16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(long16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(long16);
-__attribute__((overloadable)) uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(long16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtz(long16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rte(long16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtp(long16);
+__attribute__((overloadable))
+uint16 __spirv_SatConvertSToU_Ruint16_sat_rtn(long16);
 
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong(char);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_rtz(char);
@@ -5112,10 +5820,14 @@ __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_rte(short);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_rtp(short);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_rtn(short);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_sat(short);
-__attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_sat_rtz(short);
-__attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_sat_rte(short);
-__attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_sat_rtp(short);
-__attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_sat_rtn(short);
+__attribute__((overloadable)) ulong
+__spirv_SatConvertSToU_Rulong_sat_rtz(short);
+__attribute__((overloadable)) ulong
+__spirv_SatConvertSToU_Rulong_sat_rte(short);
+__attribute__((overloadable)) ulong
+__spirv_SatConvertSToU_Rulong_sat_rtp(short);
+__attribute__((overloadable)) ulong
+__spirv_SatConvertSToU_Rulong_sat_rtn(short);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong(int);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_rtz(int);
 __attribute__((overloadable)) ulong __spirv_SatConvertSToU_Rulong_rte(int);
@@ -5142,200 +5854,300 @@ __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rte(char2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtp(char2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtn(char2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat(char2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(char2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(char2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(char2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(char2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(char2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(char2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(char2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(char2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2(short2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtz(short2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rte(short2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtp(short2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtn(short2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat(short2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(short2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(short2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(short2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(short2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(short2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(short2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(short2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(short2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2(int2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtz(int2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rte(int2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtp(int2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtn(int2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat(int2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(int2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(int2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(int2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(int2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(int2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(int2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(int2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(int2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2(long2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtz(long2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rte(long2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtp(long2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_rtn(long2);
 __attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat(long2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(long2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(long2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(long2);
-__attribute__((overloadable)) ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(long2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtz(long2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rte(long2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtp(long2);
+__attribute__((overloadable))
+ulong2 __spirv_SatConvertSToU_Rulong2_sat_rtn(long2);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3(char3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtz(char3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rte(char3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtp(char3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtn(char3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat(char3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(char3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(char3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(char3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(char3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(char3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(char3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(char3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(char3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3(short3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtz(short3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rte(short3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtp(short3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtn(short3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat(short3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(short3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(short3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(short3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(short3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(short3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(short3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(short3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(short3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3(int3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtz(int3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rte(int3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtp(int3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtn(int3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat(int3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(int3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(int3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(int3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(int3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(int3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(int3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(int3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(int3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3(long3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtz(long3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rte(long3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtp(long3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_rtn(long3);
 __attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat(long3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(long3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(long3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(long3);
-__attribute__((overloadable)) ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(long3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtz(long3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rte(long3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtp(long3);
+__attribute__((overloadable))
+ulong3 __spirv_SatConvertSToU_Rulong3_sat_rtn(long3);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4(char4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtz(char4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rte(char4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtp(char4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtn(char4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat(char4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(char4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(char4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(char4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(char4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(char4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(char4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(char4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(char4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4(short4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtz(short4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rte(short4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtp(short4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtn(short4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat(short4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(short4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(short4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(short4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(short4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(short4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(short4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(short4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(short4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4(int4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtz(int4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rte(int4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtp(int4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtn(int4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat(int4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(int4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(int4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(int4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(int4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(int4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(int4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(int4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(int4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4(long4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtz(long4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rte(long4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtp(long4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_rtn(long4);
 __attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat(long4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(long4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(long4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(long4);
-__attribute__((overloadable)) ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(long4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtz(long4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rte(long4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtp(long4);
+__attribute__((overloadable))
+ulong4 __spirv_SatConvertSToU_Rulong4_sat_rtn(long4);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8(char8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtz(char8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rte(char8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtp(char8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtn(char8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat(char8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(char8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(char8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(char8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(char8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(char8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(char8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(char8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(char8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8(short8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtz(short8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rte(short8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtp(short8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtn(short8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat(short8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(short8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(short8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(short8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(short8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(short8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(short8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(short8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(short8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8(int8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtz(int8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rte(int8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtp(int8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtn(int8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat(int8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(int8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(int8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(int8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(int8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(int8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(int8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(int8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(int8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8(long8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtz(long8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rte(long8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtp(long8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_rtn(long8);
 __attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat(long8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(long8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(long8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(long8);
-__attribute__((overloadable)) ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(long8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtz(long8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rte(long8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtp(long8);
+__attribute__((overloadable))
+ulong8 __spirv_SatConvertSToU_Rulong8_sat_rtn(long8);
 __attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtz(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rte(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtp(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtn(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(char16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtz(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rte(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtp(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtn(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(char16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(char16);
 __attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtz(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rte(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtp(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtn(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(short16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtz(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rte(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtp(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtn(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(short16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(short16);
 __attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtz(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rte(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtp(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtn(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(int16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtz(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rte(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtp(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtn(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(int16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(int16);
 __attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtz(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rte(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtp(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_rtn(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(long16);
-__attribute__((overloadable)) ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtz(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rte(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtp(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_rtn(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtz(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rte(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtp(long16);
+__attribute__((overloadable))
+ulong16 __spirv_SatConvertSToU_Rulong16_sat_rtn(long16);
 
 __attribute__((overloadable)) char __spirv_SatConvertUToS_Rchar(uchar);
 __attribute__((overloadable)) char __spirv_SatConvertUToS_Rchar_rtz(uchar);
@@ -5383,200 +6195,295 @@ __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rte(uchar2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtp(uchar2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtn(uchar2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat(uchar2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(uchar2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rte(uchar2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(uchar2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(uchar2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(uchar2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rte(uchar2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(uchar2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(uchar2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2(ushort2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtz(ushort2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rte(ushort2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtp(ushort2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtn(ushort2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat(ushort2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(ushort2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rte(ushort2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(ushort2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(ushort2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(ushort2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rte(ushort2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(ushort2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(ushort2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2(uint2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtz(uint2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rte(uint2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtp(uint2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtn(uint2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat(uint2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(uint2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rte(uint2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(uint2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(uint2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(uint2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rte(uint2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(uint2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(uint2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2(ulong2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtz(ulong2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rte(ulong2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtp(ulong2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_rtn(ulong2);
 __attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat(ulong2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(ulong2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rte(ulong2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(ulong2);
-__attribute__((overloadable)) char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(ulong2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtz(ulong2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rte(ulong2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtp(ulong2);
+__attribute__((overloadable))
+char2 __spirv_SatConvertUToS_Rchar2_sat_rtn(ulong2);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3(uchar3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtz(uchar3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rte(uchar3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtp(uchar3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtn(uchar3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat(uchar3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(uchar3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rte(uchar3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(uchar3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(uchar3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(uchar3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rte(uchar3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(uchar3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(uchar3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3(ushort3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtz(ushort3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rte(ushort3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtp(ushort3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtn(ushort3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat(ushort3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(ushort3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rte(ushort3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(ushort3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(ushort3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(ushort3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rte(ushort3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(ushort3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(ushort3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3(uint3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtz(uint3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rte(uint3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtp(uint3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtn(uint3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat(uint3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(uint3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rte(uint3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(uint3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(uint3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(uint3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rte(uint3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(uint3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(uint3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3(ulong3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtz(ulong3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rte(ulong3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtp(ulong3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_rtn(ulong3);
 __attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat(ulong3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(ulong3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rte(ulong3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(ulong3);
-__attribute__((overloadable)) char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(ulong3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtz(ulong3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rte(ulong3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtp(ulong3);
+__attribute__((overloadable))
+char3 __spirv_SatConvertUToS_Rchar3_sat_rtn(ulong3);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4(uchar4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtz(uchar4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rte(uchar4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtp(uchar4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtn(uchar4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat(uchar4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(uchar4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rte(uchar4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(uchar4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(uchar4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(uchar4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rte(uchar4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(uchar4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(uchar4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4(ushort4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtz(ushort4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rte(ushort4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtp(ushort4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtn(ushort4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat(ushort4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(ushort4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rte(ushort4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(ushort4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(ushort4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(ushort4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rte(ushort4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(ushort4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(ushort4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4(uint4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtz(uint4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rte(uint4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtp(uint4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtn(uint4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat(uint4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(uint4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rte(uint4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(uint4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(uint4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(uint4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rte(uint4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(uint4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(uint4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4(ulong4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtz(ulong4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rte(ulong4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtp(ulong4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_rtn(ulong4);
 __attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat(ulong4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(ulong4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rte(ulong4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(ulong4);
-__attribute__((overloadable)) char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(ulong4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtz(ulong4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rte(ulong4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtp(ulong4);
+__attribute__((overloadable))
+char4 __spirv_SatConvertUToS_Rchar4_sat_rtn(ulong4);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8(uchar8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtz(uchar8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rte(uchar8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtp(uchar8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtn(uchar8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat(uchar8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(uchar8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rte(uchar8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(uchar8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(uchar8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(uchar8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rte(uchar8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(uchar8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(uchar8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8(ushort8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtz(ushort8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rte(ushort8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtp(ushort8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtn(ushort8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat(ushort8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(ushort8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rte(ushort8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(ushort8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(ushort8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(ushort8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rte(ushort8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(ushort8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(ushort8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8(uint8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtz(uint8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rte(uint8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtp(uint8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtn(uint8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat(uint8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(uint8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rte(uint8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(uint8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(uint8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(uint8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rte(uint8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(uint8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(uint8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8(ulong8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtz(ulong8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rte(ulong8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtp(ulong8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_rtn(ulong8);
 __attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat(ulong8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(ulong8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rte(ulong8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(ulong8);
-__attribute__((overloadable)) char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(ulong8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtz(ulong8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rte(ulong8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtp(ulong8);
+__attribute__((overloadable))
+char8 __spirv_SatConvertUToS_Rchar8_sat_rtn(ulong8);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtz(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rte(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtp(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtn(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rte(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(uchar16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtz(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rte(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtp(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtn(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rte(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(uchar16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(uchar16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtz(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rte(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtp(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtn(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rte(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(ushort16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtz(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rte(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtp(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtn(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rte(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(ushort16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(ushort16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16(uint16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtz(uint16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rte(uint16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtp(uint16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtn(uint16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat(uint16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(uint16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rte(uint16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(uint16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(uint16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(uint16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rte(uint16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(uint16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(uint16);
 __attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtz(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rte(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtp(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_rtn(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rte(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(ulong16);
-__attribute__((overloadable)) char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtz(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rte(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtp(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_rtn(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtz(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rte(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtp(ulong16);
+__attribute__((overloadable))
+char16 __spirv_SatConvertUToS_Rchar16_sat_rtn(ulong16);
 
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort(uchar);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtz(uchar);
@@ -5584,20 +6491,28 @@ __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rte(uchar);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtp(uchar);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtn(uchar);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat(uchar);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtz(uchar);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rte(uchar);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtp(uchar);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtn(uchar);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtz(uchar);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rte(uchar);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtp(uchar);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtn(uchar);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort(ushort);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtz(ushort);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rte(ushort);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtp(ushort);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtn(ushort);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat(ushort);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtz(ushort);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rte(ushort);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtp(ushort);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtn(ushort);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtz(ushort);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rte(ushort);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtp(ushort);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtn(ushort);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort(uint);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtz(uint);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rte(uint);
@@ -5614,210 +6529,334 @@ __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rte(ulong);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtp(ulong);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_rtn(ulong);
 __attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat(ulong);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtz(ulong);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rte(ulong);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtp(ulong);
-__attribute__((overloadable)) short __spirv_SatConvertUToS_Rshort_sat_rtn(ulong);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtz(ulong);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rte(ulong);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtp(ulong);
+__attribute__((overloadable)) short
+    __spirv_SatConvertUToS_Rshort_sat_rtn(ulong);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2(uchar2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtz(uchar2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rte(uchar2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtp(uchar2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtn(uchar2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat(uchar2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(uchar2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rte(uchar2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(uchar2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(uchar2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(uchar2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rte(uchar2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(uchar2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(uchar2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtz(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rte(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtp(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtn(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rte(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(ushort2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_rtz(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_rte(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_rtp(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_rtn(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rte(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(ushort2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(ushort2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2(uint2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtz(uint2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rte(uint2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtp(uint2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtn(uint2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat(uint2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(uint2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rte(uint2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(uint2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(uint2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(uint2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rte(uint2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(uint2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(uint2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2(ulong2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtz(ulong2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rte(ulong2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtp(ulong2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_rtn(ulong2);
 __attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat(ulong2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(ulong2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rte(ulong2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(ulong2);
-__attribute__((overloadable)) short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(ulong2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtz(ulong2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rte(ulong2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtp(ulong2);
+__attribute__((overloadable))
+short2 __spirv_SatConvertUToS_Rshort2_sat_rtn(ulong2);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3(uchar3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtz(uchar3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rte(uchar3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtp(uchar3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtn(uchar3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat(uchar3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(uchar3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rte(uchar3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(uchar3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(uchar3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(uchar3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rte(uchar3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(uchar3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(uchar3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtz(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rte(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtp(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtn(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rte(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(ushort3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_rtz(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_rte(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_rtp(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_rtn(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rte(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(ushort3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(ushort3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3(uint3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtz(uint3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rte(uint3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtp(uint3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtn(uint3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat(uint3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(uint3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rte(uint3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(uint3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(uint3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(uint3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rte(uint3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(uint3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(uint3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3(ulong3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtz(ulong3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rte(ulong3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtp(ulong3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_rtn(ulong3);
 __attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat(ulong3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(ulong3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rte(ulong3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(ulong3);
-__attribute__((overloadable)) short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(ulong3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtz(ulong3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rte(ulong3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtp(ulong3);
+__attribute__((overloadable))
+short3 __spirv_SatConvertUToS_Rshort3_sat_rtn(ulong3);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4(uchar4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtz(uchar4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rte(uchar4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtp(uchar4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtn(uchar4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat(uchar4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(uchar4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rte(uchar4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(uchar4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(uchar4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(uchar4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rte(uchar4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(uchar4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(uchar4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtz(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rte(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtp(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtn(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rte(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(ushort4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_rtz(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_rte(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_rtp(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_rtn(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rte(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(ushort4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(ushort4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4(uint4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtz(uint4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rte(uint4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtp(uint4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtn(uint4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat(uint4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(uint4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rte(uint4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(uint4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(uint4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(uint4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rte(uint4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(uint4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(uint4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4(ulong4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtz(ulong4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rte(ulong4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtp(ulong4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_rtn(ulong4);
 __attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat(ulong4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(ulong4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rte(ulong4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(ulong4);
-__attribute__((overloadable)) short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(ulong4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtz(ulong4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rte(ulong4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtp(ulong4);
+__attribute__((overloadable))
+short4 __spirv_SatConvertUToS_Rshort4_sat_rtn(ulong4);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8(uchar8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtz(uchar8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rte(uchar8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtp(uchar8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtn(uchar8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat(uchar8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(uchar8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rte(uchar8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(uchar8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(uchar8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(uchar8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rte(uchar8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(uchar8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(uchar8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtz(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rte(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtp(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtn(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rte(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(ushort8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_rtz(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_rte(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_rtp(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_rtn(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rte(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(ushort8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(ushort8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8(uint8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtz(uint8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rte(uint8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtp(uint8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtn(uint8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat(uint8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(uint8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rte(uint8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(uint8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(uint8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(uint8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rte(uint8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(uint8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(uint8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8(ulong8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtz(ulong8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rte(ulong8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtp(ulong8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_rtn(ulong8);
 __attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat(ulong8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(ulong8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rte(ulong8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(ulong8);
-__attribute__((overloadable)) short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(ulong8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtz(ulong8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rte(ulong8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtp(ulong8);
+__attribute__((overloadable))
+short8 __spirv_SatConvertUToS_Rshort8_sat_rtn(ulong8);
 __attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtz(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rte(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtp(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtn(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rte(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(uchar16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtz(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rte(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtp(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtn(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rte(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(uchar16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(uchar16);
 __attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtz(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rte(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtp(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtn(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rte(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(ushort16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtz(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rte(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtp(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtn(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rte(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(ushort16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(ushort16);
 __attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtz(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rte(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtp(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtn(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rte(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(uint16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtz(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rte(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtp(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtn(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rte(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(uint16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(uint16);
 __attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtz(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rte(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtp(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_rtn(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rte(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(ulong16);
-__attribute__((overloadable)) short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtz(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rte(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtp(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_rtn(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtz(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rte(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtp(ulong16);
+__attribute__((overloadable))
+short16 __spirv_SatConvertUToS_Rshort16_sat_rtn(ulong16);
 
 __attribute__((overloadable)) int __spirv_SatConvertUToS_Rint(uchar);
 __attribute__((overloadable)) int __spirv_SatConvertUToS_Rint_rtz(uchar);
@@ -5875,10 +6914,14 @@ __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_rte(ushort2);
 __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_rtp(ushort2);
 __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_rtn(ushort2);
 __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_sat(ushort2);
-__attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_sat_rtz(ushort2);
-__attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_sat_rte(ushort2);
-__attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_sat_rtp(ushort2);
-__attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_sat_rtn(ushort2);
+__attribute__((overloadable))
+int2 __spirv_SatConvertUToS_Rint2_sat_rtz(ushort2);
+__attribute__((overloadable))
+int2 __spirv_SatConvertUToS_Rint2_sat_rte(ushort2);
+__attribute__((overloadable))
+int2 __spirv_SatConvertUToS_Rint2_sat_rtp(ushort2);
+__attribute__((overloadable))
+int2 __spirv_SatConvertUToS_Rint2_sat_rtn(ushort2);
 __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2(uint2);
 __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_rtz(uint2);
 __attribute__((overloadable)) int2 __spirv_SatConvertUToS_Rint2_rte(uint2);
@@ -5915,10 +6958,14 @@ __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_rte(ushort3);
 __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_rtp(ushort3);
 __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_rtn(ushort3);
 __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_sat(ushort3);
-__attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_sat_rtz(ushort3);
-__attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_sat_rte(ushort3);
-__attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_sat_rtp(ushort3);
-__attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_sat_rtn(ushort3);
+__attribute__((overloadable))
+int3 __spirv_SatConvertUToS_Rint3_sat_rtz(ushort3);
+__attribute__((overloadable))
+int3 __spirv_SatConvertUToS_Rint3_sat_rte(ushort3);
+__attribute__((overloadable))
+int3 __spirv_SatConvertUToS_Rint3_sat_rtp(ushort3);
+__attribute__((overloadable))
+int3 __spirv_SatConvertUToS_Rint3_sat_rtn(ushort3);
 __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3(uint3);
 __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_rtz(uint3);
 __attribute__((overloadable)) int3 __spirv_SatConvertUToS_Rint3_rte(uint3);
@@ -5955,10 +7002,14 @@ __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_rte(ushort4);
 __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_rtp(ushort4);
 __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_rtn(ushort4);
 __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_sat(ushort4);
-__attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_sat_rtz(ushort4);
-__attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_sat_rte(ushort4);
-__attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_sat_rtp(ushort4);
-__attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_sat_rtn(ushort4);
+__attribute__((overloadable))
+int4 __spirv_SatConvertUToS_Rint4_sat_rtz(ushort4);
+__attribute__((overloadable))
+int4 __spirv_SatConvertUToS_Rint4_sat_rte(ushort4);
+__attribute__((overloadable))
+int4 __spirv_SatConvertUToS_Rint4_sat_rtp(ushort4);
+__attribute__((overloadable))
+int4 __spirv_SatConvertUToS_Rint4_sat_rtn(ushort4);
 __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4(uint4);
 __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_rtz(uint4);
 __attribute__((overloadable)) int4 __spirv_SatConvertUToS_Rint4_rte(uint4);
@@ -5995,10 +7046,14 @@ __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_rte(ushort8);
 __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_rtp(ushort8);
 __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_rtn(ushort8);
 __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_sat(ushort8);
-__attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_sat_rtz(ushort8);
-__attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_sat_rte(ushort8);
-__attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_sat_rtp(ushort8);
-__attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_sat_rtn(ushort8);
+__attribute__((overloadable))
+int8 __spirv_SatConvertUToS_Rint8_sat_rtz(ushort8);
+__attribute__((overloadable))
+int8 __spirv_SatConvertUToS_Rint8_sat_rte(ushort8);
+__attribute__((overloadable))
+int8 __spirv_SatConvertUToS_Rint8_sat_rtp(ushort8);
+__attribute__((overloadable))
+int8 __spirv_SatConvertUToS_Rint8_sat_rtn(ushort8);
 __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8(uint8);
 __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_rtz(uint8);
 __attribute__((overloadable)) int8 __spirv_SatConvertUToS_Rint8_rte(uint8);
@@ -6025,40 +7080,56 @@ __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rte(uchar16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtp(uchar16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtn(uchar16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat(uchar16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtz(uchar16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rte(uchar16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtp(uchar16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtn(uchar16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtz(uchar16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rte(uchar16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtp(uchar16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtn(uchar16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16(ushort16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtz(ushort16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rte(ushort16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtp(ushort16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtn(ushort16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat(ushort16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtz(ushort16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rte(ushort16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtp(ushort16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtn(ushort16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtz(ushort16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rte(ushort16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtp(ushort16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtn(ushort16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16(uint16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtz(uint16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rte(uint16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtp(uint16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtn(uint16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat(uint16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtz(uint16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rte(uint16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtp(uint16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtn(uint16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtz(uint16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rte(uint16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtp(uint16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtn(uint16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16(ulong16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtz(ulong16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rte(ulong16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtp(ulong16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_rtn(ulong16);
 __attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat(ulong16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtz(ulong16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rte(ulong16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtp(ulong16);
-__attribute__((overloadable)) int16 __spirv_SatConvertUToS_Rint16_sat_rtn(ulong16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtz(ulong16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rte(ulong16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtp(ulong16);
+__attribute__((overloadable))
+int16 __spirv_SatConvertUToS_Rint16_sat_rtn(ulong16);
 
 __attribute__((overloadable)) long __spirv_SatConvertUToS_Rlong(uchar);
 __attribute__((overloadable)) long __spirv_SatConvertUToS_Rlong_rtz(uchar);
@@ -6106,198 +7177,292 @@ __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rte(uchar2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtp(uchar2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtn(uchar2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat(uchar2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(uchar2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rte(uchar2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(uchar2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(uchar2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(uchar2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rte(uchar2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(uchar2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(uchar2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2(ushort2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtz(ushort2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rte(ushort2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtp(ushort2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtn(ushort2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat(ushort2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(ushort2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rte(ushort2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(ushort2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(ushort2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(ushort2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rte(ushort2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(ushort2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(ushort2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2(uint2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtz(uint2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rte(uint2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtp(uint2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtn(uint2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat(uint2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(uint2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rte(uint2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(uint2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(uint2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(uint2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rte(uint2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(uint2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(uint2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2(ulong2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtz(ulong2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rte(ulong2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtp(ulong2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_rtn(ulong2);
 __attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat(ulong2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(ulong2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rte(ulong2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(ulong2);
-__attribute__((overloadable)) long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(ulong2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtz(ulong2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rte(ulong2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtp(ulong2);
+__attribute__((overloadable))
+long2 __spirv_SatConvertUToS_Rlong2_sat_rtn(ulong2);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3(uchar3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtz(uchar3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rte(uchar3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtp(uchar3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtn(uchar3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat(uchar3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(uchar3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rte(uchar3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(uchar3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(uchar3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(uchar3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rte(uchar3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(uchar3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(uchar3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3(ushort3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtz(ushort3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rte(ushort3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtp(ushort3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtn(ushort3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat(ushort3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(ushort3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rte(ushort3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(ushort3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(ushort3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(ushort3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rte(ushort3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(ushort3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(ushort3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3(uint3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtz(uint3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rte(uint3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtp(uint3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtn(uint3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat(uint3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(uint3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rte(uint3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(uint3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(uint3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(uint3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rte(uint3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(uint3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(uint3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3(ulong3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtz(ulong3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rte(ulong3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtp(ulong3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_rtn(ulong3);
 __attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat(ulong3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(ulong3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rte(ulong3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(ulong3);
-__attribute__((overloadable)) long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(ulong3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtz(ulong3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rte(ulong3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtp(ulong3);
+__attribute__((overloadable))
+long3 __spirv_SatConvertUToS_Rlong3_sat_rtn(ulong3);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4(uchar4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtz(uchar4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rte(uchar4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtp(uchar4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtn(uchar4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat(uchar4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(uchar4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rte(uchar4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(uchar4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(uchar4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(uchar4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rte(uchar4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(uchar4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(uchar4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4(ushort4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtz(ushort4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rte(ushort4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtp(ushort4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtn(ushort4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat(ushort4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(ushort4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rte(ushort4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(ushort4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(ushort4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(ushort4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rte(ushort4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(ushort4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(ushort4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4(uint4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtz(uint4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rte(uint4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtp(uint4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtn(uint4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat(uint4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(uint4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rte(uint4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(uint4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(uint4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(uint4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rte(uint4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(uint4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(uint4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4(ulong4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtz(ulong4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rte(ulong4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtp(ulong4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_rtn(ulong4);
 __attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat(ulong4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(ulong4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rte(ulong4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(ulong4);
-__attribute__((overloadable)) long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(ulong4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtz(ulong4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rte(ulong4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtp(ulong4);
+__attribute__((overloadable))
+long4 __spirv_SatConvertUToS_Rlong4_sat_rtn(ulong4);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8(uchar8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtz(uchar8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rte(uchar8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtp(uchar8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtn(uchar8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat(uchar8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(uchar8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rte(uchar8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(uchar8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(uchar8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(uchar8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rte(uchar8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(uchar8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(uchar8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8(ushort8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtz(ushort8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rte(ushort8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtp(ushort8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtn(ushort8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat(ushort8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(ushort8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rte(ushort8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(ushort8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(ushort8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(ushort8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rte(ushort8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(ushort8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(ushort8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8(uint8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtz(uint8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rte(uint8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtp(uint8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtn(uint8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat(uint8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(uint8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rte(uint8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(uint8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(uint8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(uint8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rte(uint8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(uint8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(uint8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8(ulong8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtz(ulong8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rte(ulong8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtp(ulong8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_rtn(ulong8);
 __attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat(ulong8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(ulong8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rte(ulong8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(ulong8);
-__attribute__((overloadable)) long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(ulong8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtz(ulong8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rte(ulong8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtp(ulong8);
+__attribute__((overloadable))
+long8 __spirv_SatConvertUToS_Rlong8_sat_rtn(ulong8);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtz(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rte(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtp(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtn(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rte(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(uchar16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtz(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rte(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtp(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtn(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rte(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(uchar16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(uchar16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtz(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rte(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtp(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtn(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rte(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(ushort16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtz(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rte(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtp(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtn(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rte(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(ushort16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(ushort16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16(uint16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtz(uint16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rte(uint16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtp(uint16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtn(uint16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat(uint16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(uint16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rte(uint16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(uint16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(uint16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(uint16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rte(uint16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(uint16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(uint16);
 __attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtz(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rte(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtp(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_rtn(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rte(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(ulong16);
-__attribute__((overloadable)) long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(ulong16);
-
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtz(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rte(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtp(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_rtn(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtz(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rte(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtp(ulong16);
+__attribute__((overloadable))
+long16 __spirv_SatConvertUToS_Rlong16_sat_rtn(ulong16);
