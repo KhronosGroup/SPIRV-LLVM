@@ -171,8 +171,8 @@ public:
   virtual SPIRVMemberName *addMemberName(SPIRVTypeStruct *ST,
                                          SPIRVWord MemberNumber,
                                          const std::string &Name) = 0;
-  virtual void addUnknownStructField(SPIRVTypeStruct *, unsigned idx,
-                                     SPIRVId id) = 0;
+  virtual void addUnknownStructField(SPIRVTypeStruct *, unsigned Idx,
+                                     SPIRVId Id) = 0;
   virtual void addLine(SPIRVEntry *E, SPIRVId FileNameId, SPIRVWord Line,
                        SPIRVWord Column) = 0;
   virtual const std::shared_ptr<const SPIRVLine> &getCurrentLine() const = 0;
@@ -391,13 +391,13 @@ private:
 /// Convert SPIR-V between binary and internel text formats.
 /// This function is not thread safe and should not be used in multi-thread
 /// applications unless guarded by a critical section.
-bool ConvertSPIRV(std::istream &IS, spv_ostream &OS, std::string &ErrMsg,
+bool convertSPIRV(std::istream &IS, spv_ostream &OS, std::string &ErrMsg,
                   bool FromText, bool ToText);
 
 /// Convert SPIR-V between binary and internel text formats.
 /// This function is not thread safe and should not be used in multi-thread
 /// applications unless guarded by a critical section.
-bool ConvertSPIRV(std::string &Input, std::string &Out, std::string &ErrMsg,
+bool convertSPIRV(std::string &Input, std::string &Out, std::string &ErrMsg,
                   bool ToText);
 #endif
 } // namespace SPIRV

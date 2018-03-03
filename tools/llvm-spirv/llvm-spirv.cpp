@@ -141,7 +141,7 @@ static int convertLLVMToSPIRV() {
   std::error_code EC;
   std::string Err;
   llvm::raw_fd_ostream OFS(outFile, EC, llvm::sys::fs::F_None);
-  if (!WriteSPIRV(M.get(), OFS, Err)) {
+  if (!writeSPIRV(M.get(), OFS, Err)) {
     errs() << "Fails to save LLVM as SPIRV: " << Err << '\n';
     return -1;
   }
@@ -154,7 +154,7 @@ static int convertSPIRVToLLVM() {
   Module *M;
   std::string Err;
 
-  if (!ReadSPIRV(Context, IFS, M, Err)) {
+  if (!readSPIRV(Context, IFS, M, Err)) {
     errs() << "Fails to load SPIRV as LLVM Module: " << Err << '\n';
     return -1;
   }
@@ -206,7 +206,7 @@ static int convertSPIRV() {
 
   auto Action = [&](llvm::raw_ostream &OFS) {
     std::string Err;
-    if (!SPIRV::ConvertSPIRV(IFS, OFS, Err, ToBinary, ToText)) {
+    if (!SPIRV::convertSPIRV(IFS, OFS, Err, ToBinary, ToText)) {
       errs() << "Fails to convert SPIR-V : " << Err << '\n';
       return -1;
     }
@@ -240,7 +240,7 @@ static int regularizeLLVM() {
   }
 
   std::string Err;
-  if (!RegularizeLLVMForSPIRV(M.get(), Err)) {
+  if (!regularizeLLVMForSPIRV(M.get(), Err)) {
     errs() << "Fails to save LLVM as SPIRV: " << Err << '\n';
     return -1;
   }
