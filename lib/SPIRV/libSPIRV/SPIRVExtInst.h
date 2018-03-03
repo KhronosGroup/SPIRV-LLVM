@@ -41,6 +41,7 @@
 #define SPIRVBUILTIN_HPP_
 
 #include "OpenCL.std.h"
+#include "SPIRVEnum.h"
 #include "SPIRVUtil.h"
 
 #include <string>
