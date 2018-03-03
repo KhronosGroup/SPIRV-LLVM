@@ -168,7 +168,7 @@ SPIRversion getSupportedVersion(TypePrimitiveEnum T) {
 const char *mangledPrimitiveStringfromName(std::string Type) {
   for (size_t I = 0; I < (sizeof(PrimitiveNames) / sizeof(PrimitiveNames[0]));
        I++)
-    if (Type.compare(PrimitiveNames[I]) == 0)
+    if (Type == PrimitiveNames[I])
       return MangledTypes[I];
   return NULL;
 }

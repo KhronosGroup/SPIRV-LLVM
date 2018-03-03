@@ -85,7 +85,7 @@ public:
   //
   // Visit methods
   //
-  MangleError visit(const PrimitiveType *T) {
+  MangleError visit(const PrimitiveType *T) override {
     MangleError Me = MANGLE_SUCCESS;
 #if defined(SPIRV_SPIR20_MANGLING_REQUIREMENTS)
     Stream << mangledPrimitiveString(t->getPrimitive());
@@ -95,8 +95,8 @@ public:
     // out of all enums it makes sense to substitute only
     // memory_scope/memory_order since only they appear several times in the
     // builtin declaration.
-    if (MangledPrimitive.compare("12memory_scope") == 0 ||
-        MangledPrimitive.compare("12memory_order") == 0) {
+    if (MangledPrimitive == "12memory_scope" ||
+        MangledPrimitive == "12memory_order") {
       if (!mangleSubstitution(T, mangledPrimitiveString(T->getPrimitive()))) {
         size_t Index = Stream.str().size();
         Stream << mangledPrimitiveString(T->getPrimitive());
@@ -109,7 +109,7 @@ public:
     return Me;
   }
 
-  MangleError visit(const PointerType *P) {
+  MangleError visit(const PointerType *P) override {
     size_t Fpos = Stream.str().size();
     std::string QualStr;
     MangleError Me = MANGLE_SUCCESS;
@@ -137,7 +137,7 @@ public:
     return Me;
   }
 
-  MangleError visit(const VectorType *V) {
+  MangleError visit(const VectorType *V) override {
     size_t Index = Stream.str().size();
     std::stringstream TypeStr;
     TypeStr << "Dv" << V->getLength() << "_";
@@ -153,7 +153,7 @@ public:
     return Me;
   }
 
-  MangleError visit(const AtomicType *P) {
+  MangleError visit(const AtomicType *P) override {
     MangleError Me = MANGLE_SUCCESS;
     size_t Index = Stream.str().size();
     const char *TypeStr = "U7_Atomic";
@@ -165,7 +165,7 @@ public:
     return Me;
   }
 
-  MangleError visit(const BlockType *P) {
+  MangleError visit(const BlockType *P) override {
     Stream << "U"
              << "13block_pointerFv";
     if (P->getNumOfParams() == 0)
@@ -181,7 +181,7 @@ public:
     return MANGLE_SUCCESS;
   }
 
-  MangleError visit(const UserDefinedType *PTy) {
+  MangleError visit(const UserDefinedType *PTy) override {
     std::string Name = PTy->toString();
     Stream << Name.size() << Name;
     return MANGLE_SUCCESS;

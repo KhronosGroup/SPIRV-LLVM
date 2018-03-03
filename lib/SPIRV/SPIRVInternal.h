@@ -264,7 +264,7 @@ typedef SPIRVMap<SPIRVExtInstSetKind, std::string, SPIRVExtSetShortName>
 
 namespace kLLVMTypeName {
 const static char StructPrefix[] = "struct.";
-}
+} // namespace kLLVMTypeName
 
 namespace kSPIRVImageSampledTypeName {
 const static char Float[] = "float";

@@ -841,7 +841,7 @@ std::set<std::string> getNamedMDAsStringSet(Module *M,
   NamedMDNode *NamedMD = M->getNamedMetadata(MDName);
   std::set<std::string> StrSet;
   if (!NamedMD)
-    return std::move(StrSet);
+    return StrSet;
 
   assert(NamedMD->getNumOperands() > 0 && "Invalid SPIR");
 
@@ -850,10 +850,10 @@ std::set<std::string> getNamedMDAsStringSet(Module *M,
     if (!MD || MD->getNumOperands() == 0)
       continue;
     for (unsigned J = 0, N = MD->getNumOperands(); J != N; ++J)
-      StrSet.insert(std::move(getMDOperandAsString(MD, J)));
+      StrSet.insert(getMDOperandAsString(MD, J));
   }
 
-  return std::move(StrSet);
+  return StrSet;
 }
 
 std::tuple<unsigned, unsigned, std::string> getSPIRVSource(Module *M) {
@@ -1298,7 +1298,7 @@ static SPIR::MangleError manglePipeBuiltin(const SPIR::FunctionDescriptor &Fd,
     return SPIR::MANGLE_NULL_FUNC_DESCRIPTOR;
   }
   MangledName.assign("__" + Fd.Name);
-  if (Fd.Name.compare("write_pipe") == 0 || Fd.Name.compare("read_pipe") == 0) {
+  if (Fd.Name == "write_pipe" || Fd.Name == "read_pipe") {
     // add "_2" or "_4" postfix reflecting the number of explicit args.
     MangledName.append("_");
     // subtruct 2 in order to not count size and alignment of packet.
@@ -1388,4 +1388,4 @@ Type *getSPIRVImageTypeFromOCL(Module *M, Type *ImageTy) {
     Acc = getAccessQualifier(ImageTypeName);
   return getOrCreateOpaquePtrType(M, mapOCLTypeNameToSPIRV(ImageTypeName, Acc));
 }
-}
+} // namespace SPIRV

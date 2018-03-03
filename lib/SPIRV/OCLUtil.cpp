@@ -361,7 +361,7 @@ static FunctionType *getBlockInvokeTy(Function *F, unsigned BlockIdx) {
 class OCLBuiltinFuncMangleInfo : public SPIRV::BuiltinFuncMangleInfo {
 public:
   OCLBuiltinFuncMangleInfo(Function *F) : F(F) {}
-  void init(const std::string &UniqName) {
+  void init(const std::string &UniqName) override {
     UnmangledName = UniqName;
     size_t Pos = std::string::npos;
 

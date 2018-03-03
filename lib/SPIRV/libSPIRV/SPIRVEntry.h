@@ -68,8 +68,8 @@ class SPIRVExtInst;
 // Add declaration of encode/decode functions to a class.
 // Used inside class definition.
 #define _SPIRV_DCL_ENCDEC                                                      \
-  void encode(spv_ostream &O) const;                                           \
-  void decode(std::istream &I);
+  void encode(spv_ostream &O) const override;                                  \
+  void decode(std::istream &I) override;
 
 #define _REQ_SPIRV_VER(Version)                                                \
   SPIRVWord getRequiredSPIRVVersion() const override { return Version; }
@@ -80,98 +80,120 @@ class SPIRVExtInst;
   void Ty::encode(spv_ostream &O) const {}                                     \
   void Ty::decode(std::istream &I) {}
 #define _SPIRV_IMP_ENCDEC1(Ty, x)                                              \
-  void Ty::encode(spv_ostream &O) const { getEncoder(O) << x; }                \
-  void Ty::decode(std::istream &I) { getDecoder(I) >> x; }
+  void Ty::encode(spv_ostream &O) const { getEncoder(O) << (x); }              \
+  void Ty::decode(std::istream &I) { getDecoder(I) >> (x); }
 #define _SPIRV_IMP_ENCDEC2(Ty, x, y)                                           \
-  void Ty::encode(spv_ostream &O) const { getEncoder(O) << x << y; }           \
-  void Ty::decode(std::istream &I) { getDecoder(I) >> x >> y; }
+  void Ty::encode(spv_ostream &O) const { getEncoder(O) << (x) << (y); }       \
+  void Ty::decode(std::istream &I) { getDecoder(I) >> (x) >> (y); }
 #define _SPIRV_IMP_ENCDEC3(Ty, x, y, z)                                        \
-  void Ty::encode(spv_ostream &O) const { getEncoder(O) << x << y << z; }      \
-  void Ty::decode(std::istream &I) { getDecoder(I) >> x >> y >> z; }
-#define _SPIRV_IMP_ENCDEC4(Ty, x, y, z, u)                                     \
-  void Ty::encode(spv_ostream &O) const { getEncoder(O) << x << y << z << u; } \
-  void Ty::decode(std::istream &I) { getDecoder(I) >> x >> y >> z >> u; }
-#define _SPIRV_IMP_ENCDEC5(Ty, x, y, z, u, v)                                  \
   void Ty::encode(spv_ostream &O) const {                                      \
-    getEncoder(O) << x << y << z << u << v;                                    \
+    getEncoder(O) << (x) << (y) << (z);                                        \
   }                                                                            \
-  void Ty::decode(std::istream &I) { getDecoder(I) >> x >> y >> z >> u >> v; }
-#define _SPIRV_IMP_ENCDEC6(Ty, x, y, z, u, v, w)                               \
+  void Ty::decode(std::istream &I) { getDecoder(I) >> (x) >> (y) >> (z); }
+#define _SPIRV_IMP_ENCDEC4(Ty, x, y, z, u)                                     \
   void Ty::encode(spv_ostream &O) const {                                      \
-    getEncoder(O) << x << y << z << u << v << w;                               \
+    getEncoder(O) << (x) << (y) << (z) << (u);                                 \
   }                                                                            \
   void Ty::decode(std::istream &I) {                                           \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w;                               \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u);                                 \
+  }
+#define _SPIRV_IMP_ENCDEC5(Ty, x, y, z, u, v)                                  \
+  void Ty::encode(spv_ostream &O) const {                                      \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v);                          \
+  }                                                                            \
+  void Ty::decode(std::istream &I) {                                           \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v);                          \
+  }
+#define _SPIRV_IMP_ENCDEC6(Ty, x, y, z, u, v, w)                               \
+  void Ty::encode(spv_ostream &O) const {                                      \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w);                   \
+  }                                                                            \
+  void Ty::decode(std::istream &I) {                                           \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w);                   \
   }
 #define _SPIRV_IMP_ENCDEC7(Ty, x, y, z, u, v, w, r)                            \
   void Ty::encode(spv_ostream &O) const {                                      \
-    getEncoder(O) << x << y << z << u << v << w << r;                          \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w) << (r);            \
   }                                                                            \
   void Ty::decode(std::istream &I) {                                           \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w >> r;                          \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w) >> (r);            \
   }
 #define _SPIRV_IMP_ENCDEC8(Ty, x, y, z, u, v, w, r, s)                         \
   void Ty::encode(spv_ostream &O) const {                                      \
-    getEncoder(O) << x << y << z << u << v << w << r << s;                     \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w) << (r) << (s);     \
   }                                                                            \
   void Ty::decode(std::istream &I) {                                           \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w >> r >> s;                     \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w) >> (r) >> (s);     \
   }
 #define _SPIRV_IMP_ENCDEC9(Ty, x, y, z, u, v, w, r, s, t)                      \
   void Ty::encode(spv_ostream &O) const {                                      \
-    getEncoder(O) << x << y << z << u << v << w << r << s << t;                \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w) << (r) << (s)      \
+                  << (t);                                                      \
   }                                                                            \
   void Ty::decode(std::istream &I) {                                           \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w >> r >> s >> t;                \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w) >> (r) >> (s)      \
+                  >> (t);                                                      \
   }
 
 // Add definition of encode/decode functions to a class.
 // Used inside class definition.
 #define _SPIRV_DEF_ENCDEC0                                                     \
-  void encode(spv_ostream &O) const {}                                         \
-  void decode(std::istream &I) {}
+  void encode(spv_ostream &O) const override {}                                \
+  void decode(std::istream &I) override {}
 #define _SPIRV_DEF_ENCDEC1(x)                                                  \
-  void encode(spv_ostream &O) const { getEncoder(O) << x; }                    \
-  void decode(std::istream &I) { getDecoder(I) >> x; }
+  void encode(spv_ostream &O) const override { getEncoder(O) << (x); }         \
+  void decode(std::istream &I) override { getDecoder(I) >> (x); }
 #define _SPIRV_DEF_ENCDEC2(x, y)                                               \
-  void encode(spv_ostream &O) const { getEncoder(O) << x << y; }               \
-  void decode(std::istream &I) { getDecoder(I) >> x >> y; }
+  void encode(spv_ostream &O) const override { getEncoder(O) << (x) << (y); }  \
+  void decode(std::istream &I) override { getDecoder(I) >> (x) >> (y); }
 #define _SPIRV_DEF_ENCDEC3(x, y, z)                                            \
-  void encode(spv_ostream &O) const { getEncoder(O) << x << y << z; }          \
-  void decode(std::istream &I) { getDecoder(I) >> x >> y >> z; }
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z);                                        \
+  }                                                                            \
+  void decode(std::istream &I) override { getDecoder(I) >> (x) >> (y) >> (z); }
 #define _SPIRV_DEF_ENCDEC4(x, y, z, u)                                         \
-  void encode(spv_ostream &O) const { getEncoder(O) << x << y << z << u; }     \
-  void decode(std::istream &I) { getDecoder(I) >> x >> y >> z >> u; }
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z) << (u);                                 \
+  }                                                                            \
+  void decode(std::istream &I) override {                                      \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u);                                 \
+  }
 #define _SPIRV_DEF_ENCDEC5(x, y, z, u, v)                                      \
-  void encode(spv_ostream &O) const {                                          \
-    getEncoder(O) << x << y << z << u << v;                                    \
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v);                          \
   }                                                                            \
-  void decode(std::istream &I) { getDecoder(I) >> x >> y >> z >> u >> v; }
+  void decode(std::istream &I) override {                                      \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v);                          \
+  }
 #define _SPIRV_DEF_ENCDEC6(x, y, z, u, v, w)                                   \
-  void encode(spv_ostream &O) const {                                          \
-    getEncoder(O) << x << y << z << u << v << w;                               \
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w);                   \
   }                                                                            \
-  void decode(std::istream &I) { getDecoder(I) >> x >> y >> z >> u >> v >> w; }
+  void decode(std::istream &I) override {                                      \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w);                   \
+  }
 #define _SPIRV_DEF_ENCDEC7(x, y, z, u, v, w, r)                                \
-  void encode(spv_ostream &O) const {                                          \
-    getEncoder(O) << x << y << z << u << v << w << r;                          \
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w) << (r);            \
   }                                                                            \
-  void decode(std::istream &I) {                                               \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w >> r;                          \
+  void decode(std::istream &I) override {                                      \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w) >> (r);            \
   }
 #define _SPIRV_DEF_ENCDEC8(x, y, z, u, v, w, r, s)                             \
-  void encode(spv_ostream &O) const {                                          \
-    getEncoder(O) << x << y << z << u << v << w << r << s;                     \
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w) << (r) << (s);     \
   }                                                                            \
-  void decode(std::istream &I) {                                               \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w >> r >> s;                     \
+  void decode(std::istream &I) override {                                      \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w) >> (r) >> (s);     \
   }
 #define _SPIRV_DEF_ENCDEC9(x, y, z, u, v, w, r, s, t)                          \
-  void encode(spv_ostream &O) const {                                          \
-    getEncoder(O) << x << y << z << u << v << w << r << s << t;                \
+  void encode(spv_ostream &O) const override {                                 \
+    getEncoder(O) << (x) << (y) << (z) << (u) << (v) << (w) << (r) << (s)      \
+                  << (t);                                                      \
   }                                                                            \
-  void decode(std::istream &I) {                                               \
-    getDecoder(I) >> x >> y >> z >> u >> v >> w >> r >> s >> t;                \
+  void decode(std::istream &I) override {                                      \
+    getDecoder(I) >> (x) >> (y) >> (z) >> (u) >> (v) >> (w) >> (r) >> (s)      \
+                  >> (t);                                                      \
   }
 
 /// All SPIR-V in-memory-representation entities inherits from SPIRVEntry.
@@ -413,7 +435,7 @@ public:
 
 protected:
   _SPIRV_DEF_ENCDEC0
-  void validate() const { assert(isValidId(SPIRVEntry::OpCode)); }
+  void validate() const override { assert(isValidId(SPIRVEntry::OpCode)); }
 };
 
 class SPIRVAnnotationGeneric : public SPIRVEntryNoIdGeneric {
@@ -464,7 +486,7 @@ public:
 
 protected:
   _SPIRV_DCL_ENCDEC
-  void validate() const;
+  void validate() const override;
 
   std::string Str;
 };
@@ -484,7 +506,7 @@ public:
 
 protected:
   _SPIRV_DCL_ENCDEC
-  void validate() const;
+  void validate() const override;
   SPIRVWord MemberNumber;
   std::string Str;
 };
@@ -550,7 +572,7 @@ public:
 
 protected:
   _SPIRV_DCL_ENCDEC
-  void validate() const;
+  void validate() const override;
   SPIRVId FileName;
   SPIRVWord Line;
   SPIRVWord Column;
@@ -583,7 +605,9 @@ public:
   SPIRVExecutionMode() : ExecMode(ExecutionModeInvocations) {}
   SPIRVExecutionModeKind getExecutionMode() const { return ExecMode; }
   const std::vector<SPIRVWord> &getLiterals() const { return WordLiterals; }
-  SPIRVCapVec getRequiredCapability() const { return getCapability(ExecMode); }
+  SPIRVCapVec getRequiredCapability() const override {
+    return getCapability(ExecMode);
+  }
 
   SPIRVWord getRequiredSPIRVVersion() const override {
     switch (ExecMode) {
@@ -634,7 +658,7 @@ public:
 
 protected:
   _SPIRV_DCL_ENCDEC
-  void validate() const;
+  void validate() const override;
 
   std::string Str;
 };
@@ -644,7 +668,7 @@ public:
   SPIRVMemoryModel(SPIRVModule *M) : SPIRVEntryNoId(M, 3) {}
   SPIRVMemoryModel() {}
   _SPIRV_DCL_ENCDEC
-  void validate() const;
+  void validate() const override;
 };
 
 class SPIRVSource : public SPIRVEntryNoId<OpSource> {

@@ -50,13 +50,13 @@ namespace SPIRV {
 // To use this macro, function checkError must be defined in the scope.
 #define SPIRVCK(Condition, ErrCode, ErrMsg)                                    \
   getErrorLog().checkError(Condition, SPIRVEC_##ErrCode,                       \
-                           std::string() + ErrMsg, #Condition, __FILE__,       \
+                           std::string() + (ErrMsg), #Condition, __FILE__,     \
                            __LINE__)
 
 // Check condition and set error code and error msg. If fail returns false.
 #define SPIRVCKRT(Condition, ErrCode, ErrMsg)                                  \
   if (!getErrorLog().checkError(Condition, SPIRVEC_##ErrCode,                  \
-                                std::string() + ErrMsg, #Condition, __FILE__,  \
+                                std::string() + (ErrMsg), #Condition, __FILE__,\
                                 __LINE__))                                     \
     return false;
 
@@ -69,7 +69,7 @@ enum SPIRVErrorCode {
 
 // Defines OpErorMap which maps error code to a string describing the error.
 template <> inline void SPIRVMap<SPIRVErrorCode, std::string>::init() {
-#define _SPIRV_OP(x, y) add(SPIRVEC_##x, std::string(#x) + ": " + y);
+#define _SPIRV_OP(x, y) add(SPIRVEC_##x, std::string(#x) + ": " + (y));
 #include "SPIRVErrorEnum.h"
 #undef _SPIRV_OP
 }
@@ -120,6 +120,6 @@ inline bool SPIRVErrorLog::checkError(bool Cond, SPIRVErrorCode ErrCode,
   }
   return Cond;
 }
-}
+} // namespace SPIRV
 
 #endif /* SPIRVERROR_HPP_ */
