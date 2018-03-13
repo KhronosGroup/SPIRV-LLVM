@@ -37,31 +37,29 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "SPIRVEntry.h"
-#include "SPIRVValue.h"
 #include "SPIRVBasicBlock.h"
-#include "SPIRVInstruction.h"
+#include "SPIRVEntry.h"
 #include "SPIRVFunction.h"
+#include "SPIRVInstruction.h"
 #include "SPIRVStream.h"
+#include "SPIRVValue.h"
 
 #include <iostream>
 
 using namespace SPIRV;
 
 SPIRVBasicBlock::SPIRVBasicBlock(SPIRVId TheId, SPIRVFunction *Func)
-  :SPIRVValue(Func->getModule(), 2, OpLabel, TheId), ParentF(Func) {
+    : SPIRVValue(Func->getModule(), 2, OpLabel, TheId), ParentF(Func) {
   setAttr();
   validate();
 }
 
-SPIRVDecoder
-SPIRVBasicBlock::getDecoder(std::istream &IS){
+SPIRVDecoder SPIRVBasicBlock::getDecoder(std::istream &IS) {
   return SPIRVDecoder(IS, *this);
 }
 
 /// Assume I contains valid Id.
-SPIRVInstruction *
-SPIRVBasicBlock::addInstruction(SPIRVInstruction *I) {
+SPIRVInstruction *SPIRVBasicBlock::addInstruction(SPIRVInstruction *I) {
   assert(I && "Invalid instruction");
   Module->add(I);
   I->setParent(this);
@@ -69,17 +67,15 @@ SPIRVBasicBlock::addInstruction(SPIRVInstruction *I) {
   return I;
 }
 
-void
-SPIRVBasicBlock::encodeChildren(spv_ostream &O) const {
+void SPIRVBasicBlock::encodeChildren(spv_ostream &O) const {
   O << SPIRVNL();
-  for (size_t i = 0, e = InstVec.size(); i != e; ++i)
-    O << *InstVec[i];
+  for (size_t I = 0, E = InstVec.size(); I != E; ++I)
+    O << *InstVec[I];
 }
 
 _SPIRV_IMP_ENCDEC1(SPIRVBasicBlock, Id)
 
-void
-SPIRVBasicBlock::setScope(SPIRVEntry *Scope) {
+void SPIRVBasicBlock::setScope(SPIRVEntry *Scope) {
   assert(Scope && Scope->getOpCode() == OpFunction && "Invalid scope");
-  setParent(static_cast<SPIRVFunction*>(Scope));
+  setParent(static_cast<SPIRVFunction *>(Scope));
 }

@@ -17,98 +17,84 @@
 
 namespace SPIR {
 
-template <typename T>
-class RefCount{
+template <typename T> class RefCount {
 public:
-  RefCount(): m_refCount(0), m_ptr(0) {
-  }
+  RefCount() : MRefCount(0), MPtr(0) {}
 
-  RefCount(T* ptr): m_ptr(ptr) {
-    m_refCount = new int(1);
-  }
+  RefCount(T *Ptr) : MPtr(Ptr) { MRefCount = new int(1); }
 
-  RefCount(const RefCount<T>& other) {
-    cpy(other);
-  }
+  RefCount(const RefCount<T> &Other) { cpy(Other); }
 
   ~RefCount() {
-    if (m_refCount)
+    if (MRefCount)
       dispose();
   }
 
-  RefCount& operator=(const RefCount<T>& other) {
-    if(this == &other)
+  RefCount &operator=(const RefCount<T> &Other) {
+    if (this == &Other)
       return *this;
-    if (m_refCount)
+    if (MRefCount)
       dispose();
-    cpy(other);
+    cpy(Other);
     return *this;
   }
 
-  void init(T* ptr) {
-    assert(!m_ptr && "overrunning non NULL pointer");
-    assert(!m_refCount && "overrunning non NULL pointer");
-    m_refCount = new int(1);
-    m_ptr = ptr;
+  void init(T *Ptr) {
+    assert(!MPtr && "overrunning non NULL pointer");
+    assert(!MRefCount && "overrunning non NULL pointer");
+    MRefCount = new int(1);
+    MPtr = Ptr;
   }
 
-  bool isNull() const {
-    return (!m_ptr);
-  }
+  bool isNull() const { return (!MPtr); }
 
-// Pointer access
-  const T& operator*() const{
+  // Pointer access
+  const T &operator*() const {
     sanity();
-    return *m_ptr;
+    return *MPtr;
   }
 
-  T& operator*() {
+  T &operator*() {
     sanity();
-    return *m_ptr;
+    return *MPtr;
   }
 
-  operator T*() {
-    return m_ptr;
-  }
+  operator T *() { return MPtr; }
 
-  operator const T*() const{
-    return m_ptr;
-  }
+  operator const T *() const { return MPtr; }
 
-  T* operator->() {
-    return m_ptr;
-  }
+  T *operator->() { return MPtr; }
 
-  const T* operator->() const{
-    return m_ptr;
-  }
+  const T *operator->() const { return MPtr; }
+
 private:
-  void sanity() const{
-    assert(m_ptr && "NULL pointer");
-    assert(m_refCount && "NULL ref counter");
-    assert(*m_refCount && "zero ref counter");
+  void sanity() const {
+    assert(MPtr && "NULL pointer");
+    assert(MRefCount && "NULL ref counter");
+    assert(*MRefCount && "zero ref counter");
   }
 
-  void cpy(const RefCount<T>& other) {
-    m_refCount = other.m_refCount;
-    m_ptr = other.m_ptr;
-    if (m_refCount) ++*m_refCount;
+  void cpy(const RefCount<T> &Other) {
+    MRefCount = Other.MRefCount;
+    MPtr = Other.MPtr;
+    if (MRefCount)
+      ++*MRefCount;
   }
 
   void dispose() {
     sanity();
-    if (0 == --*m_refCount) {
-      delete m_refCount;
-      delete m_ptr;
-      m_ptr = 0;
-      m_refCount = 0;
+    if (0 == --*MRefCount) {
+      delete MRefCount;
+      delete MPtr;
+      MPtr = 0;
+      MRefCount = 0;
     }
   }
 
-  int* m_refCount;
-  T* m_ptr;
-};// End RefCount
+  int *MRefCount;
+  T *MPtr;
+}; // End RefCount
 
-} // End SPIR namespace
+} // namespace SPIR
 
-#endif//__REF_COUNT_H__
+#endif //__REF_COUNT_H__

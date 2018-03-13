@@ -43,23 +43,21 @@
 #include "SPIRVValue.h"
 #include <algorithm>
 
-namespace SPIRV{
+namespace SPIRV {
 class SPIRVFunction;
 class SPIRVInstruction;
 class SPIRVDecoder;
-class SPIRVBasicBlock: public SPIRVValue {
+class SPIRVBasicBlock : public SPIRVValue {
 
 public:
   SPIRVBasicBlock(SPIRVId TheId, SPIRVFunction *Func);
 
-  SPIRVBasicBlock():SPIRVValue(OpLabel), ParentF(NULL){
-    setAttr();
-  }
+  SPIRVBasicBlock() : SPIRVValue(OpLabel), ParentF(NULL) { setAttr(); }
 
-  SPIRVDecoder getDecoder(std::istream &IS);
-  SPIRVFunction *getParent() const { return ParentF;}
-  size_t getNumInst() const { return InstVec.size();}
-  SPIRVInstruction *getInst(size_t I) const { return InstVec[I];}
+  SPIRVDecoder getDecoder(std::istream &IS) override;
+  SPIRVFunction *getParent() const { return ParentF; }
+  size_t getNumInst() const { return InstVec.size(); }
+  SPIRVInstruction *getInst(size_t I) const { return InstVec[I]; }
   SPIRVInstruction *getPrevious(const SPIRVInstruction *I) const {
     auto Loc = find(I);
     if (Loc == InstVec.end() || Loc == InstVec.begin())
@@ -76,8 +74,8 @@ public:
     return *Loc;
   }
 
-  void setScope(SPIRVEntry *Scope);
-  void setParent(SPIRVFunction *F) { ParentF = F;}
+  void setScope(SPIRVEntry *Scope) override;
+  void setParent(SPIRVFunction *F) { ParentF = F; }
   SPIRVInstruction *addInstruction(SPIRVInstruction *I);
   void eraseInstruction(const SPIRVInstruction *I) {
     auto Loc = find(I);
@@ -85,10 +83,10 @@ public:
     InstVec.erase(Loc);
   }
 
-  void setAttr() { setHasNoType();}
+  void setAttr() { setHasNoType(); }
   _SPIRV_DCL_ENCDEC
-  void encodeChildren(spv_ostream &)const;
-  void validate()const {
+  void encodeChildren(spv_ostream &) const override;
+  void validate() const override {
     SPIRVValue::validate();
     assert(ParentF && "Invalid parent function");
   }
@@ -98,8 +96,8 @@ private:
   typedef std::vector<SPIRVInstruction *> SPIRVInstructionVector;
   SPIRVInstructionVector InstVec;
 
-  SPIRVInstructionVector::const_iterator find(const SPIRVInstruction *Inst)
-    const {
+  SPIRVInstructionVector::const_iterator
+  find(const SPIRVInstruction *Inst) const {
     return std::find(InstVec.begin(), InstVec.end(), Inst);
   }
 
@@ -109,6 +107,6 @@ private:
 };
 
 typedef SPIRVBasicBlock SPIRVLabel;
-}
+} // namespace SPIRV
 
 #endif

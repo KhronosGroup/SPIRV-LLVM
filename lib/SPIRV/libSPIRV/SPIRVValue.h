@@ -43,60 +43,59 @@
 #ifndef SPIRVVALUE_HPP_
 #define SPIRVVALUE_HPP_
 
+#include "SPIRVDecorate.h"
 #include "SPIRVEntry.h"
 #include "SPIRVType.h"
-#include "SPIRVDecorate.h"
 
 #include <iostream>
 #include <map>
 #include <memory>
 
-namespace SPIRV{
+namespace SPIRV {
 
-class SPIRVValue: public SPIRVEntry {
+class SPIRVValue : public SPIRVEntry {
 public:
   // Complete constructor for value with id and type
   SPIRVValue(SPIRVModule *M, unsigned TheWordCount, Op TheOpCode,
-      SPIRVType *TheType, SPIRVId TheId)
-    :SPIRVEntry(M, TheWordCount, TheOpCode, TheId), Type(TheType) {
+             SPIRVType *TheType, SPIRVId TheId)
+      : SPIRVEntry(M, TheWordCount, TheOpCode, TheId), Type(TheType) {
     validate();
   }
   // Complete constructor for value with type but without id
   SPIRVValue(SPIRVModule *M, unsigned TheWordCount, Op TheOpCode,
-      SPIRVType *TheType)
-    :SPIRVEntry(M, TheWordCount, TheOpCode), Type(TheType) {
+             SPIRVType *TheType)
+      : SPIRVEntry(M, TheWordCount, TheOpCode), Type(TheType) {
     setHasNoId();
     validate();
   }
   // Complete constructor for value with id but without type
-  SPIRVValue(SPIRVModule *M, unsigned TheWordCount, Op TheOpCode,
-      SPIRVId TheId)
-    :SPIRVEntry(M, TheWordCount, TheOpCode, TheId), Type(NULL) {
+  SPIRVValue(SPIRVModule *M, unsigned TheWordCount, Op TheOpCode, SPIRVId TheId)
+      : SPIRVEntry(M, TheWordCount, TheOpCode, TheId), Type(NULL) {
     setHasNoType();
     validate();
   }
   // Complete constructor for value without id and type
   SPIRVValue(SPIRVModule *M, unsigned TheWordCount, Op TheOpCode)
-    :SPIRVEntry(M, TheWordCount, TheOpCode), Type(NULL) {
+      : SPIRVEntry(M, TheWordCount, TheOpCode), Type(NULL) {
     setHasNoId();
     setHasNoType();
     validate();
   }
   // Incomplete constructor
-  SPIRVValue(Op TheOpCode):SPIRVEntry(TheOpCode), Type(NULL) {}
+  SPIRVValue(Op TheOpCode) : SPIRVEntry(TheOpCode), Type(NULL) {}
 
-  bool hasType()const { return !(Attrib & SPIRVEA_NOTYPE);}
-  SPIRVType *getType()const {
+  bool hasType() const { return !(Attrib & SPIRVEA_NOTYPE); }
+  SPIRVType *getType() const {
     assert(hasType() && "value has no type");
     return Type;
   }
-  bool isVolatile()const;
-  bool hasAlignment(SPIRVWord *Result=0)const;
+  bool isVolatile() const;
+  bool hasAlignment(SPIRVWord *Result = 0) const;
 
   void setAlignment(SPIRVWord);
   void setVolatile(bool IsVolatile);
 
-  void validate()const {
+  void validate() const override {
     SPIRVEntry::validate();
     assert((!hasType() || Type) && "Invalid type");
   }
@@ -110,114 +109,113 @@ public:
       setHasNoType();
   }
 
-  SPIRVCapVec getRequiredCapability() const {
+  SPIRVCapVec getRequiredCapability() const override {
     SPIRVCapVec CV;
     if (!hasType())
-      return std::move(CV);
-    return std::move(Type->getRequiredCapability());
+      return CV;
+    return Type->getRequiredCapability();
   }
 
 protected:
-  void setHasNoType() { Attrib |= SPIRVEA_NOTYPE;}
-  void setHasType() { Attrib &= ~SPIRVEA_NOTYPE;}
+  void setHasNoType() { Attrib |= SPIRVEA_NOTYPE; }
+  void setHasType() { Attrib &= ~SPIRVEA_NOTYPE; }
 
-  SPIRVType *Type;                 // Value Type
+  SPIRVType *Type; // Value Type
 };
 
-class SPIRVConstant: public SPIRVValue {
+class SPIRVConstant : public SPIRVValue {
 public:
   // Complete constructor for integer constant
   SPIRVConstant(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId,
-      uint64_t TheValue)
-    :SPIRVValue(M, 0, OpConstant, TheType, TheId){
+                uint64_t TheValue)
+      : SPIRVValue(M, 0, OpConstant, TheType, TheId) {
     Union.UInt64Val = TheValue;
     recalculateWordCount();
     validate();
   }
   // Complete constructor for float constant
-  SPIRVConstant(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId, float TheValue)
-    :SPIRVValue(M, 0, OpConstant, TheType, TheId){
+  SPIRVConstant(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId,
+                float TheValue)
+      : SPIRVValue(M, 0, OpConstant, TheType, TheId) {
     Union.FloatVal = TheValue;
     recalculateWordCount();
     validate();
   }
   // Complete constructor for double constant
-  SPIRVConstant(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId, double TheValue)
-    :SPIRVValue(M, 0, OpConstant, TheType, TheId){
+  SPIRVConstant(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId,
+                double TheValue)
+      : SPIRVValue(M, 0, OpConstant, TheType, TheId) {
     Union.DoubleVal = TheValue;
     recalculateWordCount();
     validate();
   }
   // Incomplete constructor
-  SPIRVConstant():SPIRVValue(OpConstant), NumWords(0){}
-  uint64_t getZExtIntValue() const { return Union.UInt64Val;}
-  float getFloatValue() const { return Union.FloatVal;}
-  double getDoubleValue() const { return Union.DoubleVal;}
+  SPIRVConstant() : SPIRVValue(OpConstant), NumWords(0) {}
+  uint64_t getZExtIntValue() const { return Union.UInt64Val; }
+  float getFloatValue() const { return Union.FloatVal; }
+  double getDoubleValue() const { return Union.DoubleVal; }
+
 protected:
   void recalculateWordCount() {
-    NumWords = Type->getBitWidth()/32;
+    NumWords = Type->getBitWidth() / 32;
     if (NumWords < 1)
       NumWords = 1;
     WordCount = 3 + NumWords;
   }
-  void validate() const {
+  void validate() const override {
     SPIRVValue::validate();
     assert(NumWords >= 1 && NumWords <= 2 && "Invalid constant size");
   }
-  void encode(spv_ostream &O) const {
+  void encode(spv_ostream &O) const override {
     getEncoder(O) << Type << Id;
     for (unsigned i = 0; i < NumWords; ++i)
       getEncoder(O) << Union.Words[i];
   }
-  void setWordCount(SPIRVWord WordCount) {
+  void setWordCount(SPIRVWord WordCount) override {
     SPIRVValue::setWordCount(WordCount);
     NumWords = WordCount - 3;
   }
-  void decode(std::istream &I) {
+  void decode(std::istream &I) override {
     getDecoder(I) >> Type >> Id;
     for (unsigned i = 0; i < NumWords; ++i)
       getDecoder(I) >> Union.Words[i];
   }
 
   unsigned NumWords;
-  union UnionType{
+  union UnionType {
     uint64_t UInt64Val;
     float FloatVal;
     double DoubleVal;
     SPIRVWord Words[2];
-    UnionType() {
-      UInt64Val = 0;
-    }
+    UnionType() { UInt64Val = 0; }
   } Union;
 };
 
-template<Op OC>
-class SPIRVConstantEmpty: public SPIRVValue {
+template <Op OC> class SPIRVConstantEmpty : public SPIRVValue {
 public:
   // Complete constructor
   SPIRVConstantEmpty(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId)
-    :SPIRVValue(M, 3, OC, TheType, TheId){
+      : SPIRVValue(M, 3, OC, TheType, TheId) {
     validate();
   }
   // Incomplete constructor
-  SPIRVConstantEmpty():SPIRVValue(OC){}
+  SPIRVConstantEmpty() : SPIRVValue(OC) {}
+
 protected:
-  void validate() const {
-    SPIRVValue::validate();
-  }
+  void validate() const override { SPIRVValue::validate(); }
   _SPIRV_DEF_ENCDEC2(Type, Id)
 };
 
-template<Op OC>
-class SPIRVConstantBool: public SPIRVConstantEmpty<OC> {
+template <Op OC> class SPIRVConstantBool : public SPIRVConstantEmpty<OC> {
 public:
   // Complete constructor
   SPIRVConstantBool(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId)
-    :SPIRVConstantEmpty<OC>(M, TheType, TheId){}
+      : SPIRVConstantEmpty<OC>(M, TheType, TheId) {}
   // Incomplete constructor
-  SPIRVConstantBool(){}
+  SPIRVConstantBool() {}
+
 protected:
-  void validate() const {
+  void validate() const override {
     SPIRVConstantEmpty<OC>::validate();
     assert(this->Type->isTypeBool() && "Invalid type");
   }
@@ -226,71 +224,65 @@ protected:
 typedef SPIRVConstantBool<OpConstantTrue> SPIRVConstantTrue;
 typedef SPIRVConstantBool<OpConstantFalse> SPIRVConstantFalse;
 
-class SPIRVConstantNull:
-    public SPIRVConstantEmpty<OpConstantNull> {
+class SPIRVConstantNull : public SPIRVConstantEmpty<OpConstantNull> {
 public:
   // Complete constructor
   SPIRVConstantNull(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId)
-    :SPIRVConstantEmpty(M, TheType, TheId){
+      : SPIRVConstantEmpty(M, TheType, TheId) {
     validate();
   }
   // Incomplete constructor
-  SPIRVConstantNull(){}
+  SPIRVConstantNull() {}
+
 protected:
-  void validate() const {
+  void validate() const override {
     SPIRVConstantEmpty::validate();
-    assert((Type->isTypeComposite() ||
-            Type->isTypeOpaque() ||
-            Type->isTypeEvent() ||
-            Type->isTypePointer() ||
-            Type->isTypeReserveId() ||
-            Type->isTypeDeviceEvent()) &&
-            "Invalid type");
+    assert((Type->isTypeComposite() || Type->isTypeOpaque() ||
+            Type->isTypeEvent() || Type->isTypePointer() ||
+            Type->isTypeReserveId() || Type->isTypeDeviceEvent()) &&
+           "Invalid type");
   }
 };
 
-class SPIRVUndef:
-    public SPIRVConstantEmpty<OpUndef> {
+class SPIRVUndef : public SPIRVConstantEmpty<OpUndef> {
 public:
   // Complete constructor
   SPIRVUndef(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId)
-    :SPIRVConstantEmpty(M, TheType, TheId){
+      : SPIRVConstantEmpty(M, TheType, TheId) {
     validate();
   }
   // Incomplete constructor
-  SPIRVUndef(){}
+  SPIRVUndef() {}
+
 protected:
-  void validate() const {
-    SPIRVConstantEmpty::validate();
-  }
+  void validate() const override { SPIRVConstantEmpty::validate(); }
 };
 
-class SPIRVConstantComposite: public SPIRVValue {
+class SPIRVConstantComposite : public SPIRVValue {
 public:
   // Complete constructor for composite constant
   SPIRVConstantComposite(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId,
-      const std::vector<SPIRVValue *> TheElements)
-    :SPIRVValue(M, TheElements.size()+3, OpConstantComposite, TheType,
-        TheId){
+                         const std::vector<SPIRVValue *> TheElements)
+      : SPIRVValue(M, TheElements.size() + 3, OpConstantComposite, TheType,
+                   TheId) {
     Elements = getIds(TheElements);
     validate();
   }
   // Incomplete constructor
-  SPIRVConstantComposite():SPIRVValue(OpConstantComposite){}
-  std::vector<SPIRVValue*> getElements()const {
-    return getValues(Elements);
+  SPIRVConstantComposite() : SPIRVValue(OpConstantComposite) {}
+  std::vector<SPIRVValue *> getElements() const { return getValues(Elements); }
+  std::vector<SPIRVEntry *> getNonLiteralOperands() const override {
+    std::vector<SPIRVValue *> Elements = getElements();
+    return std::vector<SPIRVEntry *>(Elements.begin(), Elements.end());
   }
-  std::vector<SPIRVEntry*> getNonLiteralOperands() const {
-    std::vector<SPIRVValue*> Elements = getElements();
-    return std::vector<SPIRVEntry*>(Elements.begin(), Elements.end());
-  }
+
 protected:
-  void validate() const {
+  void validate() const override {
     SPIRVValue::validate();
-    for (auto &I:Elements)
+    for (auto &I : Elements)
       getValue(I)->validate();
   }
-  void setWordCount(SPIRVWord WordCount) {
+  void setWordCount(SPIRVWord WordCount) override {
     SPIRVEntry::setWordCount(WordCount);
     Elements.resize(WordCount - 3);
   }
@@ -299,40 +291,37 @@ protected:
   std::vector<SPIRVId> Elements;
 };
 
-class SPIRVConstantSampler: public SPIRVValue {
+class SPIRVConstantSampler : public SPIRVValue {
 public:
   const static Op OC = OpConstantSampler;
   const static SPIRVWord WC = 6;
   // Complete constructor
   SPIRVConstantSampler(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId,
-      SPIRVWord TheAddrMode, SPIRVWord TheNormalized, SPIRVWord TheFilterMode)
-    :SPIRVValue(M, WC, OC, TheType, TheId), AddrMode(TheAddrMode),
-     Normalized(TheNormalized), FilterMode(TheFilterMode){
+                       SPIRVWord TheAddrMode, SPIRVWord TheNormalized,
+                       SPIRVWord TheFilterMode)
+      : SPIRVValue(M, WC, OC, TheType, TheId), AddrMode(TheAddrMode),
+        Normalized(TheNormalized), FilterMode(TheFilterMode) {
     validate();
   }
   // Incomplete constructor
-  SPIRVConstantSampler():SPIRVValue(OC), AddrMode(SPIRVSAM_Invalid),
-      Normalized(SPIRVWORD_MAX), FilterMode(SPIRVSFM_Invalid){}
+  SPIRVConstantSampler()
+      : SPIRVValue(OC), AddrMode(SPIRVSAM_Invalid), Normalized(SPIRVWORD_MAX),
+        FilterMode(SPIRVSFM_Invalid) {}
 
-  SPIRVWord getAddrMode() const {
-    return AddrMode;
-  }
+  SPIRVWord getAddrMode() const { return AddrMode; }
 
-  SPIRVWord getFilterMode() const {
-    return FilterMode;
-  }
+  SPIRVWord getFilterMode() const { return FilterMode; }
 
-  SPIRVWord getNormalized() const {
-    return Normalized;
-  }
-  SPIRVCapVec getRequiredCapability() const {
+  SPIRVWord getNormalized() const { return Normalized; }
+  SPIRVCapVec getRequiredCapability() const override {
     return getVec(CapabilityLiteralSampler);
   }
+
 protected:
   SPIRVWord AddrMode;
   SPIRVWord Normalized;
   SPIRVWord FilterMode;
-  void validate() const {
+  void validate() const override {
     SPIRVValue::validate();
     assert(OpCode == OC);
     assert(WordCount == WC);
@@ -347,34 +336,30 @@ public:
   const static SPIRVWord WC = 6;
   // Complete constructor
   SPIRVConstantPipeStorage(SPIRVModule *M, SPIRVType *TheType, SPIRVId TheId,
-    SPIRVWord ThePacketSize, SPIRVWord ThePacketAlign, SPIRVWord TheCapacity)
-    :SPIRVValue(M, WC, OC, TheType, TheId), PacketSize(ThePacketSize),
-    PacketAlign(ThePacketAlign), Capacity(TheCapacity){
+                           SPIRVWord ThePacketSize, SPIRVWord ThePacketAlign,
+                           SPIRVWord TheCapacity)
+      : SPIRVValue(M, WC, OC, TheType, TheId), PacketSize(ThePacketSize),
+        PacketAlign(ThePacketAlign), Capacity(TheCapacity) {
     validate();
   }
   // Incomplete constructor
-  SPIRVConstantPipeStorage() :SPIRVValue(OC), PacketSize(0),
-    PacketAlign(0), Capacity(0){}
+  SPIRVConstantPipeStorage()
+      : SPIRVValue(OC), PacketSize(0), PacketAlign(0), Capacity(0) {}
 
-  SPIRVWord getPacketSize() const {
-    return PacketSize;
-  }
+  SPIRVWord getPacketSize() const { return PacketSize; }
 
-  SPIRVWord getPacketAlign() const {
-    return PacketAlign;
-  }
+  SPIRVWord getPacketAlign() const { return PacketAlign; }
 
-  SPIRVWord getCapacity() const {
-    return Capacity;
-  }
-  SPIRVCapVec getRequiredCapability() const {
+  SPIRVWord getCapacity() const { return Capacity; }
+  SPIRVCapVec getRequiredCapability() const override {
     return getVec(CapabilityPipes, CapabilityPipeStorage);
   }
+
 protected:
   SPIRVWord PacketSize;
   SPIRVWord PacketAlign;
   SPIRVWord Capacity;
-  void validate() const {
+  void validate() const override {
     SPIRVValue::validate();
     assert(OpCode == OC);
     assert(WordCount == WC);
@@ -383,25 +368,23 @@ protected:
   _SPIRV_DEF_ENCDEC5(Type, Id, PacketSize, PacketAlign, Capacity)
 };
 
-class SPIRVForward:public SPIRVValue, public SPIRVComponentExecutionModes {
+class SPIRVForward : public SPIRVValue, public SPIRVComponentExecutionModes {
 public:
   const static Op OC = OpForward;
   // Complete constructor
-  SPIRVForward(SPIRVModule *TheModule, SPIRVType *TheTy, SPIRVId TheId):
-    SPIRVValue(TheModule, 0, OC, TheId){
+  SPIRVForward(SPIRVModule *TheModule, SPIRVType *TheTy, SPIRVId TheId)
+      : SPIRVValue(TheModule, 0, OC, TheId) {
     if (TheTy)
       setType(TheTy);
   }
-  SPIRVForward():SPIRVValue(OC) {
-    assert(0 && "should never be called");
-  }
+  SPIRVForward() : SPIRVValue(OC) { assert(0 && "should never be called"); }
   _SPIRV_DEF_ENCDEC1(Id)
   friend class SPIRVFunction;
+
 protected:
-  void validate() const {}
+  void validate() const override {}
 };
 
-}
-
+} // namespace SPIRV
 
 #endif /* SPIRVVALUE_HPP_ */

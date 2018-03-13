@@ -46,12 +46,15 @@
 #endif
 #include <iostream>
 
-namespace SPIRV{
+namespace SPIRV {
 
 #define _SPIRVDBG
 #ifdef _SPIRVDBG
 
-#define SPIRVDBG(x) if(SPIRVDbgEnable) {x;}
+#define SPIRVDBG(x)                                                            \
+  if (SPIRVDbgEnable) {                                                        \
+    x;                                                                         \
+  }
 
 // Enable debug output.
 extern bool SPIRVDbgEnable;
@@ -76,6 +79,5 @@ inline spv_ostream &spvdbgs() {
 #define SPIRVDBG(x)
 
 #endif
-
-}
+} // namespace SPIRV
 #endif /* SPIRVDEBUG_HPP_ */
