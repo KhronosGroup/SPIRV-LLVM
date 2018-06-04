@@ -105,12 +105,12 @@ protected:
   SPIRVDecorationGroup *Owner; // Owning decorate group
 };
 
-class SPIRVDecorateSet: public std::multiset<SPIRVDecorateGeneric *,
+class SPIRVDecorateSet: public std::multiset<const SPIRVDecorateGeneric *,
     SPIRVDecorateGeneric::Comparator> {
     public:
-  typedef std::multiset<SPIRVDecorateGeneric *,
+  typedef std::multiset<const SPIRVDecorateGeneric *,
       SPIRVDecorateGeneric::Comparator> BaseType;
-  iterator insert(value_type& Dec) {
+  iterator insert(const value_type& Dec) {
     auto ER = BaseType::equal_range(Dec);
     for (auto I = ER.first, E = ER.second; I != E; ++I) {
       SPIRVDBG(spvdbgs() << "[compare decorate] " << *Dec
@@ -244,10 +244,16 @@ public:
   _SPIRV_DCL_ENCDEC
   // Move the given decorates to the decoration group
   void takeDecorates(SPIRVDecorateSet &Decs) {
-    Decorations = std::move(Decs);
+    for (auto &I:Decs) {
+      // Insert decorates whose target ID is this decoration group
+      if (I->getTargetId() == Id) {
+        const_cast<SPIRVDecorateGeneric *>(I)->setOwner(this);
+        Decorations.insert(I);
+      }
+    }
+    // Remove those inserted decorates from original set
     for (auto &I:Decorations)
-      const_cast<SPIRVDecorateGeneric *>(I)->setOwner(this);
-    Decs.clear();
+      Decs.erase(I);
   }
 
   SPIRVDecorateSet& getDecorations() {
@@ -276,12 +282,7 @@ public:
   SPIRVGroupDecorateGeneric(Op OC)
     :SPIRVEntryNoIdGeneric(OC), DecorationGroup(nullptr){}
 
-  void setWordCount(SPIRVWord WC) {
-    SPIRVEntryNoIdGeneric::setWordCount(WC);
-    Targets.resize(WC - FixedWC);
-  }
   virtual void decorateTargets() = 0;
-  _SPIRV_DCL_ENCDEC
 protected:
   SPIRVDecorationGroup *DecorationGroup;
   std::vector<SPIRVId> Targets;
@@ -298,7 +299,12 @@ public:
   SPIRVGroupDecorate()
     :SPIRVGroupDecorateGeneric(OC){}
 
+  void setWordCount(SPIRVWord WC) {
+    SPIRVEntryNoIdGeneric::setWordCount(WC);
+    Targets.resize(WC - FixedWC);
+  }
   virtual void decorateTargets();
+  _SPIRV_DCL_ENCDEC
 };
 
 class SPIRVGroupMemberDecorate:public SPIRVGroupDecorateGeneric{
@@ -312,7 +318,13 @@ public:
   SPIRVGroupMemberDecorate()
     :SPIRVGroupDecorateGeneric(OC){}
 
+  void setWordCount(SPIRVWord WC) {
+    SPIRVEntryNoIdGeneric::setWordCount(WC);
+  }
   virtual void decorateTargets();
+  _SPIRV_DCL_ENCDEC
+protected:
+  std::vector<SPIRVWord> MemberNumbers;
 };
 
 }
