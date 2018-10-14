@@ -168,7 +168,7 @@ public:
   virtual void setCurrentLine(const std::shared_ptr<const SPIRVLine> &Line);
   virtual void addCapability(SPIRVCapabilityKind);
   virtual void addCapabilityInternal(SPIRVCapabilityKind);
-  virtual const SPIRVDecorateGeneric *addDecorate(SPIRVDecorateGeneric *);
+  virtual const SPIRVDecorateGeneric *addDecorate(const SPIRVDecorateGeneric *);
   virtual SPIRVDecorationGroup *addDecorationGroup();
   virtual SPIRVDecorationGroup *addDecorationGroup(SPIRVDecorationGroup *Group);
   virtual SPIRVGroupDecorate *addGroupDecorate(SPIRVDecorationGroup *Group,
@@ -841,8 +841,7 @@ SPIRVModuleImpl::addBasicBlock(SPIRVFunction *Func, SPIRVId Id) {
 }
 
 const SPIRVDecorateGeneric *
-SPIRVModuleImpl::addDecorate(SPIRVDecorateGeneric *Dec) {
-  add(Dec);
+SPIRVModuleImpl::addDecorate(const SPIRVDecorateGeneric *Dec) {
   SPIRVId Id = Dec->getTargetId();
   SPIRVEntry *Target = nullptr;
   bool Found = exist(Id, &Target);
@@ -1432,7 +1431,6 @@ SPIRVModuleImpl::addDecorationGroup(SPIRVDecorationGroup* Group) {
   DecGroupVec.push_back(Group);
   SPIRVDBG(spvdbgs() << "[addDecorationGroup] {" << *Group << "}\n";
           spvdbgs() << "  Remaining DecorateSet: {" << DecorateSet << "}\n");
-  assert(DecorateSet.empty());
   return Group;
 }
 

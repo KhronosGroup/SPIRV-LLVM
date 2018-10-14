@@ -282,7 +282,7 @@ SPIRVEntry::validateBuiltin(SPIRVWord TheSet, SPIRVWord Index)const {
 }
 
 void
-SPIRVEntry::addDecorate(SPIRVDecorate *Dec) {
+SPIRVEntry::addDecorate(const SPIRVDecorate *Dec) {
   auto Kind = Dec->getDecorateKind();
   Decorates.insert(std::make_pair(Dec->getDecorateKind(), Dec));
   Module->addDecorate(Dec);
@@ -321,9 +321,8 @@ SPIRVEntry::setLine(const std::shared_ptr<const SPIRVLine>& L){
 }
 
 void
-SPIRVEntry::addMemberDecorate(SPIRVMemberDecorate *Dec){
-  assert(canHaveMemberDecorates() && MemberDecorates.find(Dec->getPair()) ==
-      MemberDecorates.end());
+SPIRVEntry::addMemberDecorate(const SPIRVMemberDecorate *Dec){
+  assert(canHaveMemberDecorates());
   MemberDecorates[Dec->getPair()] = Dec;
   Module->addDecorate(Dec);
   SPIRVDBG(spvdbgs() << "[addMemberDecorate] " << *Dec << '\n';)
@@ -366,6 +365,20 @@ bool
 SPIRVEntry::hasDecorate(Decoration Kind, size_t Index, SPIRVWord *Result)const {
   DecorateMapType::const_iterator Loc = Decorates.find(Kind);
   if (Loc == Decorates.end())
+    return false;
+  if (Result)
+    *Result = Loc->second->getLiteral(Index);
+  return true;
+}
+
+// Check if an entry has Kind of member decoration at MemberIndex and get the
+// literal of the first decoration of such kind at Index.
+bool
+SPIRVEntry::hasMemberDecorate(SPIRVWord MemberIndex, Decoration Kind,
+  size_t Index, SPIRVWord *Result)const {
+  MemberDecorateMapType::const_iterator Loc =
+    MemberDecorates.find(std::make_pair(MemberIndex, Kind));
+  if (Loc == MemberDecorates.end())
     return false;
   if (Result)
     *Result = Loc->second->getLiteral(Index);
